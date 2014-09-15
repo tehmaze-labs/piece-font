@@ -75,7 +75,7 @@ def convert_html(option):
             row.append(dict(
                 char=o,
                 #unichar=cmap[o].encode('utf-8') if cmap[o] else '?',
-                unichar=ord(cmap.get(o, '?')),
+                unichar=ord(cmap.get(o)) if cmap.get(o) is not None else None,
                 uniname=unicodename(cmap[o]) if cmap.get(o) is not None else '',
                 x=x,
                 y=y,

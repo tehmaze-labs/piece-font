@@ -122,27 +122,34 @@
     <code>0x{{ '%x'|format(y) }}0</code>
   </th>
   {% for item in row %}
-  <td{% if item.uniname == '' %} class="char-unmapped"{% endif %}>
-    <div class="char" id="char-{{ '%04x'|format(item.char) }}"
-      style="background-position: {{ item.bg }}"
+  <td {% if item.uniname == '' %}class="char-unmapped" {% endif %}
       {%- if item.uniname == "" %}
       title="Char not mapped"
       {%- else %}
       title="Char &quot;&#{{ item.unichar }};&quot;, unicode name &quot;{{ item.uniname }}&quot;"
       {%- endif %}>
+    <div class="char" id="char-{{ '%04x'|format(item.char) }}"
+      style="background-position: {{ item.bg }}">
     </div>
     <div>
       <code class="index index-unicode">
         {%- if item.unichar == 0 -%}
         NULL
+        {%- elif item.unichar == None -%}
+        NONE
         {%- else -%}
         {{ '%04x'|format(item.unichar) }}
         {%- endif -%}
       </code>
     </div>
     <div>
+      {%- if item.unichar -%}
       <code class="preview">
-      {%- if item.unichar %}&#{{ item.unichar }};{%- else -%}&nbsp;{%- endif -%}
+      &#{{ item.unichar }};
+      {%- else -%}
+      <code>
+      &nbsp;
+      {%- endif -%}
       </code>
     </div>
   </td>
