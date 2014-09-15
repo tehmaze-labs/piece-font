@@ -450,7 +450,57 @@ Miscellanious:
     hitachi-mb-6880-8x8:
         description:            "Hitachi MB 6880"
 
-Unkonwn:
+Miscellanious Former Soviet Union:
+    koi8-r-8x8:
+        description:            "Код Обмена Информацией, 8 бит (Kod Obmena Informatsiey, 8 bit)"
+        language:               Russian
+        copyright:              "Former Soviet Union"
+        copyright_year:         1974
+        source:                 "FreeBSD syscons"
+    koi8-r-8x14:
+        description:            "Код Обмена Информацией, 8 бит (Kod Obmena Informatsiey, 8 bit)"
+        language:               Russian
+        copyright:              "Former Soviet Union"
+        copyright_year:         1974
+        source:                 "FreeBSD syscons"
+    koi8-r-8x16:
+        description:            "Код Обмена Информацией, 8 бит (Kod Obmena Informatsiey, 8 bit)"
+        language:               Russian
+        copyright:              "Former Soviet Union"
+        copyright_year:         1974
+        source:                 "FreeBSD syscons"
+    koi8-rb-8x16:
+        description:            "Код Обмена Информацией, 8 бит (Kod Obmena Informatsiey, 8 bit)"
+        language:               Belolrussian
+        copyright:              "Former Soviet Union"
+        copyright_year:         1974
+        source:                 "FreeBSD syscons"
+    koi8-rc-8x16:
+        description:            "Код Обмена Информацией, 8 бит (Kod Obmena Informatsiey, 8 bit)"
+        language:               Czech
+        copyright:              "Former Soviet Union"
+        copyright_year:         1974
+        source:                 "FreeBSD syscons"
+    koi8-u-8x8:
+        description:            "Код Обмена Информацией, 8 бит (Kod Obmena Informatsiey, 8 bit)"
+        language:               Ukrainian
+        copyright:              "Former Soviet Union"
+        copyright_year:         1974
+        source:                 "FreeBSD syscons"
+    koi8-u-8x14:
+        description:            "Код Обмена Информацией, 8 бит (Kod Obmena Informatsiey, 8 bit)"
+        language:               Ukrainian
+        copyright:              "Former Soviet Union"
+        copyright_year:         1974
+        source:                 "FreeBSD syscons"
+    koi8-u-8x16:
+        description:            "Код Обмена Информацией, 8 бит (Kod Obmena Informatsiey, 8 bit)"
+        language:               Ukrainian
+        copyright:              "Former Soviet Union"
+        copyright_year:         1974
+        source:                 "FreeBSD syscons"
+
+Unknown:
     iso02-8x14:
         description:            "Unknown"
     iso02-8x16:
@@ -510,22 +560,6 @@ Unkonwn:
     iso-thin-8x16:
         description:            "Unknown"
     kauno-8x8:
-        description:            "Unknown"
-    koi8-r-8x14:
-        description:            "Unknown"
-    koi8-r-8x16:
-        description:            "Unknown"
-    koi8-r-8x8:
-        description:            "Unknown"
-    koi8-rb-8x16:
-        description:            "Unknown"
-    koi8-rc-8x16:
-        description:            "Unknown"
-    koi8-u-8x14:
-        description:            "Unknown"
-    koi8-u-8x16:
-        description:            "Unknown"
-    koi8-u-8x8:
         description:            "Unknown"
     swiss-1131-8x16:
         description:            "Unknown"

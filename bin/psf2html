@@ -1,5 +1,6 @@
 #!/usr/bin/env python2
 
+import codecs
 import os
 import sys
 import unicodedata
@@ -12,7 +13,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'lib'))
 from psf import PSF
 
 
-collection = yaml.load(file('font.yaml'))
+collection = yaml.load(codecs.open('font.yaml', 'r', 'utf-8'))
 
 
 def unicodechar(char):
@@ -114,7 +115,7 @@ def convert_html(option):
     else:
         stream = open(option.output, 'wb')
 
-    stream.write(html.render(**context))
+    stream.write(html.render(**context).encode('utf-8'))
 
     if option.output != '-':
         stream.close()
