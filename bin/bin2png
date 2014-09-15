@@ -1,0 +1,57 @@
+#!/usr/bin/env python2
+
+from PIL import Image
+import sys
+import re
+
+
+RE_SIZE = re.compile(r'-(\d+)x(\d+)\.bin$', re.I)
+
+
+def convert_png(filename, option):
+    data = bytearray(open(filename, 'rb').read())
+    size = len(data)
+    bytes_per_char = ((option.char_width * option.char_height) + 7) // 8
+    glyphs = size / bytes_per_char
+    image = Image.new('1', (
+        option.char_width * glyphs,
+        option.char_height,
+    ))
+
+    for y in range(option.char_height):
+        for x in range(glyphs):
+            offset = x * bytes_per_char
+            chrdata = data[offset:offset + bytes_per_char]
+            for xx in range(option.char_width):
+                p = chrdata[y] & (0x80 >> (xx & 7))
+                if p:
+                    image.putpixel(((x * option.char_width) + xx, y), 255)
+
+    image.save(option.output)
+
+
+def run():
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-x', '--char-width', default=8, type=int)
+    parser.add_argument('-y', '--char-height', default=8, type=int)
+    parser.add_argument('-o', '--output', required=True)
+    parser.add_argument('filename')
+
+    option = parser.parse_args()
+
+    if option.char_width == 0 or option.char_height == 0:
+        test = RE_SIZE.search(option.filename)
+        if test:
+            option.char_width = int(test.group(1))
+            option.char_height = int(test.group(2))
+        else:
+            option.char_width = 8
+            option.char_height = 16
+
+    convert_png(option.filename, option)
+
+
+if __name__ == '__main__':
+    sys.exit(run())

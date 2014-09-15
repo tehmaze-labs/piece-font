@@ -1,0 +1,539 @@
+---
+Acorn Computers:
+    acorn-electron-8x8:
+        description:            "Acorn Electron"
+        copyright:              "Acorn Computers"
+        copyright_year:         1983
+        source:                 "http://elkjs.azurewebsites.net/"
+    bbc-modelb-8x8:
+        description:            "BBC Microcomputer Model B"
+        copyright:              "Acorn Computers"
+        copyright_year:         1981
+        source:                 "http://www.bbcmicrogames.com/"
+    bbc-modelb128-8x8:
+        description:            "BBC Microcomputer Model B+128"
+        copyright:              "Acorn Computers"
+        copyright_year:         1985
+        source:                 "http://www.bbcmicrogames.com/"
+
+Atari:
+    atascii-arabic-8x16:
+        description:            "ATARI ASCII"
+        variant:                "Arabic"
+        copyright:              "Atari Inc."
+        copyright_year:         1979
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    atascii-graphics-8x16:
+        description:            "ATARI ASCII"
+        variant:                "Graphics"
+        copyright:              "Atari Inc."
+        copyright_year:         1979
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    atascii-international-8x16:
+        description:            "ATARI ASCII"
+        variant:                "International"
+        copyright:              "Atari Inc."
+        copyright_year:         1979
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+
+Commodore:
+    amiga-b-strict:
+        description:            "B-Strict"
+        source:                 "B-Girl"
+        copyright:              "Lukas Nystrand (aka Mortimer Twang)"
+    amiga-b-struct:
+        description:            "B-Struct"
+        source:                 "B-Girl"
+        copyright:              "Lukas Nystrand (aka Mortimer Twang)"
+    amiga-microknight:
+        description:            "MicroKnight"
+    amiga-microknightplus:
+        description:            "MicroKnight (modified)"
+    amiga-mo-soul:
+        description:            "mO'sOul"
+        source:                 "mO'sOul"
+        copyright:              "Desoto"
+    amiga-p0t-noodle:
+        description:            "P0T-NOoDLE"
+        copyright:              "Leo Davison (aka Nudel)"
+    amiga-topaz-a500:
+        description:            "Amiga Topaz Kickstart 1.x"
+        source:                 "Kickstart v1.3 r34.5"
+        copyright:              "Commodore"
+        copyright_year:         1987
+    amiga-topaz-a1200:
+        description:            "Amiga Topaz Kickstart 2.x"
+        source:                 "Kickstart v3.1 r40.68"
+        copyright:              "Commodore"
+        copyright_year:         1993
+    amiga-topazplus-a500:
+        description:            "Amiga Topaz Kickstart 1.x"
+        variant:                modified
+        source:                 "Kickstart v2.04 r37.175"
+        copyright:              "Commodore"
+        copyright_year:         1991
+    amiga-topazplus-a1200:
+        description:            "Amiga Topaz Kickstart 2.x"
+        variant:                modified
+        source:                 "Kickstart v3.1 r40.68"
+        copyright:              "Commodore"
+        copyright_year:         1993
+    c16-8x8:
+        description:            "Commodore 16"
+        copyright:              "Commodore"
+        copyright_year:         1984
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    c16-hungarian-8x8:
+        description:            "Commodore 16"
+        language:               Hungarian
+        copyright:              "Commodore"
+        copyright_year:         1984
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    c64-8x8:
+        description:            "Commodore 64"
+        copyright:              "Commodore"
+        copyright_year:         1982
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    c64-german-8x8:
+        description:            "Commodore 64"
+        language:               German
+        copyright:              "Commodore"
+        copyright_year:         1982
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    c64-hungarian-8x8:
+        description:            "Commodore 64"
+        language:               Hungarian
+        copyright:              "Commodore"
+        copyright_year:         1982
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    c64-swedish-8x8:
+        description:            "Commodore 64"
+        language:               Swedish
+        copyright:              "Commodore"
+        copyright_year:         1982
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    c64-swedish2-8x8:
+        description:            "Commodore 64"
+        variant:                Alternative
+        language:               Swedish
+        copyright:              "Commodore"
+        copyright_year:         1982
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    c65-caff-8x8:
+        description:            "Commodore 65"
+        copyright:              "Commodore"
+        copyright_year:         1990
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    c128-8x8:
+        description:            "Commodore 128"
+        copyright:              "Commodore"
+        copyright_year:         1985
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    giana-8x8:
+        description:            "The Great Giana Sisters"
+        copyright:              "Rainbow Arts"
+        copyright_year:         1987
+        source:                 "http://www.c64.com/games/138"
+    pet-1-8x8:
+        description:            "Commodore PET 2001 series"
+        copyright:              "Commodore"
+        copyright_year:         1977
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    pet-greek-8x8:
+        description:            "Commodore PET 2001 series (Greek)"
+        copyright:              "Commodore"
+        copyright_year:         1977
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    pet-norwegian-8x8:
+        description:            "Commodore PET 2001 series (Norwegian)"
+        copyright:              "Commodore"
+        copyright_year:         1977
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    pet-russian-8x8:
+        description:            "Commodore PET 2001 series (Russian)"
+        copyright:              "Commodore"
+        copyright_year:         1977
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    pet-swedish-8x8:
+        description:            "Commodore PET 2001 series (Swedish)"
+        copyright:              "Commodore"
+        copyright_year:         1977
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    pet-2-8x8:
+        description:            "Commodore PET 4000 series"
+        copyright:              "Commodore"
+        copyright_year:         1980
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    superpet-8x8:
+        description:            "Commodore SuperPET 9000 series"
+        copyright:              "Commodore"
+        copyright_year:         1981
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    superpet-swedish-8x8:
+        description:            "Commodore SuperPET 9000 series (Swedish)"
+        copyright:              "Commodore"
+        copyright_year:         1981
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    vic20-8x8:
+        description:            "Commodore VIC-20"
+        copyright:              "Commodore"
+        copyright_year:         1981
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    vic20-german-8x8:
+        description:            "Commodore VIC-20/VC-20 (German)"
+        copyright:              "Commodore"
+        copyright_year:         1981
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    vic20-japanese-8x8:
+        description:            "Commodore VIC-20/VIC-1001 (Japanese)"
+        copyright:              "Commodore"
+        copyright_year:         1981
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    vic20-norwegian-8x8:
+        description:            "Commodore VIC-20 (Norwegian)"
+        copyright:              "Commodore"
+        copyright_year:         1981
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+    vic20-swedish-8x8:
+        description:            "Commodore VIC-20 (Swedish)"
+        copyright:              "Commodore"
+        copyright_year:         1981
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+
+IBM:
+    ibm-cp437-8x14:
+        description:            "IBM PC Code Page 437"
+        language:               "US Latin"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp437-8x16:
+        description:            "IBM PC Code Page 437"
+        language:               "US Latin"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp437-8x8:
+        description:            "IBM PC Code Page 437"
+        language:               "US Latin"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp437-thin-8x16:
+        description:            "IBM PC Code Page 437"
+        variant:                thin
+        language:               "US Latin"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp437-thin-8x8:
+        description:            "IBM PC Code Page 437"
+        variant:                thin
+        language:               "US Latin"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp737-8x16:
+        description:            "IBM PC Code Page 737"
+        language:               "Greek"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp775-8x16:
+        description:            "IBM PC Code Page 775"
+        language:               "Baltic Rim"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp850-8x14:
+        description:            "IBM PC Code Page 850"
+        language:               "Latin 1"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp850-8x16:
+        description:            "IBM PC Code Page 850"
+        language:               "Latin 1"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp850-8x8:
+        description:            "IBM PC Code Page 850"
+        language:               "Latin 1"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp850-thin-8x8:
+        description:            "IBM PC Code Page 850"
+        variant:                thin
+        language:               "Latin 1"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp850-thin-8x16:
+        description:            "IBM PC Code Page 850"
+        variant:                thin
+        language:               "Latin 1"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp852-8x16:
+        description:            "IBM PC Code Page 852"
+        language:               "Latin 2"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp855-8x16:
+        description:            "IBM PC Code Page 855"
+        language:               "Cyrillic"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp857-8x16:
+        description:            "IBM PC Code Page 857"
+        language:               "Turkish"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp860-8x16:
+        description:            "IBM PC Code Page 860"
+        language:               "Portuguese"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp861-8x16:
+        description:            "IBM PC Code Page 861"
+        language:               "Icelandic"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp862-8x16:
+        description:            "IBM PC Code Page 862"
+        language:               "Hebrew"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp863-8x16:
+        description:            "IBM PC Code Page 863"
+        language:               "French Canada"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp865-8x14:
+        description:            "IBM PC Code Page 865"
+        language:               "Nordic"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp865-8x16:
+        description:            "IBM PC Code Page 865"
+        language:               "Nordic"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp865-8x8:
+        description:            "IBM PC Code Page 865"
+        language:               "Nordic"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp865-thin-8x16:
+        description:            "IBM PC Code Page 865"
+        variant:                thin
+        language:               "Nordic"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp865-thin-8x8:
+        description:            "IBM PC Code Page 865"
+        variant:                thin
+        language:               "Nordic"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp866-8x14:
+        description:            "IBM PC Code Page 866"
+        language:               "Cyrillic CIS 1"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp866-8x16:
+        description:            "IBM PC Code Page 866"
+        language:               Cyrillic CIS 1
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp866-8x8:
+        description:            "IBM PC Code Page 866"
+        language:               Cyrillic CIS 1
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp866b-8x16:
+        description:            "IBM PC Code Page 866"
+        language:               Bulgarian
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp866c-8x16:
+        description:            "IBM PC Code Page 866"
+        language:               Russian
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp866u-8x8:
+        description:            "IBM PC Code Page 866"
+        language:               Ukrainian
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp866u-8x14:
+        description:            "IBM PC Code Page 866"
+        language:               Ukrainian
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp866u-8x16:
+        description:            "IBM PC Code Page 866"
+        language:               Ukrainian
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp869-8x16:
+        description:            "IBM PC Code Page 869"
+        language:               Greek
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp1251-8x14:
+        description:            "IBM PC Code Page 1251"
+        language:               Slavic
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp1251-8x16:
+        description:            "IBM PC Code Page 1251"
+        language:               Slavic
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+    ibm-cp1251-8x8:
+        description:            "IBM PC Code Page 1251"
+        language:               Slavic
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+
+Microsoft:
+    msx-brazilian-8x8:
+        description:            "Microsoft MSX"
+        language:               Brazilian
+        copyright:              "Microsoft"
+        copyright_year:         1983
+        source:                 "http://www.msxarchive.nl/"
+    msx-cyrillic-8x8:
+        description:            "Microsoft MSX"
+        language:               Cyrillic
+        copyright:              "Microsoft"
+        copyright_year:         1983
+        source:                 "http://www.msxarchive.nl/"
+
+Philips:
+    philips-vg-5000-8x10:
+        description:            "Philips VG 5000"
+
+Silicon Graphics:
+    sgi-iris-3130-8x16:
+        description:            "Silicon Graphics IRIS 3000"
+    sgi-iris-4d-8x16:
+        description:            "Silicon Grpahics IRIS 4D"
+
+Sinclair:
+    sam-coupe-8x8:
+        description:            "SAM Coupé (ZX Spectrum clone)"
+    zx-80-8x8:
+        description:            "Sinclair ZX80"
+    zx-81-8x8:
+        description:            "Sinclair ZX81"
+    zx-aszmic-8x8:
+        description:            "Sinclair ZX Aszmic"
+    zx-evolution-8x8:
+        description:            "Vitality ZX Evolution"
+    zx-spectrum-8x8:
+        description:            "Sinclair ZX Spectrum"
+
+Miscellanious Hobby Computers:
+    aquarius-8x8:
+        description:            "Aquarius Home Computer"
+    galaksija-8x13:
+        description:            "Galaksija (Galaxy)"
+    orao-8x8:
+        description:            "Orao (Eagle)"
+
+Miscellanious:
+    armscii8-8x8:
+        description:            "ARMSCII"
+    armscii8-8x14:
+        description:            "ARMSCII"
+    armscii8-8x16:
+        description:            "ARMSCII"
+    haik8-8x14:
+        description:            "ARMSCII (haik8)"
+    haik8-8x16:
+        description:            "ARMSCII (haik8)"
+    haik8-8x8:
+        description:            "ARMSCII"
+    hitachi-mb-6880-8x8:
+        description:            "Hitachi MB 6880"
+
+Unkonwn:
+    iso02-8x14:
+        description:            "Unknown"
+    iso02-8x16:
+        description:            "Unknown"
+    iso02-8x8:
+        description:            "Unknown"
+    iso04-8x14:
+        description:            "Unknown"
+    iso04-8x16:
+        description:            "Unknown"
+    iso04-8x8:
+        description:            "Unknown"
+    iso04-vga9-8x14:
+        description:            "Unknown"
+    iso04-vga9-8x16:
+        description:            "Unknown"
+    iso04-vga9-8x8:
+        description:            "Unknown"
+    iso04-vga9-wide-8x16:
+        description:            "Unknown"
+    iso04-wide-8x16:
+        description:            "Unknown"
+    iso05-8x14:
+        description:            "Unknown"
+    iso05-8x16:
+        description:            "Unknown"
+    iso05-8x8:
+        description:            "Unknown"
+    iso07-8x14:
+        description:            "Unknown"
+    iso07-8x16:
+        description:            "Unknown"
+    iso07-8x8:
+        description:            "Unknown"
+    iso08-8x14:
+        description:            "Unknown"
+    iso08-8x16:
+        description:            "Unknown"
+    iso08-8x8:
+        description:            "Unknown"
+    iso09-8x16:
+        description:            "Unknown"
+    iso15-8x14:
+        description:            "Unknown"
+    iso15-8x16:
+        description:            "Unknown"
+    iso15-8x8:
+        description:            "Unknown"
+    iso15-thin-8x16:
+        description:            "Unknown"
+    iso-8x14:
+        description:            "Unknown"
+    iso-8x16:
+        description:            "Unknown"
+    iso-8x8:
+        description:            "Unknown"
+    iso-thin-8x16:
+        description:            "Unknown"
+    kauno-8x8:
+        description:            "Unknown"
+    koi8-r-8x14:
+        description:            "Unknown"
+    koi8-r-8x16:
+        description:            "Unknown"
+    koi8-r-8x8:
+        description:            "Unknown"
+    koi8-rb-8x16:
+        description:            "Unknown"
+    koi8-rc-8x16:
+        description:            "Unknown"
+    koi8-u-8x14:
+        description:            "Unknown"
+    koi8-u-8x16:
+        description:            "Unknown"
+    koi8-u-8x8:
+        description:            "Unknown"
+    swiss-1131-8x16:
+        description:            "Unknown"
+    swiss-1251-8x16:
+        description:            "Unknown"
+    swiss-8x14:
+        description:            "Unknown"
+    swiss-8x16:
+        description:            "Unknown"
+    swiss-8x8:
+        description:            "Unknown"

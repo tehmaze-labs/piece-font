@@ -1,0 +1,138 @@
+#!/usr/bin/env python2
+
+import os
+import sys
+import unicodedata
+import yaml
+
+from jinja2 import Environment, FileSystemLoader
+
+# Local imports
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'lib'))
+from psf import PSF
+
+
+collection = yaml.load(file('font.yaml'))
+
+
+def unicodechar(char):
+    if len(char) == 1:
+        return unichr(ord(char))
+    else:
+        try:
+            return unichr(int(char, 16))
+        except ValueError:
+            pass
+        try:
+            return unicodedata.lookup(char)
+        except KeyError as error:
+            print >>sys.stderr, error
+            return None
+
+
+def unicodename(char):
+    try:
+        return unicodedata.name(char)
+    except ValueError:
+        return 'unknown'
+
+
+def load_charmap(filename, font):
+    #maps = [None] * len(font)
+    maps = {}
+    with open(filename, 'rb') as charmap:
+        for line in charmap:
+            line = line.strip()
+            if ' ' in line:
+                char, name = line.split(' ', 1)
+                char = int(char, 16)
+                unichar = unicodechar(name)
+                if unichar is not None:
+                    maps[char] = unicodechar(name)
+
+    return maps
+
+
+def convert_html(option):
+    # Load data files
+    font = PSF(option.filename)
+    cmap = load_charmap(option.char_map, font)
+
+    # Load html
+    tenv = Environment(loader=FileSystemLoader(
+        os.path.join(os.path.dirname(__file__), '..', 'template'),
+    ))
+    html = tenv.get_template('font/font.html')
+
+    # Glyphs
+    glyphs = []
+    cols=option.char_per_row
+    rows=(len(font) + 7) // cols
+    for y in range(rows):
+        row = []
+        for x in range(cols):
+            o = (y * cols) + x
+            row.append(dict(
+                char=o,
+                #unichar=cmap[o].encode('utf-8') if cmap[o] else '?',
+                unichar=ord(cmap.get(o, '?')),
+                uniname=unicodename(cmap[o]) if cmap.get(o) is not None else '',
+                x=x,
+                y=y,
+                bg='-{}px 0px'.format(o * 5 * font.char_width),
+            ))
+        glyphs.append((y, row))
+
+    # Scan for vendor and description in the collection map
+    name = os.path.splitext(os.path.basename(option.filename))[0]
+    vendor = None
+    info = None
+    for section in collection:
+        for fontname in collection[section]:
+            if fontname == name:
+                vendor = section
+                info = collection[section][fontname]
+
+    # Build context
+    context = dict(
+        font=font,
+        name=name,
+        info=info,
+        collection=vendor,
+        sections=sorted(collection.keys()),
+        chars=len(font),
+        char_x=font.char_width * 5,
+        char_y=font.char_height * 5,
+        charmap=cmap,
+        cols=range(cols),
+        rows=range((len(font) + 7) // cols),
+        glyphs=glyphs,
+    )
+
+    if option.output == '-':
+        stream = sys.stdout
+    else:
+        stream = open(option.output, 'wb')
+
+    stream.write(html.render(**context))
+
+    if option.output != '-':
+        stream.close()
+
+
+def run():
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-c', '--char-per-row', default=16, type=int)
+    parser.add_argument('-m', '--char-map', required=True)
+    parser.add_argument('-o', '--output', required=True)
+    parser.add_argument('filename')
+
+    option = parser.parse_args()
+    return convert_html(option)
+
+
+if __name__ == '__main__':
+    sys.exit(run())
+

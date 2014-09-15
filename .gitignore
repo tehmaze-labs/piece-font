@@ -1,0 +1,6 @@
+# Object files
+*.pyc
+*.pyo
+
+# Build stuff
+build/

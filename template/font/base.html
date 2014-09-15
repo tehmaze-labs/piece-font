@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Piece :: Font :: {% block title %}Stuff{% endblock %}</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+{% block head %}{% endblock %}
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <h2>Collection</h2>
+      <ul>
+      {% for section in sections %}
+        <li><a href="{{ section|lower|replace(" ", "-") }}.html">{{ section }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+    <div class="col-md-10">
+{% block content %}{% endblock %}
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+{% extends "font/base.html" %}
+
+{% block title %}{{ name }}{% endblock %}
+
+{% block head %}
+<style type="text/css">
+.char {
+  margin:     0px auto !important;
+  padding:    0;
+  width:      {{ char_x }}px;
+  height:     {{ char_y }}px;
+  background: url(preview/{{ name }}-char.png);
+}
+.char-unmapped {
+  background: #fcc !important;
+}
+.char-preview {
+  border:     16px solid #ccc;
+  background: #ccc;
+}
+.table-font,
+.table-font * {
+  text-align: center;
+}
+.table-font code {
+  background-color: transparent !important;
+}
+.table-font td {
+  background-color: #ccc;
+}
+.table-font td:hover {
+  background-color: #ffc;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<h2>Font details</h2>
+
+<div class="row">
+  <div class="col-md-9">
+    <table class="table">
+      <tr>
+        <th>Name</th>
+        <td>{{ name }}</td>
+      </tr>
+      {%- if info.variant %}
+      <tr>
+        <th>Variant</th>
+        <td>{{ info.variant }}</td>
+      </tr>
+      {%- endif %}
+      {%- if info.language %}
+      <tr>
+        <th>Variant</th>
+        <td>{{ info.language }}</td>
+      </tr>
+      {%- endif %}
+      <tr>
+        <th>Description</th>
+        <td>{{ info.description|default("Not available") }}</td>
+      </tr>
+      <tr>
+        <th>Collection</th>
+        <td><a href="{{ collection|lower|replace(" ", "-") }}.html">{{ collection }}</a></td>
+      </tr>
+      <tr>
+        <th>Copyright</th>
+        <td>&copy; {{ info.copyright_year|default("Unknown") }} {{ info.copyright }}</td>
+      </tr>
+      <tr>
+        <th>Character size</th>
+        <td>{{ font.char_width }} x {{ font.char_height }}</td>
+      </tr>
+      <tr>
+        <th>Characters</th>
+        <td>{{ font|length }}</td>
+      </tr>
+      <tr>
+        <th>PSF version</th>
+        <td>{{ font.version }}</td>
+      </tr>
+      <tr>
+        <th>Download as</th>
+        <td>
+          <a href="{{ name }}.png">.png</a>,
+          <a href="{{ name }}.psf">.psf</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-md-3">
+    <img src="preview/{{ name }}.png" alt="{{ name }}" class="char-preview" usemap="#charmap">
+    <map name="charmap">
+    </map>
+  </div>
+</div>
+
+<h2>Characters</h2>
+
+<table class="table table-bordered table-font">
+{% for y, row in glyphs %}
+{% if (y % 8) == 0 %}
+<tr>
+  <th>&nbsp;</th>
+{% for x in cols %}
+  <th>
+    <code>0x{{ '%02x'|format(x) }}</code>
+  </th>
+{% endfor %}
+</tr>
+{% endif %}
+<tr>
+  <th>
+    <code>0x{{ '%x'|format(y) }}0</code>
+  </th>
+  {% for item in row %}
+  <td{% if item.uniname == '' %} class="char-unmapped"{% endif %}>
+    <div class="char" id="char-{{ '%04x'|format(item.char) }}"
+      style="background-position: {{ item.bg }}"
+      {%- if item.uniname == "" %}
+      title="Char not mapped"
+      {%- else %}
+      title="Char &quot;&#{{ item.unichar }};&quot;, unicode name &quot;{{ item.uniname }}&quot;"
+      {%- endif %}>
+    </div>
+    <div>
+      <code class="index index-unicode">{{ '%04x'|format(item.unichar) }}
+      {%- if item.unichar %} &#{{ item.unichar }};
+      {%- else %} &nbsp;
+      {%- endif %}</code>
+    </div>
+  </td>
+  {% endfor %}
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
