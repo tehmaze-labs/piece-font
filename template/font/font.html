@@ -18,12 +18,19 @@
   border:     16px solid #ccc;
   background: #ccc;
 }
+.preview {
+  color:         #fff;
+  background:    #000 !important;
+  border-radius: 0;
+  margin:        0;
+  padding:       0;
+}
 .table-font,
 .table-font * {
   text-align: center;
 }
 .table-font code {
-  background-color: transparent !important;
+  background-color: transparent;
 }
 .table-font td {
   background-color: #ccc;
@@ -125,10 +132,18 @@
       {%- endif %}>
     </div>
     <div>
-      <code class="index index-unicode">{{ '%04x'|format(item.unichar) }}
-      {%- if item.unichar %} &#{{ item.unichar }};
-      {%- else %} &nbsp;
-      {%- endif %}</code>
+      <code class="index index-unicode">
+        {%- if item.unichar == 0 -%}
+        NULL
+        {%- else -%}
+        {{ '%04x'|format(item.unichar) }}
+        {%- endif -%}
+      </code>
+    </div>
+    <div>
+      <code class="preview">
+      {%- if item.unichar %}&#{{ item.unichar }};{%- else -%}&nbsp;{%- endif -%}
+      </code>
     </div>
   </td>
   {% endfor %}
