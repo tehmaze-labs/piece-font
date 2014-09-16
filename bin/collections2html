@@ -1,0 +1,66 @@
+#!/usr/bin/env python2
+
+import codecs
+import os
+import sys
+import unicodedata
+import yaml
+
+from jinja2 import Environment, FileSystemLoader
+
+# Local imports
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'lib'))
+from ascii import CONTROL_CHARS, CONTROL_SHORT, CONTROL_WORDS
+from psf import PSF
+
+
+collection = yaml.load(codecs.open('font.yaml', 'r', 'utf-8'))
+
+
+def convert_html(option):
+    # Load html
+    tenv = Environment(loader=FileSystemLoader(
+        os.path.join(os.path.dirname(__file__), '..', 'template'),
+    ))
+    html = tenv.get_template('font/collection.html')
+
+    # Scan for collections
+    for section in collection:
+        link = section.lower().replace(' ', '-')
+        fonts = []
+
+        for name in sorted(collection[section]):
+            info = dict(
+                name=name,
+                link='{}.html'.format(name.lower().replace(' ', '-')),
+            )
+            info.update(collection[section][name])
+            fonts.append(info)
+
+        # Build context
+        context = dict(
+            sections=sorted(collection.keys()),
+            collection=section,
+            link=link,
+            fonts=fonts,
+        )
+
+        filename = os.path.join(option.output, '{}.html'.format(link))
+        print 'Writing', filename
+        with open(filename, 'wb') as stream:
+            stream.write(html.render(**context).encode('utf-8'))
+
+
+def run():
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-o', '--output', required=True)
+
+    option = parser.parse_args()
+    return convert_html(option)
+
+
+if __name__ == '__main__':
+    sys.exit(run())
+

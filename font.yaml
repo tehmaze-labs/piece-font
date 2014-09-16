@@ -405,34 +405,66 @@ Microsoft:
 Philips:
     philips-vg-5000-8x10:
         description:            "Philips VG 5000"
+        copyright:              "Philips"
+        copyright_year:         1984
+        source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
 
 Silicon Graphics:
     sgi-iris-3130-8x16:
         description:            "Silicon Graphics IRIS 3000"
+        copyright:              "Silicon Graphics"
+        source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
     sgi-iris-4d-8x16:
         description:            "Silicon Grpahics IRIS 4D"
+        copyright:              "Silicon Graphics"
+        source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
 
 Sinclair:
     sam-coupe-8x8:
         description:            "SAM Coupé (ZX Spectrum clone)"
+        copyright:              "SAM Coupé"
+        copyright_year:         1989
+        source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
     zx-80-8x8:
         description:            "Sinclair ZX80"
+        copyright:              "Science of Cambridge Ltd."
+        copyright_year:         1980
+        source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
     zx-81-8x8:
         description:            "Sinclair ZX81"
+        copyright:              "Sinclair Research Ldt."
+        copyright_year:         1981
+        source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
     zx-aszmic-8x8:
         description:            "Sinclair ZX Aszmic"
+        copyright:              "Sinclair Research Ldt."
+        source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
     zx-evolution-8x8:
         description:            "Vitality ZX Evolution"
+        copyright:              "Vitality"
+        source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
     zx-spectrum-8x8:
         description:            "Sinclair ZX Spectrum"
+        copyright:              "Sinclair Research Ldt."
+        copyright_year:         1982
+        source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
 
 Miscellanious Hobby Computers:
     aquarius-8x8:
         description:            "Aquarius Home Computer"
+        copyright:              "Mattel"
+        copyright_year:         1983
+        source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
     galaksija-8x13:
         description:            "Galaksija (Galaxy)"
+        copyright:              "Voja Antonić"
+        copyright_year:         1983
+        source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
     orao-8x8:
         description:            "Orao (Eagle)"
+        copyright:              "PEL Varaždin"
+        copyright_year:         1984
+        source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
 
 Miscellanious:
     armscii8-8x8:

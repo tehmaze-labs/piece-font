@@ -1,3 +1,4 @@
+# http://amigadev.elowar.com/read/ADCD_2.1/Includes_and_Autodocs_2._guide/node0508.html
 0000 
 0001 
 0002 
@@ -5,15 +6,15 @@
 0004 
 0005 
 0006 
-0007 
-0008 
-0009 
-000a 
-000b 
-000c 
-000d 
-000e 
-000f 
+0007 BEL
+0008 BS
+0009 HT
+000a LF
+000b VT
+000c FF
+000d CR
+000e SO
+000f SI
 0010 
 0011 
 0012 
@@ -25,7 +26,7 @@
 0018 
 0019 
 001a 
-001b 
+001b ESC
 001c 
 001d 
 001e 
@@ -125,7 +126,7 @@
 007c |
 007d }
 007e ~
-007f 
+007f NONE
 0080 WHITE VERTICAL RECTANGLE
 0081 WHITE VERTICAL RECTANGLE
 0082 WHITE VERTICAL RECTANGLE

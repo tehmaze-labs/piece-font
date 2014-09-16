@@ -11,6 +11,9 @@
   height:     {{ char_y }}px;
   background: url(preview/{{ name }}-char.png);
 }
+.char-control {
+  background: #ccf !important;
+}
 .char-unmapped {
   background: #fcc !important;
 }
@@ -90,8 +93,10 @@
       <tr>
         <th>Download as</th>
         <td>
-          <a href="{{ name }}.png">.png</a>,
-          <a href="{{ name }}.psf">.psf</a>
+          <a href="download/bin/{{ name }}.bin">.bin</a>,
+          <a href="download/hex/{{ name }}.hex">.hex</a>,
+          <a href="download/png/{{ name }}.png">.png</a>,
+          <a href="download/psf/{{ name }}.psf">.psf</a>
         </td>
       </tr>
     </table>
@@ -121,21 +126,22 @@
   <th>
     <code>0x{{ '%x'|format(y) }}0</code>
   </th>
-  {% for item in row %}
-  <td {% if item.uniname == '' %}class="char-unmapped" {% endif %}
-      {%- if item.uniname == "" %}
-      title="Char not mapped"
-      {%- else %}
-      title="Char &quot;&#{{ item.unichar }};&quot;, unicode name &quot;{{ item.uniname }}&quot;"
-      {%- endif %}>
+{% for item in row %}
+  {%- if item.control %}
+  <td class="char-control" title="Control character &quot;{{ item.controlname }}&quot;">
+  {%- elif item.uniname %}
+  <td title="Character &quot;&#{{ item.unichar }};&quot;, unicode name &quot;{{ item.uniname }}&quot;">
+  {%- else %}
+  <td class="char-unmapped" title="Character not mapped">
+  {%- endif %}
     <div class="char" id="char-{{ '%04x'|format(item.char) }}"
       style="background-position: {{ item.bg }}">
     </div>
     <div>
       <code class="index index-unicode">
-        {%- if item.unichar == 0 -%}
-        NULL
-        {%- elif item.unichar == None -%}
+        {% if item.control %}
+        {{ item.uniname }}
+        {% elif not item.unichar %}
         NONE
         {%- else -%}
         {{ '%04x'|format(item.unichar) }}

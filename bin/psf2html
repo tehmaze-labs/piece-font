@@ -10,15 +10,24 @@ from jinja2 import Environment, FileSystemLoader
 
 # Local imports
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'lib'))
+from ascii import CONTROL_CHARS, CONTROL_SHORT, CONTROL_WORDS
 from psf import PSF
 
 
 collection = yaml.load(codecs.open('font.yaml', 'r', 'utf-8'))
 
 
+class Skip(object):
+    pass
+
+
 def unicodechar(char):
     if len(char) == 1:
         return unichr(ord(char))
+    elif char.upper() == 'NONE':
+        return Skip
+    elif char in CONTROL_SHORT:
+        return unichr(CONTROL_SHORT[char])
     else:
         try:
             return unichr(int(char, 16))
@@ -44,7 +53,9 @@ def load_charmap(filename, font):
     with open(filename, 'rb') as charmap:
         for line in charmap:
             line = line.strip()
-            if ' ' in line:
+            if line.startswith('#'):
+                continue
+            elif ' ' in line:
                 char, name = line.split(' ', 1)
                 char = int(char, 16)
                 unichar = unicodechar(name)
@@ -73,15 +84,41 @@ def convert_html(option):
         row = []
         for x in range(cols):
             o = (y * cols) + x
-            row.append(dict(
+            c = cmap.get(o)
+            control = False
+            controlname = None
+            if c is None:
+                if o in CONTROL_CHARS:
+                    control = True
+                    controlname = CONTROL_WORDS[o]
+                    unichar = None
+                    uniname = CONTROL_CHARS[o]
+                else:
+                    unichar = None
+                    uniname = None
+            elif c is Skip:
+                unichar = None
+                uniname = None
+            elif ord(c) in CONTROL_CHARS:
+                control = True
+                controlname = CONTROL_WORDS[ord(c)]
+                unichar = None
+                uniname = CONTROL_CHARS[ord(c)]
+            else:
+                unichar = ord(c)
+                uniname = unicodename(c)
+
+            glyph  = dict(
                 char=o,
-                #unichar=cmap[o].encode('utf-8') if cmap[o] else '?',
-                unichar=ord(cmap.get(o)) if cmap.get(o) is not None else None,
-                uniname=unicodename(cmap[o]) if cmap.get(o) is not None else '',
+                control=control,
+                controlname=controlname,
+                unichar=unichar,
+                uniname=uniname,
                 x=x,
                 y=y,
                 bg='-{}px 0px'.format(o * 5 * font.char_width),
-            ))
+            )
+            row.append(glyph)
         glyphs.append((y, row))
 
     # Scan for vendor and description in the collection map
@@ -105,6 +142,7 @@ def convert_html(option):
         char_x=font.char_width * 5,
         char_y=font.char_height * 5,
         charmap=cmap,
+        control=CONTROL_CHARS,
         cols=range(cols),
         rows=range((len(font) + 7) // cols),
         glyphs=glyphs,

@@ -1,0 +1,35 @@
+{% extends "font/base.html" %}
+
+{% block title %}Collection {{ name }}{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<h2>Collection {{ name }}</h2>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Font</th>
+      <th>Description</th>
+      <th>Language</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for font in fonts %}
+    <tr>
+      <td><a href="{{ font.link }}">{{ font.name }}</a></td>
+      <td>{{ font.description }}</td>
+      <td>
+      {%- if font.language -%}
+      {{ font.language }}
+      {%- else -%}
+      International
+      {%- endif %}
+      </td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+{% endblock %}
