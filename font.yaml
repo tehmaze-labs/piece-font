@@ -207,192 +207,228 @@ Commodore:
         source:                 "MESS (Multi Emulator Super System) 0.154"
 
 IBM:
-    ibm-cp437-8x14:
-        description:            "IBM PC Code Page 437"
-        language:               "US Latin"
-        copyright:              "IBM Corp."
-        copyright_year:         1984
-    ibm-cp437-8x16:
-        description:            "IBM PC Code Page 437"
-        language:               "US Latin"
-        copyright:              "IBM Corp."
-        copyright_year:         1984
     ibm-cp437-8x8:
         description:            "IBM PC Code Page 437"
         language:               "US Latin"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x50]
+    ibm-cp437-8x14:
+        description:            "IBM PC Code Page 437"
+        language:               "US Latin"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+        textmodes:              [80x24]
+    ibm-cp437-8x16:
+        description:            "IBM PC Code Page 437"
+        language:               "US Latin"
+        copyright:              "IBM Corp."
+        copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp437-thin-8x16:
         description:            "IBM PC Code Page 437"
         variant:                thin
         language:               "US Latin"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp437-thin-8x8:
         description:            "IBM PC Code Page 437"
         variant:                thin
         language:               "US Latin"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x50]
     ibm-cp737-8x16:
         description:            "IBM PC Code Page 737"
         language:               "Greek"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp775-8x16:
         description:            "IBM PC Code Page 775"
         language:               "Baltic Rim"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp850-8x14:
         description:            "IBM PC Code Page 850"
         language:               "Latin 1"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp850-8x16:
         description:            "IBM PC Code Page 850"
         language:               "Latin 1"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp850-8x8:
         description:            "IBM PC Code Page 850"
         language:               "Latin 1"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp850-thin-8x8:
         description:            "IBM PC Code Page 850"
         variant:                thin
         language:               "Latin 1"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp850-thin-8x16:
         description:            "IBM PC Code Page 850"
         variant:                thin
         language:               "Latin 1"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp852-8x16:
         description:            "IBM PC Code Page 852"
         language:               "Latin 2"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp855-8x16:
         description:            "IBM PC Code Page 855"
         language:               "Cyrillic"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp857-8x16:
         description:            "IBM PC Code Page 857"
         language:               "Turkish"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp860-8x16:
         description:            "IBM PC Code Page 860"
         language:               "Portuguese"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp861-8x16:
         description:            "IBM PC Code Page 861"
         language:               "Icelandic"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp862-8x16:
         description:            "IBM PC Code Page 862"
         language:               "Hebrew"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp863-8x16:
         description:            "IBM PC Code Page 863"
         language:               "French Canada"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x50]
     ibm-cp865-8x14:
         description:            "IBM PC Code Page 865"
         language:               "Nordic"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x24]
     ibm-cp865-8x16:
         description:            "IBM PC Code Page 865"
         language:               "Nordic"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp865-8x8:
         description:            "IBM PC Code Page 865"
         language:               "Nordic"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x50]
     ibm-cp865-thin-8x16:
         description:            "IBM PC Code Page 865"
         variant:                thin
         language:               "Nordic"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp865-thin-8x8:
         description:            "IBM PC Code Page 865"
         variant:                thin
         language:               "Nordic"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x50]
     ibm-cp866-8x14:
         description:            "IBM PC Code Page 866"
         language:               "Cyrillic CIS 1"
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x24]
     ibm-cp866-8x16:
         description:            "IBM PC Code Page 866"
         language:               Cyrillic CIS 1
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp866-8x8:
         description:            "IBM PC Code Page 866"
         language:               Cyrillic CIS 1
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x50]
     ibm-cp866b-8x16:
         description:            "IBM PC Code Page 866"
         language:               Bulgarian
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp866c-8x16:
         description:            "IBM PC Code Page 866"
         language:               Russian
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp866u-8x8:
         description:            "IBM PC Code Page 866"
         language:               Ukrainian
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x50]
     ibm-cp866u-8x14:
         description:            "IBM PC Code Page 866"
         language:               Ukrainian
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x24]
     ibm-cp866u-8x16:
         description:            "IBM PC Code Page 866"
         language:               Ukrainian
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp869-8x16:
         description:            "IBM PC Code Page 869"
         language:               Greek
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp1251-8x14:
         description:            "IBM PC Code Page 1251"
         language:               Slavic
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x24]
     ibm-cp1251-8x16:
         description:            "IBM PC Code Page 1251"
         language:               Slavic
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x25]
     ibm-cp1251-8x8:
         description:            "IBM PC Code Page 1251"
         language:               Slavic
         copyright:              "IBM Corp."
         copyright_year:         1984
+        textmodes:              [80x50]
 
 Microsoft:
     msx-brazilian-8x8:
@@ -511,6 +547,7 @@ Miscellanious Hobby Computers:
         description:            "Robotron Z9001"
         copyright_year:         1985
         source:                 "http://www.homecomputermuseum.de/"
+        textmodes:              [40x24, 40x20]
     sharp-mz-80a-8x8:
         description:            "Sharp MZ-80A"
         language:               Japanese
