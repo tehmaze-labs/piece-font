@@ -432,11 +432,16 @@ Sinclair:
     pentagon-128k-93-8x8:
         description:            "Pentagon 128k 93 (ZX Spectrum clone)"
         copyright_year:         1990
-        source:                 "http://pentagon.nedopc.com/"
+        source:                 "http://zxspectrum.it.omegahg.com/_PE.htm"
+    pentagon-128k-dynaelectronics-8x8:
+        description:            "Pentagon 128k 1989 (ZX Spectrum clone)"
+        copyright:              "Dynaelectronics"
+        copyright_year:         1989
+        source:                 "http://zxspectrum.it.omegahg.com/_PE.htm"
     pentagon-128k-sos89r-8x8:
         description:            "Pentagon 128k SOS89R (ZX Spectrum clone)"
         copyright_year:         1990
-        source:                 "http://pentagon.nedopc.com/"
+        source:                 "http://zxspectrum.it.omegahg.com/_PE.htm"
     sam-coupe-8x8:
         description:            "SAM Coupé (ZX Spectrum clone)"
         copyright:              "SAM Coupé"
