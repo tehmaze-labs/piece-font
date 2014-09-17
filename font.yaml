@@ -512,6 +512,9 @@ Sinclair:
         copyright:              "Sinclair Research Ldt."
         copyright_year:         1982
         source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
+    zx-spectrum-blitzs-8x8:
+        description:            "Blitz's ZX Spectrum (clone)"
+        source:                 "MESS (Multi Emulator Super System) 0.154"
 
 Miscellanious Hobby Computers:
     aquarius-8x8:
