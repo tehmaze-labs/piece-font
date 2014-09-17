@@ -10,6 +10,12 @@ Acorn Computers:
         copyright:              "Acorn Computers"
         copyright_year:         1981
         source:                 "http://www.bbcmicrogames.com/"
+    bbc-modelbplus-8x8:
+        description:            "BBC Microcomputer Model B"
+        variant:                enhanced version
+        copyright:              "Acorn Computers"
+        copyright_year:         1981
+        source:                 "http://www.bbcmicrogames.com/"
     bbc-modelb128-8x8:
         description:            "BBC Microcomputer Model B+128"
         copyright:              "Acorn Computers"
