@@ -505,6 +505,12 @@ Miscellanious Hobby Computers:
         description:            "Robotron Z9001"
         copyright_year:         1985
         source:                 "http://www.homecomputermuseum.de/"
+    pk8000-vesta-8x8:
+        description:            "Веста ПК8000 (Vesta PK8000)"
+        language:               Russian
+        copyright:              "Веста"
+        copyright_year:         1991
+        source:                 "http://pk8000.narod.ru/"
 
 Miscellanious:
     armscii8-8x8:
