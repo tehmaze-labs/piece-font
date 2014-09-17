@@ -420,7 +420,11 @@ Silicon Graphics:
         source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
 
 Sinclair:
-    pentagon-sos89r-8x8:
+    pentagon-128k-1990-8x8:
+        description:            "Pentagon 128k 1990 (ZX Spectrum clone)"
+        copyright_year:         1990
+        source:                 "http://pentagon.nedopc.com/"
+    pentagon-128k-sos89r-8x8:
         description:            "Pentagon 128k SOS89R (ZX Spectrum clone)"
         copyright_year:         1990
         source:                 "http://pentagon.nedopc.com/"
