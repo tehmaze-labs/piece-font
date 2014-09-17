@@ -505,6 +505,13 @@ Miscellanious Hobby Computers:
         description:            "Robotron Z9001"
         copyright_year:         1985
         source:                 "http://www.homecomputermuseum.de/"
+    sharp-mz-80a-8x8:
+        description:            "Sharp MZ-80A"
+        language:               Japanese
+        copyright:              "Sharp"
+        copyright_year:         1982
+        source:                 "MESS (Multi Emulator Super System) 0.154"
+        textmodes:              [40x25]
     pk8000-vesta-8x8:
         description:            "Веста ПК8000 (Vesta PK8000)"
         language:               Russian
