@@ -487,6 +487,19 @@ Miscellanious Hobby Computers:
         copyright:              "PEL Varaždin"
         copyright_year:         1984
         source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
+    robotron-z9001-8x8:
+        description:            "Robotron Z9001"
+        copyrighy_year:         1985
+        source:                 "http://www.homecomputermuseum.de/"
+    robotron-z9001-german-8x8:
+        description:            "Robotron Z9001"
+        language:               German
+        copyrighy_year:         1985
+        source:                 "http://www.homecomputermuseum.de/"
+    robotron-z9001-international-8x8:
+        description:            "Robotron Z9001"
+        copyrighy_year:         1985
+        source:                 "http://www.homecomputermuseum.de/"
 
 Miscellanious:
     armscii8-8x8:
