@@ -423,7 +423,12 @@ Sinclair:
     pentagon-128k-1990-8x8:
         description:            "Pentagon 128k 1990 (ZX Spectrum clone)"
         copyright_year:         1990
-        source:                 "http://pentagon.nedopc.com/"
+        source:                 "http://zxspectrum.it.omegahg.com/_PE.htm"
+    pentagon-128k-1991-8x8:
+        description:            "Pentagon 128k 1991 (ZX Spectrum clone)"
+        copyright:              "RaK"
+        copyright_year:         1991
+        source:                 "http://zxspectrum.it.omegahg.com/_PE.htm"
     pentagon-128k-93-8x8:
         description:            "Pentagon 128k 93 (ZX Spectrum clone)"
         copyright_year:         1990
