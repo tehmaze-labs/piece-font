@@ -477,6 +477,11 @@ Miscellanious Hobby Computers:
         copyright:              "Mattel"
         copyright_year:         1983
         source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
+    canon-x07:
+        description:            "Canon X-07"
+        copyright:              "Canon"
+        copyright_year:         1983
+        source:                 "MESS (Multi Emulator Super System) 0.154"
     galaksija-8x13:
         description:            "Galaksija (Galaxy)"
         copyright:              "Voja Antonić"
@@ -489,16 +494,16 @@ Miscellanious Hobby Computers:
         source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
     robotron-z9001-8x8:
         description:            "Robotron Z9001"
-        copyrighy_year:         1985
+        copyright_year:         1985
         source:                 "http://www.homecomputermuseum.de/"
     robotron-z9001-german-8x8:
         description:            "Robotron Z9001"
         language:               German
-        copyrighy_year:         1985
+        copyright_year:         1985
         source:                 "http://www.homecomputermuseum.de/"
     robotron-z9001-international-8x8:
         description:            "Robotron Z9001"
-        copyrighy_year:         1985
+        copyright_year:         1985
         source:                 "http://www.homecomputermuseum.de/"
 
 Miscellanious:
