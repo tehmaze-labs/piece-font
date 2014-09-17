@@ -16,7 +16,7 @@ PSF2_VERSION = 0x00000000
 def convert_psf(filename, stream, version=1):
     w = 8
     h = 16
-    glyphs = []
+    glyphs = ['\x00' * (w * h / 8) for x in range(256)]
     with open(filename, 'r') as fd:
         for line in fd:
             if line.startswith('# Width: '):

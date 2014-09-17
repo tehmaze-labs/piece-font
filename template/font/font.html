@@ -87,6 +87,10 @@
         <td>{{ font|length }}</td>
       </tr>
       <tr>
+        <th>Text modes</th>
+        <td>{{ info.textmodes|join(", ")|replace("x", " x ")|default("Unknown") }}</td>
+      </tr>
+      <tr>
         <th>PSF version</th>
         <td>{{ font.version }}</td>
       </tr>

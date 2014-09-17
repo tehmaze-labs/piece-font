@@ -50,6 +50,10 @@ def convert_html(option):
         with open(filename, 'wb') as stream:
             stream.write(html.render(**context).encode('utf-8'))
 
+    html = tenv.get_template('font/index.html')
+    with open(os.path.join(option.output, 'index.html'), 'wb') as stream:
+        stream.write(html.render(**context).encode('utf-8'))
+
 
 def run():
     import argparse
