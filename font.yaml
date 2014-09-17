@@ -420,6 +420,10 @@ Silicon Graphics:
         source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
 
 Sinclair:
+    pentagon-sos89r-8x8:
+        description:            "Pentagon 128k SOS89R (ZX Spectrum clone)"
+        copyright_year:         1990
+        source:                 "http://pentagon.nedopc.com/"
     sam-coupe-8x8:
         description:            "SAM Coupé (ZX Spectrum clone)"
         copyright:              "SAM Coupé"
