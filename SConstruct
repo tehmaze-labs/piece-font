@@ -20,19 +20,17 @@ def copy(source, ext):
     )
 
 
-def convert(source, src_ext, dst_ext):
+def convert(source, src_ext, dst_ext, extra=''):
     converter = env.Command(
         'build/%s/${SOURCE.filebase}.%s' % (
             dst_ext,
             dst_ext,
         ),
         source,
-        'bin/%s2%s -o $TARGET $SOURCE && '
-        'if [ -f ${SOURCE.dir}/${SOURCE.filebase}.map ]; then '
-        'cp ${SOURCE.dir}/${SOURCE.filebase}.map build/map/${TARGET.filebase}.map; '
-        'fi' % (
+        'bin/%s2%s %s -o $TARGET $SOURCE' % (
             src_ext,
             dst_ext,
+            extra,
         )
     )
     Depends(converter, build_dir)
@@ -48,37 +46,41 @@ def compress(source):
 
 # from .bin to .hex, .psf
 for font in fonts_bin:
+    umap = str(font).replace('.bin', '.map')
     build_bin.extend(copy(font, 'bin'))
     for font_hex in convert(font, 'bin', 'hex'):
         build_hex.append(font_hex)
-        for font_psf in convert(font_hex, 'hex', 'psf'):
+        for font_psf in convert(font_hex, 'hex', 'psf', '-m ' + umap):
             build_psf.append(font_psf)
             compress(font_psf)
 
 # from .fnt to .bin, .hex, .psf
 for font in fonts_fnt:
+    umap = str(font).replace('.fnt', '.map')
     for font_bin in convert(font, 'fnt', 'bin'):
         build_bin.append(font_bin)
         for font_hex in convert(font_bin, 'bin', 'hex'):
             build_hex.append(font_hex)
-            for font_psf in convert(font_hex, 'hex', 'psf'):
+            for font_psf in convert(font_hex, 'hex', 'psf', '-m ' + umap):
                 build_psf.append(font_psf)
                 compress(font_psf)
 
 # from .hex to .bin, .psf
 for font in fonts_hex:
+    umap = str(font).replace('.hex', '.map')
     build_hex.extend(copy(font, 'hex'))
     build_bin.extend(convert(font, 'hex', 'bin'))
-    for font_psf in convert(font, 'hex', 'psf'):
+    for font_psf in convert(font, 'hex', 'psf', '-m ' + umap):
         build_psf.append(font_psf)
         compress(font_psf)
 
 # from .png to .bin, .hex, .psf
 for font in fonts_png:
+    umap = str(font).replace('.png', '.map')
     for font_hex in convert(font, 'png', 'hex'):
         build_hex.append(font_hex)
         build_bin.extend(convert(font_hex, 'hex', 'bin'))
-        for font_psf in convert(font_hex, 'hex', 'psf'):
+        for font_psf in convert(font_hex, 'hex', 'psf', '-m ' + umap):
             build_psf.append(font_psf)
             compress(font_psf)
 
@@ -99,7 +101,6 @@ for font in build_psf:
         'mkdir -p build/html && '
         'bin/psf2html '
         '-o ${TARGET} '
-        '-m src/*/${SOURCE.filebase}.map '
         '${SOURCE}',
     )
     Depends(font_html, font_png_preview)

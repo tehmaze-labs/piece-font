@@ -68,7 +68,13 @@ def load_charmap(filename, font):
 def convert_html(option):
     # Load data files
     font = PSF(option.filename)
-    cmap = load_charmap(option.char_map, font)
+    if font.unicode_map:
+        cmap = {
+            x: None if c is None else unichr(c)
+            for x, c in enumerate(font.unicode_map)
+        }
+    else:
+        cmap = load_charmap(option.char_map, font)
 
     # Load html
     tenv = Environment(loader=FileSystemLoader(
@@ -164,7 +170,7 @@ def run():
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-c', '--char-per-row', default=16, type=int)
-    parser.add_argument('-m', '--char-map', required=True)
+    parser.add_argument('-m', '--char-map')
     parser.add_argument('-o', '--output', required=True)
     parser.add_argument('filename')
 

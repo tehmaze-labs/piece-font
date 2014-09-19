@@ -1,19 +1,54 @@
 #!/usr/bin/env python2
 
+import os
 import struct
 import sys
+import unicodedata
+
+# Local imports
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'lib'))
+from ascii import CONTROL_CHARS, CONTROL_SHORT, CONTROL_WORDS
 
 PSF1_MAGIC   = bytearray('\x36\x04')
 PSF1_HEADER  = '<bb'
 PSF1_MODE256 = 0x00
 PSF1_MODE512 = 0x01
 
-PSF2_MAGIC   = bytearray('\x72\xb5\x4a\x86')
-PSF2_HEADER  = '<IIIIIII'
-PSF2_FLAGS   = 0x00000000
-PSF2_VERSION = 0x00000000
+PSF2_MAGIC       = bytearray('\x72\xb5\x4a\x86')
+PSF2_HEADER      = '<IIIIIII'
+PSF2_HAS_UNICODE = 0x01
+PSF2_FLAGS       = 0x00000000
+PSF2_VERSION     = 0x00000000
+PSF2_SEPARATOR   = 0xff
+PSF2_STARTSEQ    = 0xfe
 
-def convert_psf(filename, stream, version=1):
+
+def unicode_char(name):
+    if len(name) == 1:
+        return ord(name)
+
+    elif name in CONTROL_SHORT:
+        return CONTROL_SHORT[name]
+
+    else:
+        try:
+            return int(name, 16)
+        except ValueError:
+            return ord(unicodedata.lookup(name))
+
+
+def unicode_map_utf8(unicode_map):
+    mappings = bytearray()
+    for index, char in enumerate(unicode_map):
+        if char is None:
+            mappings.append('\x00')
+        else:
+            mappings.extend(unichr(char).encode('utf-8'))
+        mappings.append(PSF2_SEPARATOR)
+    return mappings
+
+
+def convert_psf(filename, stream, option):
     w = 8
     h = 16
     glyphs = ['\x00' * (w * h / 8) for x in range(256)]
@@ -32,7 +67,26 @@ def convert_psf(filename, stream, version=1):
                     glyphs.append('')
                 glyphs[idx] = glyph.decode('hex')
 
-    if version == 1:
+    if option.unicode_map:
+        with open(option.unicode_map, 'r') as fd:
+            unicode_map = [None] * len(glyphs)
+            for line in fd:
+                line = line.strip()
+                if line.startswith('#'):
+                    continue
+                elif ' ' in line:
+                    index, mapping = line.split(' ', 1)
+                    index = int(index, 16)
+                    if index >= len(glyphs):
+                        raise ValueError('Map entry {} exceeds {} glyphs'.format(
+                            index, len(glyphs),
+                        ))
+                    unicode_map[index] = unicode_char(mapping)
+
+    else:
+        unicode_map = None
+
+    if option.version == 1:
         if len(glyphs) > 512:
             raise ValueError('Font has %d glyphs, 512 is the limit' % len(glyphs))
         if len(glyphs) > 256:
@@ -49,7 +103,12 @@ def convert_psf(filename, stream, version=1):
             h,
         ))
 
-    elif version == 2:
+    elif option.version == 2:
+        # Build flags
+        flags = PSF2_FLAGS
+        if unicode_map:
+            flags |= PSF2_HAS_UNICODE
+
         # Write magic
         stream.write(PSF2_MAGIC)
         # Write header
@@ -57,7 +116,7 @@ def convert_psf(filename, stream, version=1):
             PSF2_HEADER,
             PSF2_VERSION,
             struct.calcsize(PSF2_HEADER) + len(PSF2_MAGIC),
-            PSF2_FLAGS,
+            flags,
             len(glyphs),
             h * ((w + 7) // 8),
             h,
@@ -67,11 +126,16 @@ def convert_psf(filename, stream, version=1):
     # Write font data
     stream.write(''.join(glyphs))
 
+    if unicode_map:
+        if option.version == 2:
+            stream.write(unicode_map_utf8(unicode_map))
+
 def run():
     import argparse
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-o', '--output', required=True)
+    parser.add_argument('-m', '--unicode_map')
     parser.add_argument('-v', '--version', default=2, choices=[1, 2], type=int,
         help='PSF version (1 or 2, defaults to 2)')
     parser.add_argument('filename')
@@ -82,7 +146,7 @@ def run():
     else:
         stream = open(option.output, 'wb')
 
-    convert_psf(option.filename, stream, option.version)
+    convert_psf(option.filename, stream, option)
     return 0
 
 

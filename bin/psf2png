@@ -31,7 +31,8 @@ def run():
 
     psf = PSF(option.filename)
     num = len(psf)
-    size = (16 * psf.char_width, (num / 16) * psf.char_height)
+    ynum = (len(psf) + 15) // 16
+    size = (16 * psf.char_width, ynum * psf.char_height)
     image = Image.new('P', size)
     draws = ImageDraw.Draw(image)
 

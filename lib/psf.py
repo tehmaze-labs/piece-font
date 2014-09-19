@@ -8,8 +8,11 @@ PSF1_MAGIC   = bytearray('\x36\x04')
 PSF1_HEADER  = '<2sbb'
 PSF1_MODE512 = 0x01
 
-PSF2_MAGIC   = bytearray('\x72\xb5\x4a\x86')
-PSF2_HEADER  = '<4sIIIIIII'
+PSF2_MAGIC       = bytearray('\x72\xb5\x4a\x86')
+PSF2_HEADER      = '<4sIIIIIII'
+PSF2_HAS_UNICODE = 0x01
+PSF2_SEPARATOR   = 0xff
+PSF2_STARTSEQ    = 0xfe
 
 
 class Glyph(object):
@@ -41,6 +44,8 @@ class Glyph(object):
 class PSF(object):
     def __init__(self, filename):
         self.data = file(filename).read()
+        self.version = -1
+        self.unicode_map = None
 
         if bytearray(self.data[:len(PSF1_MAGIC)]) == PSF1_MAGIC:
             self.parse_psf1()
@@ -85,3 +90,96 @@ class PSF(object):
 
         self.char_bytes    = self.charsize
         self.glyphs_offset = self.headersize
+
+        if self.flags & PSF2_HAS_UNICODE:
+            self.parse_psf2_unicode_map()
+
+    def parse_psf2_unicode_map(self):
+        offset = self.glyphs_offset + self.char_bytes * len(self)
+        data = bytearray(self.data[offset:])
+        self.unicode_map = [None] * len(self)
+        ualt = False
+        upos = 0
+        while len(data):
+            first = data[0]
+            if first == PSF2_SEPARATOR:
+                data.pop(0)
+                upos += 1
+                ualt = False
+                continue
+            if first < 0x80:
+                self.unicode_map[upos] = data.pop(0)
+                ualt = True
+                continue
+
+            size = 0
+            if first < 0xc0:
+                raise ValueError('Unicode map entry {} corrupt: {:02x}, {!r}'.format(
+                    len(self.unicode_map),
+                    first,
+                    data
+                ))
+            elif first < 0xe0:
+                size = 2
+            elif first < 0xf0:
+                size = 3
+            elif first < 0xf8:
+                size = 4
+            elif first < 0xfc:
+                size = 5
+            elif first < 0xfe:
+                size = 6
+            else:
+                raise ValueError('Unicode map entry {} corrupt: {:02x}'.format(
+                    len(self.unicode_map),
+                    first,
+                ))
+
+            buff = data[:size]
+            data = data[size:]
+
+            if ualt:  # We don't support alternative sequences, byez!
+                continue
+
+            for n in range(1, size):
+                if buff[n] & 0xc0 != 0x80:
+                    raise ValueError('Unicode map entry {} corrupt: {!02x} at {}'.format(
+                        len(self.unicode_map),
+                        buff[n],
+                        n,
+                    ))
+
+            char = 0
+            if size == 2:
+                char = char << 6 | (buff[0] & 0x1f)
+                char = char << 6 | (buff[1] & 0x3f)
+
+            elif size == 3:
+                char = char << 6 | (buff[0] & 0x0f)
+                char = char << 6 | (buff[1] & 0x3f)
+                char = char << 6 | (buff[2] & 0x3f)
+
+            elif size == 4:
+                char = char << 6 | (buff[0] & 0x07)
+                char = char << 6 | (buff[1] & 0x3f)
+                char = char << 6 | (buff[2] & 0x3f)
+                char = char << 6 | (buff[3] & 0x3f)
+
+            elif size == 5:
+                char = char << 6 | (buff[0] & 0x03)
+                char = char << 6 | (buff[1] & 0x3f)
+                char = char << 6 | (buff[2] & 0x3f)
+                char = char << 6 | (buff[3] & 0x3f)
+                char = char << 6 | (buff[4] & 0x3f)
+
+            elif size == 6:
+                char = char << 6 | (buff[0] & 0x01)
+                Ochar = char << 6 | (buff[1] & 0x3f)
+                char = char << 6 | (buff[2] & 0x3f)
+                char = char << 6 | (buff[3] & 0x3f)
+
+                char = char << 6 | (buff[4] & 0x3f)
+                char = char << 6 | (buff[5] & 0x3f)
+
+            self.unicode_map[upos] = char
+            ualt = True
