@@ -24,23 +24,57 @@ Acorn Computers:
 
 Atari:
     atascii-arabic-8x16:
-        description:            "ATARI ASCII"
+        description:            "Atari ASCII"
         variant:                "Arabic"
         copyright:              "Atari Inc."
         copyright_year:         1979
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     atascii-graphics-8x16:
-        description:            "ATARI ASCII"
+        description:            "Atari ASCII"
         variant:                "Graphics"
         copyright:              "Atari Inc."
         copyright_year:         1979
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     atascii-international-8x16:
-        description:            "ATARI ASCII"
+        description:            "Atari ASCII"
         variant:                "International"
         copyright:              "Atari Inc."
         copyright_year:         1979
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
+    atari-5200-8x8:
+        description:            "Atari 5200 SuperSystem"
+        copyright:              "Atari Inc."
+        copyright_year:         1982
+        source:                 "Multi Emulator Super System"
+    atari-gdos-gsans-8x6:
+        description:            "Atari Graphics Device Operating System"
+        variant:                gsans
+    atari-gdos-gsans-8x8:
+        description:            "Atari Graphics Device Operating System"
+        variant:                gsans
+    atari-gdos-gsans-8x14:
+        description:            "Atari Graphics Device Operating System"
+        variant:                gsans
+    atari-gdos-gsans-8x16:
+        description:            "Atari Graphics Device Operating System"
+        variant:                gsans
+    atari-gdos-tsans-8x6:
+        description:            "Atari Graphics Device Operating System"
+        variant:                tsans
+    atari-gdos-tsans-8x8:
+        description:            "Atari Graphics Device Operating System"
+        variant:                tsans
+    atari-gdos-tsans-8x14:
+        description:            "Atari Graphics Device Operating System"
+        variant:                tsans
+    atari-gdos-tsans-8x16:
+        description:            "Atari Graphics Device Operating System"
+        variant:                tsans
+    atari-xegs-8x8:
+        description:            "Atari XE Video Game System"
+        copyright:              "Atari Inc."
+        copyright_year:         1987
+        source:                 "Multi Emulator Super System"
 
 Commodore:
     amiga-b-strict:
@@ -88,53 +122,53 @@ Commodore:
         description:            "Commodore 16"
         copyright:              "Commodore"
         copyright_year:         1984
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     c16-hungarian-8x8:
         description:            "Commodore 16"
         language:               Hungarian
         copyright:              "Commodore"
         copyright_year:         1984
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     c64-8x8:
         description:            "Commodore 64"
         copyright:              "Commodore"
         copyright_year:         1982
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     c64-german-8x8:
         description:            "Commodore 64"
         language:               German
         copyright:              "Commodore"
         copyright_year:         1982
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     c64-hungarian-8x8:
         description:            "Commodore 64"
         language:               Hungarian
         copyright:              "Commodore"
         copyright_year:         1982
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     c64-swedish-8x8:
         description:            "Commodore 64"
         language:               Swedish
         copyright:              "Commodore"
         copyright_year:         1982
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     c64-swedish2-8x8:
         description:            "Commodore 64"
         variant:                Alternative
         language:               Swedish
         copyright:              "Commodore"
         copyright_year:         1982
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     c65-caff-8x8:
         description:            "Commodore 65"
         copyright:              "Commodore"
         copyright_year:         1990
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     c128-8x8:
         description:            "Commodore 128"
         copyright:              "Commodore"
         copyright_year:         1985
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     giana-8x8:
         description:            "The Great Giana Sisters"
         copyright:              "Rainbow Arts"
@@ -144,67 +178,67 @@ Commodore:
         description:            "Commodore PET 2001 series"
         copyright:              "Commodore"
         copyright_year:         1977
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     pet-greek-8x8:
         description:            "Commodore PET 2001 series (Greek)"
         copyright:              "Commodore"
         copyright_year:         1977
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     pet-norwegian-8x8:
         description:            "Commodore PET 2001 series (Norwegian)"
         copyright:              "Commodore"
         copyright_year:         1977
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     pet-russian-8x8:
         description:            "Commodore PET 2001 series (Russian)"
         copyright:              "Commodore"
         copyright_year:         1977
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     pet-swedish-8x8:
         description:            "Commodore PET 2001 series (Swedish)"
         copyright:              "Commodore"
         copyright_year:         1977
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     pet-2-8x8:
         description:            "Commodore PET 4000 series"
         copyright:              "Commodore"
         copyright_year:         1980
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     superpet-8x8:
         description:            "Commodore SuperPET 9000 series"
         copyright:              "Commodore"
         copyright_year:         1981
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     superpet-swedish-8x8:
         description:            "Commodore SuperPET 9000 series (Swedish)"
         copyright:              "Commodore"
         copyright_year:         1981
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     vic20-8x8:
         description:            "Commodore VIC-20"
         copyright:              "Commodore"
         copyright_year:         1981
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     vic20-german-8x8:
         description:            "Commodore VIC-20/VC-20 (German)"
         copyright:              "Commodore"
         copyright_year:         1981
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     vic20-japanese-8x8:
         description:            "Commodore VIC-20/VIC-1001 (Japanese)"
         copyright:              "Commodore"
         copyright_year:         1981
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     vic20-norwegian-8x8:
         description:            "Commodore VIC-20 (Norwegian)"
         copyright:              "Commodore"
         copyright_year:         1981
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     vic20-swedish-8x8:
         description:            "Commodore VIC-20 (Swedish)"
         copyright:              "Commodore"
         copyright_year:         1981
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
 
 IBM:
     ibm-cp437-8x8:
@@ -514,7 +548,7 @@ Sinclair:
         source:                 "http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html"
     zx-spectrum-blitzs-8x8:
         description:            "Blitz's ZX Spectrum (clone)"
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
 
 Miscellanious Hobby Computers:
     aquarius-8x8:
@@ -526,7 +560,7 @@ Miscellanious Hobby Computers:
         description:            "Canon X-07"
         copyright:              "Canon"
         copyright_year:         1983
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
     galaksija-8x13:
         description:            "Galaksija (Galaxy)"
         copyright:              "Voja Antonić"
@@ -556,7 +590,7 @@ Miscellanious Hobby Computers:
         language:               Japanese
         copyright:              "Sharp"
         copyright_year:         1982
-        source:                 "MESS (Multi Emulator Super System) 0.154"
+        source:                 "Multi Emulator Super System"
         textmodes:              [40x25]
     pk8000-vesta-8x8:
         description:            "Веста ПК8000 (Vesta PK8000)"
@@ -564,6 +598,26 @@ Miscellanious Hobby Computers:
         copyright:              "Веста"
         copyright_year:         1991
         source:                 "http://pk8000.narod.ru/"
+    xerox-x820-u92-8x8:
+        description:            "Xerox 820"
+        copyright:              Xerox
+        copyright_year:         1981
+        source:                 "Multi Emulator Super System"
+        textmodes:              [80x24]
+    xerox-x820ii-u57-8x8:
+        description:            "Xerox 820-II"
+        variant:                Update 57
+        copyright:              Xerox
+        copyright_year:         1982
+        source:                 "Multi Emulator Super System"
+        textmodes:              [80x24]
+    xerox-x820ii-u58-8x8:
+        description:            "Xerox 820-II"
+        variant:                Update 58
+        copyright:              Xerox
+        copyright_year:         1982
+        source:                 "Multi Emulator Super System"
+        textmodes:              [80x24]
 
 Miscellanious:
     armscii8-8x8:
