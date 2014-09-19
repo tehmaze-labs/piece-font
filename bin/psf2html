@@ -21,8 +21,15 @@ class Skip(object):
     pass
 
 
+def control_char(char):
+    if char in CONTROL_CHARS:
+        return chr(char)
+
+
 def unicodechar(char):
-    if len(char) == 1:
+    if char is None:
+        return None
+    elif len(char) == 1:
         return unichr(ord(char))
     elif char.upper() == 'NONE':
         return Skip
@@ -70,8 +77,8 @@ def convert_html(option):
     font = PSF(option.filename)
     if font.unicode_map:
         cmap = {
-            x: None if c is None else unichr(c)
-            for x, c in enumerate(font.unicode_map)
+            x: unicodechar(unichr(char) if char else control_char(x))
+            for x, char in enumerate(font.unicode_map)
         }
     else:
         cmap = load_charmap(option.char_map, font)
