@@ -77,47 +77,6 @@ Atari:
         source:                 "Multi Emulator Super System"
 
 Commodore:
-    amiga-b-strict:
-        description:            "B-Strict"
-        source:                 "B-Girl"
-        copyright:              "Lukas Nystrand (aka Mortimer Twang)"
-    amiga-b-struct:
-        description:            "B-Struct"
-        source:                 "B-Girl"
-        copyright:              "Lukas Nystrand (aka Mortimer Twang)"
-    amiga-microknight:
-        description:            "MicroKnight"
-    amiga-microknightplus:
-        description:            "MicroKnight (modified)"
-    amiga-mo-soul:
-        description:            "mO'sOul"
-        source:                 "mO'sOul"
-        copyright:              "Desoto"
-    amiga-p0t-noodle:
-        description:            "P0T-NOoDLE"
-        copyright:              "Leo Davison (aka Nudel)"
-    amiga-topaz-a500:
-        description:            "Amiga Topaz Kickstart 1.x"
-        source:                 "Kickstart v1.3 r34.5"
-        copyright:              "Commodore"
-        copyright_year:         1987
-    amiga-topaz-a1200:
-        description:            "Amiga Topaz Kickstart 2.x"
-        source:                 "Kickstart v3.1 r40.68"
-        copyright:              "Commodore"
-        copyright_year:         1993
-    amiga-topazplus-a500:
-        description:            "Amiga Topaz Kickstart 1.x"
-        variant:                modified
-        source:                 "Kickstart v2.04 r37.175"
-        copyright:              "Commodore"
-        copyright_year:         1991
-    amiga-topazplus-a1200:
-        description:            "Amiga Topaz Kickstart 2.x"
-        variant:                modified
-        source:                 "Kickstart v3.1 r40.68"
-        copyright:              "Commodore"
-        copyright_year:         1993
     c16-8x8:
         description:            "Commodore 16"
         copyright:              "Commodore"
@@ -174,6 +133,51 @@ Commodore:
         copyright:              "Rainbow Arts"
         copyright_year:         1987
         source:                 "http://www.c64.com/games/138"
+
+Commodore Amiga:
+    amiga-b-strict:
+        description:            "B-Strict"
+        source:                 "B-Girl"
+        copyright:              "Lukas Nystrand (aka Mortimer Twang)"
+    amiga-b-struct:
+        description:            "B-Struct"
+        source:                 "B-Girl"
+        copyright:              "Lukas Nystrand (aka Mortimer Twang)"
+    amiga-microknight:
+        description:            "MicroKnight"
+    amiga-microknightplus:
+        description:            "MicroKnight (modified)"
+    amiga-mo-soul:
+        description:            "mO'sOul"
+        source:                 "mO'sOul"
+        copyright:              "Desoto"
+    amiga-p0t-noodle:
+        description:            "P0T-NOoDLE"
+        copyright:              "Leo Davison (aka Nudel)"
+    amiga-topaz-a500:
+        description:            "Amiga Topaz Kickstart 1.x"
+        source:                 "Kickstart v1.3 r34.5"
+        copyright:              "Commodore"
+        copyright_year:         1987
+    amiga-topaz-a1200:
+        description:            "Amiga Topaz Kickstart 2.x"
+        source:                 "Kickstart v3.1 r40.68"
+        copyright:              "Commodore"
+        copyright_year:         1993
+    amiga-topazplus-a500:
+        description:            "Amiga Topaz Kickstart 1.x"
+        variant:                modified
+        source:                 "Kickstart v2.04 r37.175"
+        copyright:              "Commodore"
+        copyright_year:         1991
+    amiga-topazplus-a1200:
+        description:            "Amiga Topaz Kickstart 2.x"
+        variant:                modified
+        source:                 "Kickstart v3.1 r40.68"
+        copyright:              "Commodore"
+        copyright_year:         1993
+
+Commodore PET:
     pet-1-8x8:
         description:            "Commodore PET 2001 series"
         copyright:              "Commodore"
@@ -214,6 +218,8 @@ Commodore:
         copyright:              "Commodore"
         copyright_year:         1981
         source:                 "Multi Emulator Super System"
+
+Commodore VIC-20:
     vic20-8x8:
         description:            "Commodore VIC-20"
         copyright:              "Commodore"

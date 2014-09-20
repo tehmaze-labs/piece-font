@@ -68,7 +68,11 @@
       {%- endif %}
       <tr>
         <th>Description</th>
-        <td>{{ info.description|default("Not available") }}</td>
+      {%- if info.description %}
+        <td>{{ info.description }}</td>
+      {%- else %}
+        <td><em>Not available</em></td>
+      {%- endif %}
       </tr>
       <tr>
         <th>Collection</th>
@@ -88,19 +92,33 @@
       </tr>
       <tr>
         <th>Text modes</th>
-        <td>{{ info.textmodes|join(", ")|replace("x", " x ")|default("Unknown") }}</td>
-      </tr>
-      <tr>
-        <th>PSF version</th>
-        <td>{{ font.version }}</td>
+      {%- if info.textmodes %}
+        <td>{{ info.textmodes|join(", ")|replace("x", " x ") }}</td>
+      {%- else %}
+        <td><em>Unknown</em></td>
+      {%- endif %}
       </tr>
       <tr>
         <th>Download as</th>
         <td>
-          <a href="download/bin/{{ name }}.bin">.bin</a>,
-          <a href="download/hex/{{ name }}.hex">.hex</a>,
-          <a href="download/png/{{ name }}.png">.png</a>,
-          <a href="download/psf/{{ name }}.psf">.psf</a>
+          <ul class="list-unstyled">
+            <li>
+              <code><a href="download/bin/{{ name }}.bin">.bin</a></code>
+              Raw binary dump (from ROM)
+            </li>
+            <li>
+              <code><a href="download/fnt/{{ name }}.fnt">.fnt</a></code>
+              Microsoft Windows font-resource
+            </li>
+            <li>
+              <code><a href="download/hex/{{ name }}.hex">.hex</a></code>
+              Raw ROM hexadecimal dump
+            </li>
+            <li>
+              <code><a href="download/psf/{{ name }}.psf">.psf</a></code>
+              Linux/BSD PC Screen Font
+            </li>
+          </ul>
         </td>
       </tr>
     </table>
