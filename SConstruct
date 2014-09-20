@@ -14,7 +14,7 @@ build_dir = env.Command('build/{bin,hex,psf,map}', '', 'mkdir ${TARGET}')
 
 def copy(source, ext):
     return env.Command(
-        'build/%s/${SOURCE.file}' % (ext,),
+        'build/html/download/%s/${SOURCE.file}' % (ext,),
         source,
         'cp $SOURCE $TARGET',
     )
@@ -22,7 +22,7 @@ def copy(source, ext):
 
 def convert(source, src_ext, dst_ext, extra=''):
     converter = env.Command(
-        'build/%s/${SOURCE.filebase}.%s' % (
+        'build/html/download/%s/${SOURCE.filebase}.%s' % (
             dst_ext,
             dst_ext,
         ),
@@ -84,8 +84,20 @@ for font in fonts_png:
             build_psf.append(font_psf)
             compress(font_psf)
 
+# from .psf to .fnt
+for font in build_psf:
+    env.Command(
+        'build/html/download/bdf/${SOURCE.filebase}.bdf',
+        font,
+        'psf2bdf $SOURCE $TARGET',
+    )
+    env.Command(
+        'build/html/download/fnt/${SOURCE.filebase}.fnt',
+        font,
+        'psf2fnt $SOURCE $TARGET',
+    )
+
 # from .psf to .html
-env.Command('build/html', '', 'mkdir -p ${TARGET}')
 env.Command('build/html/preview', '', 'mkdir -p ${TARGET}')
 for font in build_psf:
     font_png_preview = env.Command(
