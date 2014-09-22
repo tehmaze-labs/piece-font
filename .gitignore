@@ -6,3 +6,4 @@
 build/
 font/*/*/*.bin
 font/*/*/*.map
+font/*/*/*.yml.1*
