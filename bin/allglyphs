@@ -1,0 +1,45 @@
+#!/usr/bin/python2
+
+import collections
+import hashlib
+import os
+import sys
+import yaml
+
+glyphs = collections.OrderedDict({})
+bitmaps = collections.defaultdict(set)
+for y in [4, 8, 9, 10, 11, 12, 13, 14, 16]:
+    glyphs[y] = collections.defaultdict(set)
+
+
+for dirpath, dirnames, filenames in os.walk(sys.argv[1]):
+    for filename in filenames:
+        if not filename.endswith('.yaml'):
+            continue
+
+        path = os.path.join(dirpath, filename)
+        print 'parse', path
+        font = yaml.load(file(path))
+        size = font['font']['size'][1]
+        for index, glyph in font['characters'].iteritems():
+            if not glyph['unicode']:
+                continue
+            glyphs[size][glyph['unicode']].add(glyph['bitmap'])
+            bitmaps[glyph['bitmap']].add(
+                os.path.splitext(filename)[0],
+            )
+
+for size in glyphs:
+    with open('glyphs-{}.yaml'.format(size), 'w') as stream:
+        for name in sorted(glyphs[size]):
+            stream.write('{}:\n'.format(name))
+            for i, bitmap in enumerate(glyphs[size][name]):
+                fonts = bitmaps.get(bitmap, [])
+                bitmap = '\n      '.join(bitmap.splitlines())
+                stream.write('  {}:\n'.format(i))
+                if fonts:
+                    stream.write('    fonts:\n')
+                    for font in sorted(fonts):
+                        stream.write('      - {}\n'.format(font))
+                stream.write('    bitmap:\n      |\n      {}\n'.format(bitmap))
+            stream.write('\n')

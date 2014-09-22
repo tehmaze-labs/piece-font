@@ -1,6 +1,6 @@
 {% extends "font/base.html" %}
 
-{% block title %}{{ name }}{% endblock %}
+{% block title %}{{ font.info.name }}{% endblock %}
 
 {% block head %}
 <style type="text/css">
@@ -9,7 +9,7 @@
   padding:    0;
   width:      {{ char_x }}px;
   height:     {{ char_y }}px;
-  background: url(preview/{{ name }}-char.png);
+  background: url({{ font.info.name }}.back.png);
 }
 .char-control {
   background: #ccf !important;
@@ -52,35 +52,38 @@
     <table class="table">
       <tr>
         <th>Name</th>
-        <td>{{ name }}</td>
+        <td>{{ font.info.name }}</td>
       </tr>
-      {%- if info.variant %}
+      {%- if font.info.variant %}
       <tr>
         <th>Variant</th>
-        <td>{{ info.variant }}</td>
+        <td>{{ font.info.variant }}</td>
       </tr>
       {%- endif %}
-      {%- if info.language %}
+      {%- if font.info.language %}
       <tr>
         <th>Language</th>
-        <td>{{ info.language }}</td>
+        <td>{{ font.info.language }}</td>
       </tr>
       {%- endif %}
       <tr>
         <th>Description</th>
-      {%- if info.description %}
-        <td>{{ info.description }}</td>
+      {%- if font.info.description %}
+        <td>{{ font.info.description }}</td>
       {%- else %}
         <td><em>Not available</em></td>
       {%- endif %}
       </tr>
       <tr>
         <th>Collection</th>
-        <td><a href="{{ collection|lower|replace(" ", "-") }}.html">{{ collection }}</a></td>
+        <td>
+          <a href="../">{{ collection|title }}</a> /
+          <a href="./">{{ vendor|title }}</a>
+        </td>
       </tr>
       <tr>
         <th>Copyright</th>
-        <td>&copy; {{ info.copyright_year }} {{ info.copyright }}</td>
+        <td>&copy; {{ font.info.copyright.year }} {{ font.info.copyright.vendor }}</td>
       </tr>
       <tr>
         <th>Character size</th>
@@ -92,8 +95,8 @@
       </tr>
       <tr>
         <th>Text modes</th>
-      {%- if info.textmodes %}
-        <td>{{ info.textmodes|join(", ")|replace("x", " x ") }}</td>
+      {%- if font.info.textmodes %}
+        <td>{{ font.info.textmodes|join(", ")|replace("x", " x ") }}</td>
       {%- else %}
         <td><em>Unknown</em></td>
       {%- endif %}
@@ -103,19 +106,15 @@
         <td>
           <ul class="list-unstyled">
             <li>
-              <code><a href="download/bin/{{ name }}.bin">.bin</a></code>
+              <code><a href="{{ font.info.name }}.bin">.bin</a></code>
               Raw binary dump (from ROM)
             </li>
             <li>
-              <code><a href="download/fnt/{{ name }}.fnt">.fnt</a></code>
-              Microsoft Windows font-resource
-            </li>
-            <li>
-              <code><a href="download/hex/{{ name }}.hex">.hex</a></code>
+              <code><a href="{{ font.info.name }}.hex">.hex</a></code>
               Raw ROM hexadecimal dump
             </li>
             <li>
-              <code><a href="download/psf/{{ name }}.psf">.psf</a></code>
+              <code><a href="{{ font.info.name }}.psf">.psf</a></code>
               Linux/BSD PC Screen Font
             </li>
           </ul>
@@ -124,7 +123,7 @@
     </table>
   </div>
   <div class="col-md-3">
-    <img src="preview/{{ name }}.png" alt="{{ name }}" class="char-preview" usemap="#charmap">
+    <img src="{{ font.info.name }}.char.png" alt="{{ font.info.name }}" class="char-preview" usemap="#charmap">
     <map name="charmap">
     </map>
   </div>

@@ -1,0 +1,192 @@
+#!/usr/bin/env python2
+
+import codecs
+import os
+import sys
+import unicodedata
+import yaml
+from collections import OrderedDict
+
+from jinja2 import Environment, FileSystemLoader
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'lib'))
+from font import Font
+from ascii import CONTROL_CHARS, CONTROL_SHORT, CONTROL_WORDS
+from psf import PSF
+
+
+class Skip(object):
+    pass
+
+
+def control_char(char):
+    if char in CONTROL_CHARS:
+        return chr(char)
+
+
+def unicodechar(char):
+    if char is None:
+        return None
+    elif len(char) == 1:
+        return unichr(ord(char))
+    elif char.upper() == 'NONE':
+        return Skip
+    elif char in CONTROL_SHORT:
+        return unichr(CONTROL_SHORT[char])
+    else:
+        try:
+            return unichr(int(char, 16))
+        except ValueError:
+            pass
+        try:
+            return unicodedata.lookup(char)
+        except KeyError as error:
+            print >>sys.stderr, error
+            return None
+
+
+def unicodename(char):
+    try:
+        return unicodedata.name(char)
+    except ValueError:
+        return 'unknown'
+
+
+def load_charmap(filename, font):
+    #maps = [None] * len(font)
+    maps = {}
+    with open(filename, 'rb') as charmap:
+        for line in charmap:
+            line = line.strip()
+            if line.startswith('#'):
+                continue
+            elif ' ' in line:
+                char, name = line.split(' ', 1)
+                char = int(char, 16)
+                unichar = unicodechar(name)
+                if unichar is not None:
+                    maps[char] = unicodechar(name)
+
+    return maps
+
+
+def convert_html(option):
+    # Load data files
+    font = Font(option.filename)
+
+    # Load html
+    tenv = Environment(loader=FileSystemLoader(
+        os.path.join(os.path.dirname(__file__), '..', 'template'),
+    ))
+    html = tenv.get_template('font/font.html')
+
+    # Glyphs
+    glyphs = []
+    cols=option.char_per_row
+    rows=(len(font) + 7) // cols
+    for y in range(rows):
+        row = []
+        for x in range(cols):
+            o = (y * cols) + x
+            g = font[o]
+            if g is None:
+                c = None
+            else:
+                c = g.to_unicode()
+            control = False
+            controlname = None
+            if c is None:
+                if o in CONTROL_CHARS:
+                    control = True
+                    controlname = CONTROL_WORDS[o]
+                    unichar = None
+                    uniname = CONTROL_CHARS[o]
+                else:
+                    unichar = None
+                    uniname = None
+            elif c is Skip:
+                unichar = None
+                uniname = None
+            elif ord(c) in CONTROL_CHARS:
+                control = True
+                controlname = CONTROL_WORDS[ord(c)]
+                unichar = None
+                uniname = CONTROL_CHARS[ord(c)]
+            else:
+                unichar = ord(c)
+                uniname = unicodename(c)
+
+            glyph  = dict(
+                char=o,
+                control=control,
+                controlname=controlname,
+                unichar=unichar,
+                uniname=uniname,
+                x=x,
+                y=y,
+                bg='-{}px 0px'.format(o * 5 * font.char_width),
+            )
+            row.append(glyph)
+        glyphs.append((y, row))
+
+    collections = OrderedDict()
+    for collection in sorted(os.listdir('font')):
+        if collection.startswith('.'):
+            continue
+        path = os.path.join('font', collection)
+        if not os.path.isdir(path):
+            continue
+
+        collections[collection] = []
+        for vendor in os.listdir(os.path.join('font', collection)):
+            if vendor.startswith('.'):
+                continue
+            collections[collection].append(vendor)
+
+        collections[collection].sort()
+
+    # Scan for vendor and description in the collection map
+    vendor = os.path.basename(os.path.dirname(option.filename))
+    collection = os.path.basename(os.path.dirname(os.path.dirname(option.filename)))
+
+    # Build context
+    context = dict(
+        font=font,
+        collections=collections,
+        collection=collection,
+        vendor=vendor,
+        chars=len(font),
+        char_x=font.char_width * 5,
+        char_y=font.char_height * 5,
+        control=CONTROL_CHARS,
+        cols=range(cols),
+        rows=range((len(font) + 7) // cols),
+        glyphs=glyphs,
+    )
+
+    if option.output == '-':
+        stream = sys.stdout
+    else:
+        stream = open(option.output, 'wb')
+
+    stream.write(html.render(**context).encode('utf-8'))
+
+    if option.output != '-':
+        stream.close()
+
+
+def run():
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-c', '--char-per-row', default=16, type=int)
+    parser.add_argument('-o', '--output', required=True)
+    parser.add_argument('filename')
+
+    option = parser.parse_args()
+    return convert_html(option)
+
+
+if __name__ == '__main__':
+    sys.exit(run())
+

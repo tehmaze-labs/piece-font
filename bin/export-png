@@ -1,0 +1,31 @@
+#!/usr/bin/env python2
+
+import os
+import sys
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'lib'))
+from font import Font
+
+
+def run():
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('filename')
+    parser.add_argument('-o', '--output', required=True)
+    parser.add_argument('-s', '--scale', default=1, type=int)
+    parser.add_argument('-c', '--columns', default=0, type=int)
+    parser.add_argument('-t', '--text', default=False, action='store_true')
+    option = parser.parse_args()
+
+    font = Font(option.filename)
+    image = font.to_image(**dict(
+        scale=option.scale,
+        columns=option.columns,
+        text=option.text,
+    ))
+    image.save(option.output)
+
+
+if __name__ == '__main__':
+    sys.exit(run())

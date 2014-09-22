@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Piece :: Font :: {% block title %}Stuff{% endblock %}</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maze.io/piece/font/css/bootstrap.min.css">
 {% block head %}{% endblock %}
 </head>
 <body>
@@ -11,12 +11,14 @@
 <div class="container">
   <div class="row">
     <div class="col-md-2">
-      <h2>Collection</h2>
+      {% for collection in collections %}
+      <h2>{{ collection|title }}</h2>
       <ul>
-      {% for section in sections %}
-        <li><a href="{{ section|lower|replace(" ", "-") }}.html">{{ section }}</a></li>
+      {% for vendor in collections[collection] %}
+        <li><a href="/piece/font/{{ collection|lower|replace(" ", "-") }}/{{ vendor|lower|replace(" ", "-") }}.html">{{ vendor|title }}</a></li>
       {% endfor %}
       </ul>
+      {% endfor %}
     </div>
     <div class="col-md-10">
 {% block content %}{% endblock %}
