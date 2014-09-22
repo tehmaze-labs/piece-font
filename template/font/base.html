@@ -12,10 +12,10 @@
   <div class="row">
     <div class="col-md-2">
       {% for collection in collections %}
-      <h2>{{ collection|title }}</h2>
+      <h2><a href="/piece/font/{{ collection }}/">{{ collection|title }}</a></h2>
       <ul>
       {% for vendor in collections[collection] %}
-        <li><a href="/piece/font/{{ collection|lower|replace(" ", "-") }}/{{ vendor|lower|replace(" ", "-") }}.html">{{ vendor|title }}</a></li>
+        <li><a href="/piece/font/{{ collection }}/{{ vendor }}/">{{ vendor|replace("-", " ")|title }}</a></li>
       {% endfor %}
       </ul>
       {% endfor %}

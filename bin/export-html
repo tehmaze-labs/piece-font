@@ -1,6 +1,7 @@
 #!/usr/bin/env python2
 
 import codecs
+import glob
 import os
 import sys
 import unicodedata
@@ -17,6 +18,44 @@ from psf import PSF
 
 class Skip(object):
     pass
+
+def scan_collections():
+    collections = OrderedDict()
+    for collection in sorted(os.listdir('font')):
+        if collection.startswith('.'):
+            continue
+        path = os.path.join('font', collection)
+        if not os.path.isdir(path):
+            continue
+
+        collections[collection] = []
+        for vendor in os.listdir(os.path.join('font', collection)):
+            if vendor.startswith('.'):
+                continue
+            collections[collection].append(vendor)
+
+        collections[collection].sort()
+    return collections
+
+
+def get_template(template):
+    # Load html
+    tenv = Environment(loader=FileSystemLoader(
+        os.path.join(os.path.dirname(__file__), '..', 'template'),
+    ))
+    return tenv.get_template(template)
+
+
+def write_template(option, html, context):
+    if option.output == '-':
+        stream = sys.stdout
+    else:
+        stream = open(option.output, 'wb')
+
+    stream.write(html.render(**context).encode('utf-8'))
+
+    if option.output != '-':
+        stream.close()
 
 
 def control_char(char):
@@ -72,13 +111,8 @@ def load_charmap(filename, font):
 
 def convert_html(option):
     # Load data files
-    font = Font(option.filename)
-
-    # Load html
-    tenv = Environment(loader=FileSystemLoader(
-        os.path.join(os.path.dirname(__file__), '..', 'template'),
-    ))
-    html = tenv.get_template('font/font.html')
+    font = Font(option.filename, load_glyphs=False)
+    html = get_template('font/font.html')
 
     # Glyphs
     glyphs = []
@@ -129,22 +163,6 @@ def convert_html(option):
             row.append(glyph)
         glyphs.append((y, row))
 
-    collections = OrderedDict()
-    for collection in sorted(os.listdir('font')):
-        if collection.startswith('.'):
-            continue
-        path = os.path.join('font', collection)
-        if not os.path.isdir(path):
-            continue
-
-        collections[collection] = []
-        for vendor in os.listdir(os.path.join('font', collection)):
-            if vendor.startswith('.'):
-                continue
-            collections[collection].append(vendor)
-
-        collections[collection].sort()
-
     # Scan for vendor and description in the collection map
     vendor = os.path.basename(os.path.dirname(option.filename))
     collection = os.path.basename(os.path.dirname(os.path.dirname(option.filename)))
@@ -152,7 +170,7 @@ def convert_html(option):
     # Build context
     context = dict(
         font=font,
-        collections=collections,
+        collections=scan_collections(),
         collection=collection,
         vendor=vendor,
         chars=len(font),
@@ -164,15 +182,56 @@ def convert_html(option):
         glyphs=glyphs,
     )
 
-    if option.output == '-':
-        stream = sys.stdout
-    else:
-        stream = open(option.output, 'wb')
+    return write_template(option, html, context)
 
-    stream.write(html.render(**context).encode('utf-8'))
 
-    if option.output != '-':
-        stream.close()
+def convert_html_vendor(option):
+    html = get_template('font/vendor.html')
+
+    fonts = []
+    for font in glob.glob(os.path.join(option.filename, '*.yml')):
+        fonts.append(Font(font))
+
+    # Build context
+    context = dict(
+        name=os.path.basename(option.filename),
+        collections=scan_collections(),
+        fonts=fonts,
+    )
+
+    return write_template(option, html, context)
+
+
+def convert_html_collection(option):
+    html = get_template('font/collection.html')
+
+    collection = OrderedDict()
+    for vendor in os.listdir(option.filename):
+        if vendor.startswith('.'):
+            continue
+        collection[vendor] = 0
+        for font in glob.glob(os.path.join(option.filename, vendor, '*.yml')):
+            collection[vendor] += 1
+
+    # Build context
+    context = dict(
+        name=os.path.basename(option.filename),
+        collections=scan_collections(),
+        collection=collection,
+    )
+
+    return write_template(option, html, context)
+
+
+def convert_html_index(option):
+    html = get_template('font/index.html')
+
+    # Build context
+    context = dict(
+        collections=scan_collections(),
+    )
+
+    return write_template(option, html, context)
 
 
 def run():
@@ -184,7 +243,19 @@ def run():
     parser.add_argument('filename')
 
     option = parser.parse_args()
-    return convert_html(option)
+
+    if os.path.isdir(option.filename):
+        part = option.filename.split(os.sep)
+        if len(part) == 3:
+            return convert_html_vendor(option)
+        elif len(part) == 2:
+            return convert_html_collection(option)
+        elif len(part) == 1:
+            return convert_html_index(option)
+        else:
+            raise ValueError('Cant parse directory')
+    else:
+        return convert_html(option)
 
 
 if __name__ == '__main__':

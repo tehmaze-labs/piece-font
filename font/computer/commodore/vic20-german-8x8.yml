@@ -1,5 +1,6 @@
 font:
-  description: Commodore VIC-20/VC-20 (German)
+  description: Commodore VIC-20/VC-20
+  language: German
   copyright:
     vendor: Commodore
     year:   1981

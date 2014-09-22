@@ -1,0 +1,123 @@
+#!/usr/bin/env python2
+
+import os
+import re
+import sys
+import zlib
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'lib'))
+from font import Font
+
+import yaml
+
+
+def checksum(data):
+    #return zlib.crc32(data)
+    c = 0L
+    for line in data.splitlines():
+        line = line.strip().replace('-', '0').replace('#', '1')
+        c <<= 8
+        c += int(line, 2)
+    return c
+
+
+def load_glyphs(filename):
+    print 'loading', filename
+    font = Font(filename)
+    glyphs = {}
+
+    for glyph in font:
+        if glyph is None or glyph.character is None:
+            continue
+        else:
+            glyphs[checksum(glyph.bitmap_raw)] = glyph.character
+
+    return glyphs
+
+
+def findnth(string, sub, n):
+    c = 0
+    s = -1
+    while c < n:
+        s = string.find(sub, s + 1)
+        if s == -1:
+            return -1
+        c += 1
+    return s
+
+
+def subnth(string, n, u):
+    c = 0
+    f = False
+    o = []
+    for line in string.splitlines():
+        line = line.rstrip()
+        if 'unicode:' in line:
+            if c == n:
+                o.append('    unicode: {}'.format(u))
+                f = True
+            else:
+                o.append(line)
+
+            c += 1
+        else:
+            o.append(line)
+
+    if f is False:
+        raise ValueError('{}th unicode char not found'.format(n))
+
+    return '\n'.join(o)
+
+
+def run():
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-f', '--filename')
+    parser.add_argument('sources', nargs='+')
+    option = parser.parse_args()
+
+    glyphs = {}
+    for source in option.sources:
+        glyphs.update(
+            load_glyphs(source),
+        )
+
+    font = Font(option.filename)
+    fraw = file(option.filename).read()
+    fout = fraw
+    print 'got', len(font), 'glyphs'
+    done = 0
+    adds = 0
+    for i, glyph in enumerate(font):
+        if glyph.character is None:
+            csum = checksum(glyph.bitmap_raw)
+            if csum in glyphs:
+                print 'char', i, 'unmapped looks like a ', glyphs[csum]
+                print glyph.bitmap_raw
+                print
+                glyph.character = glyphs[csum]
+
+                fout = subnth(
+                    fout,
+                    i,
+                    glyphs[csum],
+                )
+                adds += 1
+        else:
+            done += 1
+
+    print 'got', done, '+', adds, '=', (done + adds), '/', len(font)
+
+    if fout != fraw:
+        import time
+        print 'font modified'
+        save = '.'.join([option.filename, str(time.time())])
+        print 'mv {} -> {}'.format(option.filename, save)
+        os.rename(option.filename, save)
+        with open(option.filename, 'wb') as out:
+            out.write(fout)
+
+
+if __name__ == '__main__':
+    sys.exit(run())

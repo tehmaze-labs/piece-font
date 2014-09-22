@@ -1,33 +1,25 @@
 {% extends "font/base.html" %}
 
-{% block title %}Collection {{ name }}{% endblock %}
+{% block title %}Collection {{ name|title }}{% endblock %}
 
 {% block head %}
 {% endblock %}
 
 {% block content %}
-<h2>Collection {{ name }}</h2>
+<h2>Collection {{ name|title }}</h2>
 
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Font</th>
-      <th>Description</th>
-      <th>Language</th>
+      <th>Vendor</th>
+      <th>Fonts</th>
     </tr>
   </thead>
   <tbody>
-{% for font in fonts %}
+{% for vendor, fonts in collection.iteritems()|sort %}
     <tr>
-      <td><a href="{{ font.link }}">{{ font.name }}</a></td>
-      <td>{{ font.description }}</td>
-      <td>
-      {%- if font.language -%}
-      {{ font.language }}
-      {%- else -%}
-      International
-      {%- endif %}
-      </td>
+      <td><a href="{{ vendor }}/">{{ vendor|replace("-", " ")|title }}</a></td>
+      <td>{{ fonts }}</td>
     </tr>
 {% endfor %}
   </tbody>

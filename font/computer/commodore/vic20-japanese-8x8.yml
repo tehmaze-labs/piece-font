@@ -1,5 +1,6 @@
 font:
-  description: Commodore VIC-20/VIC-1001 (Japanese)
+  description: Commodore VIC-20/VIC-1001
+  language: Japanese
   copyright:
     vendor: Commodore
     year:   1981

@@ -1,0 +1,41 @@
+{% extends "font/base.html" %}
+
+{% block title %}Fonts from {{ name|title }}{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<h2>Fonts from {{ name|title }}</h2>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Font</th>
+      <th>Description</th>
+      <th>Language</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for font in fonts|sort %}
+    <tr>
+      <td><a href="{{ font.info.name }}.html">{{ font.info.name }}</a></td>
+      {%- if font.info.description -%}
+      <td>{{ font.info.description }}</td>
+      {%- else -%}
+      <td><em>Not available</em></td>
+      {%- endif -%}
+      <td>
+      {%- if font.info.language -%}
+      {{ font.info.language }}
+      {%- else -%}
+      International
+      {%- endif %}
+      </td>
+      <td><img src="{{ font.info.name }}.text.png" alt="{{ font.info.name }} preview"></td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+{% endblock %}

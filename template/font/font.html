@@ -171,13 +171,10 @@
     </div>
     <div>
       {%- if item.unichar -%}
-      <code class="preview">
-      &#{{ item.unichar }};
+      <code class="preview">&#{{ item.unichar }};</code>
       {%- else -%}
-      <code>
-      &nbsp;
+      <code>&nbsp;</code>
       {%- endif -%}
-      </code>
     </div>
   </td>
   {% endfor %}

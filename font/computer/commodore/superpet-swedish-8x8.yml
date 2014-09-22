@@ -1,5 +1,6 @@
 font:
-  description: Commodore SuperPET 9000 series (Swedish)
+  description: Commodore SuperPET 9000 series
+  language: Swedish
   copyright:
     vendor: Commodore
     year:   1981

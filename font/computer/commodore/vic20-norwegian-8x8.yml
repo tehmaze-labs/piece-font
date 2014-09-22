@@ -1,5 +1,6 @@
 font:
-  description: Commodore VIC-20 (Norwegian)
+  description: Commodore VIC-20
+  language: Norwegian
   copyright:
     vendor: Commodore
     year:   1981

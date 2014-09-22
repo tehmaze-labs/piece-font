@@ -1,5 +1,6 @@
 font:
-  description: Commodore PET 2001 series (Russian)
+  description: Commodore PET 2001 series
+  language: Russian
   copyright:
     vendor: Commodore
     year:   1977
