@@ -5,7 +5,7 @@ import os
 import struct
 import unicodedata
 import yaml
-from PIL import Image
+from PIL import Image, ImageOps
 
 
 TEXT = [
@@ -85,7 +85,10 @@ class Font(object):
 
     def __getitem__(self, index):
         if isinstance(index, (int, long)):
-            return self.glyphs[index]
+            try:
+                return self.glyphs[index]
+            except IndexError:
+                return None
         else:
             for glyph in self:
                 if glyph is None:
@@ -117,7 +120,7 @@ class Font(object):
             self.info['name'] = os.path.splitext(
                 os.path.basename(self.filename)
             )[0]
-            self.glyphs = []
+            self.glyphs = [None] * len(font['characters'])
             for index, info in font['characters'].iteritems():
                 if isinstance(index, basestring):
                     index = int(index, 16)
@@ -173,6 +176,15 @@ class Font(object):
                             (y + 1) * self.char_height,
                         )
                     )
+
+            alpha = []
+            for data in image.getdata():
+                if data > 192:
+                    alpha.append((0, 0, 0, 255))
+                else:
+                    alpha.append((255, 255, 255, 0))
+            image = Image.new('RGBA', size)
+            image.putdata(alpha)
 
         elif columns > 0:
             per_row = columns

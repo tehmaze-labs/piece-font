@@ -1,0 +1,94 @@
+#!/usr/bin/env python2
+
+
+import os
+import re
+import sys
+import zlib
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'lib'))
+from font import Font
+
+import yaml
+
+
+def subunicode(data, subs):
+    c = 0
+    o = []
+    for line in data.splitlines():
+        line = line.rstrip()
+        if 'unicode:' in line:
+            if c in subs:
+                o.append('    unicode: {}'.format(subs.pop(c)))
+            else:
+                o.append(line)
+            c += 1
+        else:
+            o.append(line)
+
+    #if len(subs):
+    #    raise ValueError('{} unicode characters remaining: {!r}'.format(
+    #        len(subs),
+    #        subs,
+    #    ))
+
+    return '\n'.join(o)
+
+
+def copymap(option):
+    print 'reading source font', option.source
+    source = yaml.load(file(option.source))
+    print 'reading target font', option.target
+    target = yaml.load(file(option.target))
+
+    subs = {}
+    miss = {}
+    if option.replace:
+        for i, glyph in source['characters'].iteritems():
+            if glyph['unicode']:
+                subs[i] = glyph['unicode'].strip()
+
+    else:
+        for i, glyph in target['characters'].iteritems():
+            if not glyph['unicode']:
+                miss[i] = True
+        for i, glyph in source['characters'].iteritems():
+            if i in miss and glyph['unicode']:
+                subs[i] = glyph['unicode'].strip()
+
+    if miss:
+        print 'missing', len(miss), 'unicode glyphs'
+    if subs:
+        print 'replacing', len(subs), 'unicode glyphs'
+    else:
+        print 'nothing to do'
+        return
+
+    fraw = file(option.target).read()
+    fout = subunicode(fraw, subs)
+
+    if fout != fraw:
+        import time
+        print 'font modified'
+        save = '.'.join([option.target, str(time.time())])
+        print 'mv {} -> {}'.format(option.target, save)
+        os.rename(option.target, save)
+        with open(option.target, 'wb') as out:
+            out.write(fout)
+
+
+
+def run():
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-r', '--replace', default=False, action='store_true')
+    parser.add_argument('source')
+    parser.add_argument('target')
+    option = parser.parse_args()
+
+    return copymap(option)
+
+
+if __name__ == '__main__':
+    sys.exit(run())

@@ -5,5 +5,6 @@
 # Build stuff
 build/
 font/*/*/*.bin
+font/*/*/*.hex
 font/*/*/*.map
 font/*/*/*.yml.1*
