@@ -46,25 +46,22 @@ def findnth(string, sub, n):
     return s
 
 
-def subnth(string, n, u):
+def subunicode(data, subs):
     c = 0
-    f = False
     o = []
     for line in string.splitlines():
         line = line.rstrip()
         if 'unicode:' in line:
-            if c == n:
-                o.append('    unicode: {}'.format(u))
-                f = True
+            if c in subs:
+                o.append('    unicode: {}'.format(subs.pop(o)))
             else:
                 o.append(line)
-
             c += 1
         else:
             o.append(line)
 
-    if f is False:
-        raise ValueError('{}th unicode char not found'.format(n))
+    if len(subs):
+        raise ValueError('{} unicode characters remaining'.format(len(subs)))
 
     return '\n'.join(o)
 
@@ -88,7 +85,7 @@ def run():
     fout = fraw
     print 'got', len(font), 'glyphs'
     done = 0
-    adds = 0
+    subs = {}
     for i, glyph in enumerate(font):
         if glyph.character is None:
             csum = checksum(glyph.bitmap_raw)
@@ -96,18 +93,14 @@ def run():
                 print 'char', i, 'unmapped looks like a ', glyphs[csum]
                 print glyph.bitmap_raw
                 print
-                glyph.character = glyphs[csum]
-
-                fout = subnth(
-                    fout,
-                    i,
-                    glyphs[csum],
-                )
-                adds += 1
+                subs[i] = glyphs[csum]
         else:
             done += 1
 
+    adds = len(subs)
     print 'got', done, '+', adds, '=', (done + adds), '/', len(font)
+    if subs:
+        fout = subunicode(fout, subs)
 
     if fout != fraw:
         import time

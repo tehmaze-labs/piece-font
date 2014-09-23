@@ -135,42 +135,42 @@ Commodore:
         source:                 "http://www.c64.com/games/138"
 
 Commodore Amiga:
-    amiga-b-strict:
+    amiga-b-strict-8x8:
         description:            "B-Strict"
         source:                 "B-Girl"
         copyright:              "Lukas Nystrand (aka Mortimer Twang)"
-    amiga-b-struct:
+    amiga-b-struct-8x8:
         description:            "B-Struct"
         source:                 "B-Girl"
         copyright:              "Lukas Nystrand (aka Mortimer Twang)"
-    amiga-microknight:
+    amiga-microknight-8x16:
         description:            "MicroKnight"
-    amiga-microknightplus:
+    amiga-microknightplus-8x16:
         description:            "MicroKnight (modified)"
-    amiga-mo-soul:
+    amiga-mo-soul-8x16:
         description:            "mO'sOul"
         source:                 "mO'sOul"
         copyright:              "Desoto"
-    amiga-p0t-noodle:
+    amiga-p0t-noodle-8x16:
         description:            "P0T-NOoDLE"
         copyright:              "Leo Davison (aka Nudel)"
-    amiga-topaz-a500:
+    amiga-topaz-a500-8x16:
         description:            "Amiga Topaz Kickstart 1.x"
         source:                 "Kickstart v1.3 r34.5"
         copyright:              "Commodore"
         copyright_year:         1987
-    amiga-topaz-a1200:
+    amiga-topaz-a1200-8x16:
         description:            "Amiga Topaz Kickstart 2.x"
         source:                 "Kickstart v3.1 r40.68"
         copyright:              "Commodore"
         copyright_year:         1993
-    amiga-topazplus-a500:
+    amiga-topazplus-a500-8x16:
         description:            "Amiga Topaz Kickstart 1.x"
         variant:                modified
         source:                 "Kickstart v2.04 r37.175"
         copyright:              "Commodore"
         copyright_year:         1991
-    amiga-topazplus-a1200:
+    amiga-topazplus-a1200-8x16:
         description:            "Amiga Topaz Kickstart 2.x"
         variant:                modified
         source:                 "Kickstart v3.1 r40.68"

@@ -7,4 +7,5 @@ build/
 font/*/*/*.bin
 font/*/*/*.hex
 font/*/*/*.map
+font/*/*/*.png
 font/*/*/*.yml.1*
