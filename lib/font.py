@@ -5,7 +5,7 @@ import os
 import struct
 import unicodedata
 import yaml
-from PIL import Image, ImageOps
+from PIL import Image, ImageDraw, ImageOps
 
 
 TEXT = [
@@ -54,11 +54,15 @@ class Glyph(object):
 
     def to_image(self):
         size = (self.char_width, self.char_height)
-        image = Image.new('1', size)
+        image = Image.new('RGB', size)
+        if self.character is None:
+            draw = ImageDraw.Draw(image)
+            draw.rectangle(((0, 0), size), fill=(0x80, 0x00, 0x00))
+
         for y, row in enumerate(self.bitmap_raw.splitlines()):
             for x, pixel in enumerate(row):
                 if pixel == '#':
-                    image.putpixel((x, y), 255)
+                    image.putpixel((x, y), (0xff, 0xff, 0xff))
 
         return image
 
@@ -161,7 +165,7 @@ class Font(object):
                 self.char_width * len(TEXT[0]),
                 self.char_height * len(TEXT),
             )
-            image = Image.new('1', size)
+            image = Image.new('RGB', size)
             for y in range(len(TEXT)):
                 for x in range(len(TEXT[y])):
                     c = UNITEXT[y][x]
@@ -194,7 +198,7 @@ class Font(object):
                 self.char_width * columns,
                 self.char_height * rows,
             )
-            image = Image.new('1', size)
+            image = Image.new('RGB', size)
 
             for y in range(rows):
                 for x in range(columns):
@@ -217,7 +221,7 @@ class Font(object):
                 self.char_width * len(self),
                 self.char_height,
             )
-            image = Image.new('1', size)
+            image = Image.new('RGB', size)
 
             for x, glyph in enumerate(self):
                 if glyph is None:
