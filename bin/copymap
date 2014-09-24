@@ -12,8 +12,8 @@ from font import Font
 import yaml
 
 
-def subunicode(data, subs):
-    c = 0
+def subunicode(data, subs, offset=0):
+    c = offset
     o = []
     for line in data.splitlines():
         line = line.rstrip()
@@ -65,7 +65,7 @@ def copymap(option):
         return
 
     fraw = file(option.target).read()
-    fout = subunicode(fraw, subs)
+    fout = subunicode(fraw, subs, offset=option.offset)
 
     if fout != fraw:
         import time
@@ -83,6 +83,7 @@ def run():
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-r', '--replace', default=False, action='store_true')
+    parser.add_argument('-o', '--offset', default=0, type=int)
     parser.add_argument('source')
     parser.add_argument('target')
     option = parser.parse_args()

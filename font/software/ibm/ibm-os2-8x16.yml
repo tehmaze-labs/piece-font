@@ -7610,7 +7610,7 @@ characters:
           --------
 
   0x16a:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -14855,7 +14855,7 @@ characters:
           --------
 
   0x2c3:
-    unicode:
+    unicode: COMMA
     bitmap:
       |
           --------
@@ -15674,7 +15674,7 @@ characters:
           --------
 
   0x2ea:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -15716,7 +15716,7 @@ characters:
           --------
 
   0x2ec:
-    unicode:
+    unicode: RIGHT ANGLE
     bitmap:
       |
           --------
@@ -15800,7 +15800,7 @@ characters:
           --------
 
   0x2f0:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT VERTICAL
     bitmap:
       |
           ----#---
@@ -15821,7 +15821,7 @@ characters:
           ----#---
 
   0x2f1:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT DOWN AND RIGHT
     bitmap:
       |
           --------
@@ -15842,7 +15842,7 @@ characters:
           ----#---
 
   0x2f2:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT DOWN AND LEFT
     bitmap:
       |
           --------
@@ -15863,7 +15863,7 @@ characters:
           ----#---
 
   0x2f3:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT UP AND RIGHT
     bitmap:
       |
           ----#---
@@ -15884,7 +15884,7 @@ characters:
           --------
 
   0x2f4:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT UP AND LEFT
     bitmap:
       |
           ----#---
@@ -15905,7 +15905,7 @@ characters:
           --------
 
   0x2f5:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT VERTICAL AND RIGHT
     bitmap:
       |
           ----#---
@@ -15926,7 +15926,7 @@ characters:
           ----#---
 
   0x2f6:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT VERTICAL AND LEFT
     bitmap:
       |
           ----#---
@@ -15947,7 +15947,7 @@ characters:
           ----#---
 
   0x2f7:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT DOWN AND HORIZONTAL
     bitmap:
       |
           --------
@@ -15968,7 +15968,7 @@ characters:
           ----#---
 
   0x2f8:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT UP AND HORIZONTAL
     bitmap:
       |
           ----#---
@@ -15989,7 +15989,7 @@ characters:
           --------
 
   0x2f9:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT VERTICAL AND HORIZONTAL
     bitmap:
       |
           ----#---
@@ -16031,7 +16031,7 @@ characters:
           --------
 
   0x2fb:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE VERTICAL
     bitmap:
       |
           ---#-#--
@@ -16052,7 +16052,7 @@ characters:
           ---#-#--
 
   0x2fc:
-    unicode:
+    unicode: BOX DRAWINGS DOWN SINGLE AND RIGHT DOUBLE
     bitmap:
       |
           --------
@@ -16073,7 +16073,7 @@ characters:
           ----#---
 
   0x2fd:
-    unicode:
+    unicode: BOX DRAWINGS DOWN DOUBLE AND RIGHT SINGLE
     bitmap:
       |
           --------
@@ -16094,7 +16094,7 @@ characters:
           ---#-#--
 
   0x2fe:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE DOWN AND RIGHT
     bitmap:
       |
           --------
@@ -16115,7 +16115,7 @@ characters:
           ---#-#--
 
   0x2ff:
-    unicode:
+    unicode: BOX DRAWINGS DOWN SINGLE AND LEFT DOUBLE
     bitmap:
       |
           --------
@@ -16136,7 +16136,7 @@ characters:
           ----#---
 
   0x300:
-    unicode:
+    unicode: BOX DRAWINGS DOWN DOUBLE AND LEFT SINGLE
     bitmap:
       |
           --------
@@ -16157,7 +16157,7 @@ characters:
           ---#-#--
 
   0x301:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE DOWN AND LEFT
     bitmap:
       |
           --------
@@ -16178,7 +16178,7 @@ characters:
           ---#-#--
 
   0x302:
-    unicode:
+    unicode: BOX DRAWINGS UP SINGLE AND RIGHT DOUBLE
     bitmap:
       |
           ----#---
@@ -16199,7 +16199,7 @@ characters:
           --------
 
   0x303:
-    unicode:
+    unicode: BOX DRAWINGS UP DOUBLE AND RIGHT SINGLE
     bitmap:
       |
           ---#-#--
@@ -16220,7 +16220,7 @@ characters:
           --------
 
   0x304:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE UP AND RIGHT
     bitmap:
       |
           ---#-#--
@@ -16241,7 +16241,7 @@ characters:
           --------
 
   0x305:
-    unicode:
+    unicode: BOX DRAWINGS UP SINGLE AND LEFT DOUBLE
     bitmap:
       |
           ----#---
@@ -16262,7 +16262,7 @@ characters:
           --------
 
   0x306:
-    unicode:
+    unicode: BOX DRAWINGS UP DOUBLE AND LEFT SINGLE
     bitmap:
       |
           ---#-#--
@@ -16283,7 +16283,7 @@ characters:
           --------
 
   0x307:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE UP AND LEFT
     bitmap:
       |
           ---#-#--
@@ -16304,7 +16304,7 @@ characters:
           --------
 
   0x308:
-    unicode:
+    unicode: BOX DRAWINGS VERTICAL SINGLE AND RIGHT DOUBLE
     bitmap:
       |
           ----#---
@@ -16325,7 +16325,7 @@ characters:
           ----#---
 
   0x309:
-    unicode:
+    unicode: BOX DRAWINGS VERTICAL DOUBLE AND RIGHT SINGLE
     bitmap:
       |
           ---#-#--
@@ -16346,7 +16346,7 @@ characters:
           ---#-#--
 
   0x30a:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE VERTICAL AND RIGHT
     bitmap:
       |
           ---#-#--
@@ -16367,7 +16367,7 @@ characters:
           ---#-#--
 
   0x30b:
-    unicode:
+    unicode: BOX DRAWINGS VERTICAL SINGLE AND LEFT DOUBLE
     bitmap:
       |
           ----#---
@@ -16388,7 +16388,7 @@ characters:
           ----#---
 
   0x30c:
-    unicode:
+    unicode: BOX DRAWINGS VERTICAL DOUBLE AND LEFT SINGLE
     bitmap:
       |
           ---#-#--
@@ -16409,7 +16409,7 @@ characters:
           ---#-#--
 
   0x30d:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE VERTICAL AND LEFT
     bitmap:
       |
           ---#-#--
@@ -16430,7 +16430,7 @@ characters:
           ---#-#--
 
   0x30e:
-    unicode:
+    unicode: BOX DRAWINGS DOWN SINGLE AND HORIZONTAL DOUBLE
     bitmap:
       |
           --------
@@ -16451,7 +16451,7 @@ characters:
           ----#---
 
   0x30f:
-    unicode:
+    unicode: BOX DRAWINGS DOWN DOUBLE AND HORIZONTAL SINGLE
     bitmap:
       |
           --------
@@ -16472,7 +16472,7 @@ characters:
           ---#-#--
 
   0x310:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE DOWN AND HORIZONTAL
     bitmap:
       |
           --------
@@ -16493,7 +16493,7 @@ characters:
           ---#-#--
 
   0x311:
-    unicode:
+    unicode: BOX DRAWINGS UP SINGLE AND HORIZONTAL DOUBLE
     bitmap:
       |
           ----#---
@@ -16514,7 +16514,7 @@ characters:
           --------
 
   0x312:
-    unicode:
+    unicode: BOX DRAWINGS UP DOUBLE AND HORIZONTAL SINGLE
     bitmap:
       |
           ---#-#--
@@ -16535,7 +16535,7 @@ characters:
           --------
 
   0x313:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE UP AND HORIZONTAL
     bitmap:
       |
           ---#-#--
@@ -16556,7 +16556,7 @@ characters:
           --------
 
   0x314:
-    unicode:
+    unicode: BOX DRAWINGS VERTICAL SINGLE AND HORIZONTAL DOUBLE
     bitmap:
       |
           ----#---
@@ -16577,7 +16577,7 @@ characters:
           ----#---
 
   0x315:
-    unicode:
+    unicode: BOX DRAWINGS VERTICAL DOUBLE AND HORIZONTAL SINGLE
     bitmap:
       |
           ---#-#--
@@ -16598,7 +16598,7 @@ characters:
           ---#-#--
 
   0x316:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE VERTICAL AND HORIZONTAL
     bitmap:
       |
           ---#-#--
@@ -16829,7 +16829,7 @@ characters:
           --------
 
   0x321:
-    unicode:
+    unicode: BLACK RECTANGLE
     bitmap:
       |
           --------
@@ -16850,7 +16850,7 @@ characters:
           --------
 
   0x322:
-    unicode:
+    unicode: BLACK UP-POINTING TRIANGLE
     bitmap:
       |
           --------
@@ -16871,7 +16871,7 @@ characters:
           --------
 
   0x323:
-    unicode:
+    unicode: BLACK RIGHT-POINTING POINTER
     bitmap:
       |
           --------
@@ -16892,7 +16892,7 @@ characters:
           --------
 
   0x324:
-    unicode:
+    unicode: BLACK DOWN-POINTING TRIANGLE
     bitmap:
       |
           --------
@@ -16913,7 +16913,7 @@ characters:
           --------
 
   0x325:
-    unicode:
+    unicode: BLACK LEFT-POINTING POINTER
     bitmap:
       |
           --------
@@ -16934,7 +16934,7 @@ characters:
           --------
 
   0x326:
-    unicode:
+    unicode: WHITE CIRCLE
     bitmap:
       |
           --------
@@ -16997,7 +16997,7 @@ characters:
           ########
 
   0x329:
-    unicode:
+    unicode: INVERSE WHITE CIRCLE
     bitmap:
       |
           ########
@@ -17018,7 +17018,7 @@ characters:
           ########
 
   0x32a:
-    unicode:
+    unicode: WHITE SMILING FACE
     bitmap:
       |
           --------
@@ -17039,7 +17039,7 @@ characters:
           --------
 
   0x32b:
-    unicode:
+    unicode: BLACK SMILING FACE
     bitmap:
       |
           --------
@@ -17060,7 +17060,7 @@ characters:
           --------
 
   0x32c:
-    unicode:
+    unicode: WHITE SUN WITH RAYS
     bitmap:
       |
           --------
@@ -17081,7 +17081,7 @@ characters:
           --------
 
   0x32d:
-    unicode:
+    unicode: FEMALE SIGN
     bitmap:
       |
           --------
@@ -17102,7 +17102,7 @@ characters:
           --------
 
   0x32e:
-    unicode:
+    unicode: MALE SIGN
     bitmap:
       |
           --------
@@ -17123,7 +17123,7 @@ characters:
           --------
 
   0x32f:
-    unicode:
+    unicode: BLACK SPADE SUIT
     bitmap:
       |
           --------
@@ -17165,7 +17165,7 @@ characters:
           --------
 
   0x331:
-    unicode:
+    unicode: BLACK CLUB SUIT
     bitmap:
       |
           --------
@@ -17186,7 +17186,7 @@ characters:
           --------
 
   0x332:
-    unicode:
+    unicode: BLACK HEART SUIT
     bitmap:
       |
           --------
@@ -17207,7 +17207,7 @@ characters:
           --------
 
   0x333:
-    unicode:
+    unicode: BLACK DIAMOND SUIT
     bitmap:
       |
           --------
@@ -17228,7 +17228,7 @@ characters:
           --------
 
   0x334:
-    unicode:
+    unicode: EIGHTH NOTE
     bitmap:
       |
           --------
@@ -17249,7 +17249,7 @@ characters:
           --------
 
   0x335:
-    unicode:
+    unicode: BEAMED SIXTEENTH NOTES
     bitmap:
       |
           --------
@@ -17312,7 +17312,7 @@ characters:
           --------
 
   0x338:
-    unicode:
+    unicode: ARABIC FATHATAN
     bitmap:
       |
           --#-#-#-
@@ -17354,7 +17354,7 @@ characters:
           --------
 
   0x33a:
-    unicode:
+    unicode: ARABIC LETTER HAMZA
     bitmap:
       |
           --------
@@ -17375,7 +17375,7 @@ characters:
           --------
 
   0x33b:
-    unicode:
+    unicode: ARABIC LETTER ALEF WITH MADDA ABOVE
     bitmap:
       |
           ---#-#--
@@ -17417,7 +17417,7 @@ characters:
           --------
 
   0x33d:
-    unicode:
+    unicode: ARABIC LETTER ALEF WITH HAMZA ABOVE
     bitmap:
       |
           --##----
@@ -17459,7 +17459,7 @@ characters:
           --------
 
   0x33f:
-    unicode:
+    unicode: ARABIC LETTER WAW WITH HAMZA ABOVE
     bitmap:
       |
           --------
@@ -17501,7 +17501,7 @@ characters:
           --------
 
   0x341:
-    unicode:
+    unicode: ARABIC LETTER ALEF
     bitmap:
       |
           --------
@@ -17543,7 +17543,7 @@ characters:
           --------
 
   0x343:
-    unicode:
+    unicode: ARABIC LETTER BEH
     bitmap:
       |
           --------
@@ -17585,7 +17585,7 @@ characters:
           --------
 
   0x345:
-    unicode:
+    unicode: ARABIC LETTER TEH MARBUTA
     bitmap:
       |
           --------
@@ -17606,7 +17606,7 @@ characters:
           --------
 
   0x346:
-    unicode:
+    unicode: ARABIC LETTER TEH
     bitmap:
       |
           --------
@@ -17648,7 +17648,7 @@ characters:
           --------
 
   0x348:
-    unicode:
+    unicode: ARABIC LETTER THEH
     bitmap:
       |
           --------
@@ -17690,7 +17690,7 @@ characters:
           --------
 
   0x34a:
-    unicode:
+    unicode: ARABIC LETTER JEEM
     bitmap:
       |
           --------
@@ -17732,7 +17732,7 @@ characters:
           --------
 
   0x34c:
-    unicode:
+    unicode: ARABIC LETTER HAH
     bitmap:
       |
           --------
@@ -17774,7 +17774,7 @@ characters:
           --------
 
   0x34e:
-    unicode:
+    unicode: ARABIC LETTER KHAH
     bitmap:
       |
           --------
@@ -17816,7 +17816,7 @@ characters:
           --------
 
   0x350:
-    unicode:
+    unicode: ARABIC LETTER DAL
     bitmap:
       |
           --------
@@ -17837,7 +17837,7 @@ characters:
           --------
 
   0x351:
-    unicode:
+    unicode: ARABIC LETTER THAL
     bitmap:
       |
           --------
@@ -17858,7 +17858,7 @@ characters:
           --------
 
   0x352:
-    unicode:
+    unicode: ARABIC LETTER REH
     bitmap:
       |
           --------
@@ -17879,7 +17879,7 @@ characters:
           --------
 
   0x353:
-    unicode:
+    unicode: ARABIC LETTER ZAIN
     bitmap:
       |
           --------
@@ -17900,7 +17900,7 @@ characters:
           --------
 
   0x354:
-    unicode:
+    unicode: ARABIC LETTER SEEN
     bitmap:
       |
           --------
@@ -17942,7 +17942,7 @@ characters:
           --------
 
   0x356:
-    unicode:
+    unicode: ARABIC LETTER SHEEN
     bitmap:
       |
           --------
@@ -17984,7 +17984,7 @@ characters:
           --------
 
   0x358:
-    unicode:
+    unicode: ARABIC LETTER SAD
     bitmap:
       |
           --------
@@ -18026,7 +18026,7 @@ characters:
           --------
 
   0x35a:
-    unicode:
+    unicode: ARABIC LETTER DAD
     bitmap:
       |
           --------
@@ -18068,7 +18068,7 @@ characters:
           --------
 
   0x35c:
-    unicode:
+    unicode: ARABIC LETTER TAH
     bitmap:
       |
           --------
@@ -18089,7 +18089,7 @@ characters:
           --------
 
   0x35d:
-    unicode:
+    unicode: ARABIC LETTER ZAH
     bitmap:
       |
           --------
@@ -18110,7 +18110,7 @@ characters:
           --------
 
   0x35e:
-    unicode:
+    unicode: ARABIC LETTER AIN
     bitmap:
       |
           --------
@@ -18194,7 +18194,7 @@ characters:
           --------
 
   0x362:
-    unicode:
+    unicode: ARABIC LETTER GHAIN
     bitmap:
       |
           --------
@@ -18278,7 +18278,7 @@ characters:
           --------
 
   0x366:
-    unicode:
+    unicode: ARABIC LETTER FEH
     bitmap:
       |
           --------
@@ -18320,7 +18320,7 @@ characters:
           --------
 
   0x368:
-    unicode:
+    unicode: ARABIC LETTER QAF
     bitmap:
       |
           --------
@@ -18362,7 +18362,7 @@ characters:
           --------
 
   0x36a:
-    unicode:
+    unicode: ARABIC LETTER KAF
     bitmap:
       |
           --------
@@ -18404,7 +18404,7 @@ characters:
           --------
 
   0x36c:
-    unicode:
+    unicode: ARABIC LETTER LAM
     bitmap:
       |
           --------
@@ -18446,7 +18446,7 @@ characters:
           --------
 
   0x36e:
-    unicode:
+    unicode: ARABIC LETTER MEEM
     bitmap:
       |
           --------
@@ -18488,7 +18488,7 @@ characters:
           --------
 
   0x370:
-    unicode:
+    unicode: ARABIC LETTER NOON
     bitmap:
       |
           --------
@@ -18530,7 +18530,7 @@ characters:
           --------
 
   0x372:
-    unicode:
+    unicode: ARABIC LETTER HEH
     bitmap:
       |
           --------
@@ -18593,7 +18593,7 @@ characters:
           --------
 
   0x375:
-    unicode:
+    unicode: ARABIC LETTER WAW
     bitmap:
       |
           --------
@@ -18614,7 +18614,7 @@ characters:
           --------
 
   0x376:
-    unicode:
+    unicode: ARABIC LETTER ALEF MAKSURA
     bitmap:
       |
           --------
@@ -18656,7 +18656,7 @@ characters:
           --------
 
   0x378:
-    unicode:
+    unicode: ARABIC LETTER YEH
     bitmap:
       |
           --------

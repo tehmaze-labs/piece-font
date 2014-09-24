@@ -35,25 +35,14 @@ def load_glyphs(filename):
     return glyphs
 
 
-def findnth(string, sub, n):
-    c = 0
-    s = -1
-    while c < n:
-        s = string.find(sub, s + 1)
-        if s == -1:
-            return -1
-        c += 1
-    return s
-
-
 def subunicode(data, subs):
     c = 0
     o = []
-    for line in string.splitlines():
+    for line in data.splitlines():
         line = line.rstrip()
         if 'unicode:' in line:
             if c in subs:
-                o.append('    unicode: {}'.format(subs.pop(o)))
+                o.append('    unicode: {}'.format(subs.pop(c)))
             else:
                 o.append(line)
             c += 1

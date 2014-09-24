@@ -1,0 +1,132 @@
+#!/usr/bin/env python2
+
+
+import math
+import os
+import re
+import unicodedata
+import yaml
+
+
+RE_SIZE = re.compile(r'-(\d+)x(\d+)\.bin$', re.I)
+
+
+def fontinfo(filename):
+    fontname = os.path.splitext(os.path.basename(filename))[0]
+    info = yaml.load(file('font.yaml'))
+    for collection, section in info.iteritems():
+        for font in section:
+            if font == fontname:
+                return section[font]
+    return {}
+
+
+def unicodename(char):
+    char = unichr(ord(char))
+    try:
+        return unicodedata.name(char)
+    except ValueError as error:
+        raise ValueError('{}: {}'.format(str(error), char))
+
+
+def convert_txt(src, dst, option):
+    char_width_bytes = int(math.ceil(float(option.char_width) / float(option.char_width)))
+    char_bytes = char_width_bytes * option.char_height
+    binary = bytearray(src.read())
+    unicode_map = [''] * max(512, (len(binary) / char_bytes))
+
+    info = fontinfo(option.filename)
+
+    if option.unicode_map:
+        with file(option.unicode_map) as um:
+            for line in um:
+                line = line.rstrip('\r\n')
+                if line.startswith('#'):
+                    continue
+                elif ' ' in line:
+                    index, char = line.split(' ', 1)
+                    index = int(index, 16)
+                    if index >= len(unicode_map):
+                        raise ValueError('Unicode map overflow {}'.format(index))
+                    if len(char) == 1:
+                        unicode_map[index] = unicodename(char)
+                    else:
+                        unicode_map[index] = char
+
+    dst.write('font:\n')
+    dst.write('  description: {}\n'.format(info.get('description', '').encode('utf8')))
+    dst.write('  copyright:\n')
+    dst.write('    vendor: {}\n'.format(info.get('copyright', '').encode('utf8')))
+    dst.write('    year:   {}\n'.format(info.get('copyright_year', '')))
+    dst.write('  size: [{}, {}]\n'.format(
+        option.char_width,
+        option.char_height,
+    ))
+    dst.write('  source: {}\n'.format(info.get('source', '')))
+    dst.write('\n')
+    dst.write('characters:\n')
+
+    if option.char_width == 4:
+        # Realign characters
+        print char_bytes, 'bytes per char'
+        oldbinary = binary
+        newbinary = bytearray()
+        for i, o in enumerate(xrange(0, len(binary), char_bytes)):
+            for j, byte in enumerate(binary[o:o + char_bytes]):
+                newbinary.append(byte >> 4)
+            for j, byte in enumerate(binary[o:o + char_bytes]):
+                newbinary.append(byte & 0xf)
+        binary = newbinary
+
+    binary_format = '{:0%db}\n' % (option.char_width,)
+    for i, o in enumerate(xrange(0, len(binary), char_bytes)):
+        dst.write('  0x{:03x}:\n'.format(i))
+        dst.write('    unicode: {}\n'.format(unicode_map[i]))
+        dst.write('    bitmap:\n')
+        dst.write('      |\n')
+        for j, byte in enumerate(binary[o:o + char_bytes]):
+            dst.write('          ')
+            dst.write(
+                binary_format.format(byte).replace('1', '#').replace('0', '-')
+            )
+        dst.write('\n')
+
+
+def run():
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-o', '--output', required=True)
+    parser.add_argument(
+        '-m', '--unicode-map',
+        help='Unicode map (old format)',
+    )
+    parser.add_argument(
+        '-x', '--char-width', default=0, type=int,
+        help='Character pixel width (default: 8)',
+    )
+    parser.add_argument(
+        '-y', '--char-height', default=0, type=int,
+        help='Character pixel height (default: 16)',
+    )
+    parser.add_argument('filename')
+
+    option = parser.parse_args()
+
+    if option.char_width == 0 or option.char_height == 0:
+        test = RE_SIZE.search(option.filename)
+        if test:
+            option.char_width = int(test.group(1))
+            option.char_height = int(test.group(2))
+        else:
+            option.char_width = 8
+            option.char_height = 16
+
+    with open(option.filename, 'r') as src:
+        with open(option.output, 'wb') as dst:
+            convert_txt(src, dst, option)
+
+
+if __name__ == '__main__':
+    import sys
+    sys.exit(run())

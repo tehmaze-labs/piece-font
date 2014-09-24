@@ -183,7 +183,7 @@ class Font(object):
 
             alpha = []
             for data in image.getdata():
-                if data > 192:
+                if data[0] > 192:
                     alpha.append((0, 0, 0, 255))
                 else:
                     alpha.append((255, 255, 255, 0))
