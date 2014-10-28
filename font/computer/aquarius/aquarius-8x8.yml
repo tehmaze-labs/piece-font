@@ -6,6 +6,27 @@ font:
   size: [8, 8]
   source: http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html
 
+# Palette from TEA1002 encoder chip
+palette:
+  mode: rgb
+  colors:
+    - 0x000000  # black
+    - 0xf01010  # red
+    - 0x10f010  # green
+    - 0xf0e810  # yellow
+    - 0x2020d8  # blue
+    - 0xf010f0  # magenta
+    - 0x30c0c0  # cyan
+    - 0xffffff  # white
+    - 0xc0c0c0  # grey
+    - 0x28a8a8  # cyan
+    - 0xc020c0  # magenta
+    - 0x401088  # blue
+    - 0xf0f070  # yellow
+    - 0x20c840  # green
+    - 0xa82020  # red
+    - 0x303030  # black
+
 characters:
   0x000:
     unicode: POUND SIGN
@@ -190,7 +211,7 @@ characters:
           --------
 
   0x00e:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -203,7 +224,7 @@ characters:
           ########
 
   0x00f:
-    unicode: 
+    unicode:
     bitmap:
       |
           ######--
@@ -216,7 +237,7 @@ characters:
           --##----
 
   0x010:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -229,7 +250,7 @@ characters:
           --------
 
   0x011:
-    unicode: 
+    unicode:
     bitmap:
       |
           --######
@@ -242,7 +263,7 @@ characters:
           ----##--
 
   0x012:
-    unicode: 
+    unicode:
     bitmap:
       |
           --####--
@@ -255,7 +276,7 @@ characters:
           --####--
 
   0x013:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -268,7 +289,7 @@ characters:
           ##-##-##
 
   0x014:
-    unicode: 
+    unicode:
     bitmap:
       |
           -######-
@@ -281,7 +302,7 @@ characters:
           ##----##
 
   0x015:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -294,7 +315,7 @@ characters:
           -#######
 
   0x016:
-    unicode: 
+    unicode:
     bitmap:
       |
           -#####--
@@ -307,7 +328,7 @@ characters:
           --###---
 
   0x017:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -320,7 +341,7 @@ characters:
           ##-###--
 
   0x018:
-    unicode: 
+    unicode:
     bitmap:
       |
           -#####--
@@ -333,7 +354,7 @@ characters:
           --------
 
   0x019:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -346,7 +367,7 @@ characters:
           ##-##-##
 
   0x01a:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -359,7 +380,7 @@ characters:
           ----####
 
   0x01b:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -372,7 +393,7 @@ characters:
           --------
 
   0x01c:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -385,7 +406,7 @@ characters:
           ####----
 
   0x01d:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -398,7 +419,7 @@ characters:
           --------
 
   0x01e:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -411,7 +432,7 @@ characters:
           ----####
 
   0x01f:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -1698,7 +1719,7 @@ characters:
           #-------
 
   0x082:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -1711,7 +1732,7 @@ characters:
           #######-
 
   0x083:
-    unicode: 
+    unicode:
     bitmap:
       |
           --#####-
@@ -1724,7 +1745,7 @@ characters:
           ---###--
 
   0x084:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -1737,7 +1758,7 @@ characters:
           -#-#-#-#
 
   0x085:
-    unicode: 
+    unicode:
     bitmap:
       |
           #-#-----
@@ -1763,7 +1784,7 @@ characters:
           -#-#-#-#
 
   0x087:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -1802,7 +1823,7 @@ characters:
           ########
 
   0x08a:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -1815,7 +1836,7 @@ characters:
           --####--
 
   0x08b:
-    unicode: 
+    unicode:
     bitmap:
       |
           --####--
@@ -1828,7 +1849,7 @@ characters:
           ---##---
 
   0x08c:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -1841,7 +1862,7 @@ characters:
           --###-##
 
   0x08d:
-    unicode: 
+    unicode:
     bitmap:
       |
           --#####-
@@ -1906,7 +1927,7 @@ characters:
           #######-
 
   0x092:
-    unicode: 
+    unicode:
     bitmap:
       |
           --####--
@@ -1919,7 +1940,7 @@ characters:
           --####-#
 
   0x093:
-    unicode: 
+    unicode:
     bitmap:
       |
           --####--
@@ -1932,7 +1953,7 @@ characters:
           #-####--
 
   0x094:
-    unicode: 
+    unicode:
     bitmap:
       |
           #-#-#-#-
@@ -1945,7 +1966,7 @@ characters:
           --------
 
   0x095:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----#-#-
@@ -1958,7 +1979,7 @@ characters:
           -----#-#
 
   0x096:
-    unicode: 
+    unicode:
     bitmap:
       |
           --####--
@@ -2010,7 +2031,7 @@ characters:
           #####---
 
   0x09a:
-    unicode: 
+    unicode:
     bitmap:
       |
           --##----
@@ -2023,7 +2044,7 @@ characters:
           --##----
 
   0x09b:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----##--
@@ -2036,7 +2057,7 @@ characters:
           ----##--
 
   0x09c:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2049,7 +2070,7 @@ characters:
           --------
 
   0x09d:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2088,7 +2109,7 @@ characters:
           ---##---
 
   0x0a0:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2140,7 +2161,7 @@ characters:
           --------
 
   0x0a4:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2153,7 +2174,7 @@ characters:
           --------
 
   0x0a5:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -2166,7 +2187,7 @@ characters:
           --------
 
   0x0a6:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -2179,7 +2200,7 @@ characters:
           --------
 
   0x0a7:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -2192,7 +2213,7 @@ characters:
           --------
 
   0x0a8:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2205,7 +2226,7 @@ characters:
           --------
 
   0x0a9:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -2218,7 +2239,7 @@ characters:
           --------
 
   0x0aa:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -2231,7 +2252,7 @@ characters:
           --------
 
   0x0ab:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -2244,7 +2265,7 @@ characters:
           --------
 
   0x0ac:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2257,7 +2278,7 @@ characters:
           --------
 
   0x0ad:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -2270,7 +2291,7 @@ characters:
           --------
 
   0x0ae:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -2283,7 +2304,7 @@ characters:
           --------
 
   0x0af:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -2296,7 +2317,7 @@ characters:
           --------
 
   0x0b0:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2309,7 +2330,7 @@ characters:
           ####----
 
   0x0b1:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -2322,7 +2343,7 @@ characters:
           ####----
 
   0x0b2:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -2335,7 +2356,7 @@ characters:
           ####----
 
   0x0b3:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -2348,7 +2369,7 @@ characters:
           ####----
 
   0x0b4:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2361,7 +2382,7 @@ characters:
           ####----
 
   0x0b5:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -2374,7 +2395,7 @@ characters:
           ####----
 
   0x0b6:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -2387,7 +2408,7 @@ characters:
           ####----
 
   0x0b7:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -2400,7 +2421,7 @@ characters:
           ####----
 
   0x0b8:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2413,7 +2434,7 @@ characters:
           ####----
 
   0x0b9:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -2426,7 +2447,7 @@ characters:
           ####----
 
   0x0ba:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -2439,7 +2460,7 @@ characters:
           ####----
 
   0x0bb:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -2452,7 +2473,7 @@ characters:
           ####----
 
   0x0bc:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2465,7 +2486,7 @@ characters:
           ####----
 
   0x0bd:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -2478,7 +2499,7 @@ characters:
           ####----
 
   0x0be:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -2491,7 +2512,7 @@ characters:
           ####----
 
   0x0bf:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -2504,7 +2525,7 @@ characters:
           ####----
 
   0x0c0:
-    unicode: 
+    unicode:
     bitmap:
       |
           -------#
@@ -2517,7 +2538,7 @@ characters:
           ########
 
   0x0c1:
-    unicode: 
+    unicode:
     bitmap:
       |
           #-------
@@ -2530,7 +2551,7 @@ characters:
           ########
 
   0x0c2:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -2543,7 +2564,7 @@ characters:
           --------
 
   0x0c3:
-    unicode: 
+    unicode:
     bitmap:
       |
           ######--
@@ -2556,7 +2577,7 @@ characters:
           ######--
 
   0x0c4:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2569,7 +2590,7 @@ characters:
           --------
 
   0x0c5:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -2582,7 +2603,7 @@ characters:
           ---##---
 
   0x0c6:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2595,7 +2616,7 @@ characters:
           --------
 
   0x0c7:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -2608,7 +2629,7 @@ characters:
           --------
 
   0x0c8:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -2621,7 +2642,7 @@ characters:
           ---##---
 
   0x0c9:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2634,7 +2655,7 @@ characters:
           ####----
 
   0x0ca:
-    unicode: 
+    unicode:
     bitmap:
       |
           -------#
@@ -2647,7 +2668,7 @@ characters:
           #-------
 
   0x0cb:
-    unicode: 
+    unicode:
     bitmap:
       |
           ------##
@@ -2660,7 +2681,7 @@ characters:
           ------##
 
   0x0cc:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -2673,7 +2694,7 @@ characters:
           --------
 
   0x0cd:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -2686,7 +2707,7 @@ characters:
           ---##---
 
   0x0ce:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2699,7 +2720,7 @@ characters:
           ---##---
 
   0x0cf:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -2712,7 +2733,7 @@ characters:
           --------
 
   0x0d0:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----#--#
@@ -2725,7 +2746,7 @@ characters:
           ------#-
 
   0x0d1:
-    unicode: 
+    unicode:
     bitmap:
       |
           -#-#--#-
@@ -2738,7 +2759,7 @@ characters:
           -#--#-#-
 
   0x0d2:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2751,7 +2772,7 @@ characters:
           ########
 
   0x0d3:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2764,7 +2785,7 @@ characters:
           --------
 
   0x0d4:
-    unicode: 
+    unicode:
     bitmap:
       |
           -##--##-
@@ -2777,7 +2798,7 @@ characters:
           ---##---
 
   0x0d5:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -2790,7 +2811,7 @@ characters:
           --####--
 
   0x0d6:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -2803,7 +2824,7 @@ characters:
           ---##---
 
   0x0d7:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2816,7 +2837,7 @@ characters:
           ----####
 
   0x0d8:
-    unicode: 
+    unicode:
     bitmap:
       |
           #------#
@@ -2829,7 +2850,7 @@ characters:
           #------#
 
   0x0d9:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -2842,7 +2863,7 @@ characters:
           --------
 
   0x0da:
-    unicode: 
+    unicode:
     bitmap:
       |
           #-------
@@ -2855,7 +2876,7 @@ characters:
           -------#
 
   0x0db:
-    unicode: 
+    unicode:
     bitmap:
       |
           ##------
@@ -2868,7 +2889,7 @@ characters:
           ##------
 
   0x0dc:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2881,7 +2902,7 @@ characters:
           ---##---
 
   0x0dd:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -2894,7 +2915,7 @@ characters:
           ---##---
 
   0x0de:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2907,7 +2928,7 @@ characters:
           ---##---
 
   0x0df:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -2920,7 +2941,7 @@ characters:
           --------
 
   0x0e0:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2933,7 +2954,7 @@ characters:
           ----####
 
   0x0e1:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -2946,7 +2967,7 @@ characters:
           ----####
 
   0x0e2:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -2959,7 +2980,7 @@ characters:
           ----####
 
   0x0e3:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -2972,7 +2993,7 @@ characters:
           ----####
 
   0x0e4:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2985,7 +3006,7 @@ characters:
           ----####
 
   0x0e5:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -2998,7 +3019,7 @@ characters:
           ----####
 
   0x0e6:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -3011,7 +3032,7 @@ characters:
           ----####
 
   0x0e7:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -3024,7 +3045,7 @@ characters:
           ----####
 
   0x0e8:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -3037,7 +3058,7 @@ characters:
           ----####
 
   0x0e9:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -3050,7 +3071,7 @@ characters:
           ----####
 
   0x0ea:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -3063,7 +3084,7 @@ characters:
           ----####
 
   0x0eb:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -3076,7 +3097,7 @@ characters:
           ----####
 
   0x0ec:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -3089,7 +3110,7 @@ characters:
           ----####
 
   0x0ed:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -3102,7 +3123,7 @@ characters:
           ----####
 
   0x0ee:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -3115,7 +3136,7 @@ characters:
           ----####
 
   0x0ef:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -3128,7 +3149,7 @@ characters:
           ----####
 
   0x0f0:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -3141,7 +3162,7 @@ characters:
           ########
 
   0x0f1:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -3154,7 +3175,7 @@ characters:
           ########
 
   0x0f2:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -3167,7 +3188,7 @@ characters:
           ########
 
   0x0f3:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -3180,7 +3201,7 @@ characters:
           ########
 
   0x0f4:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -3193,7 +3214,7 @@ characters:
           ########
 
   0x0f5:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -3206,7 +3227,7 @@ characters:
           ########
 
   0x0f6:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -3219,7 +3240,7 @@ characters:
           ########
 
   0x0f7:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -3232,7 +3253,7 @@ characters:
           ########
 
   0x0f8:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -3245,7 +3266,7 @@ characters:
           ########
 
   0x0f9:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -3258,7 +3279,7 @@ characters:
           ########
 
   0x0fa:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -3271,7 +3292,7 @@ characters:
           ########
 
   0x0fb:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -3284,7 +3305,7 @@ characters:
           ########
 
   0x0fc:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -3297,7 +3318,7 @@ characters:
           ########
 
   0x0fd:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -3310,7 +3331,7 @@ characters:
           ########
 
   0x0fe:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -3323,7 +3344,7 @@ characters:
           ########
 
   0x0ff:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -3334,4 +3355,3 @@ characters:
           ########
           ########
           ########
-
