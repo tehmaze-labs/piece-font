@@ -129,6 +129,23 @@
   </div>
 </div>
 
+{% if palette %}
+<h2>Palette</h2>
+<div class="row">
+  <div class="col-md-9">
+    <table class="table table-condensed">
+      {% for rgb, name in palette %}
+      <tr>
+        <td style="width: 1em">#{{ loop.index }}</td>
+        <td style="background-color: {{ rgb }}; color: {{ rgb }}">example</td>
+        <td style="width: 10em">{{ name|title }}</td>
+      </tr>
+    {% endfor %}
+    </table>
+  </div>
+</div>
+{% endif %}
+
 <h2>Characters</h2>
 
 <table class="table table-bordered table-font">

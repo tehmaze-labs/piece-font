@@ -180,6 +180,7 @@ def convert_html(option):
         cols=range(cols),
         rows=range((len(font) + 7) // cols),
         glyphs=glyphs,
+        palette=font.palette,
     )
 
     return write_template(option, html, context)
@@ -260,4 +261,3 @@ def run():
 
 if __name__ == '__main__':
     sys.exit(run())
-

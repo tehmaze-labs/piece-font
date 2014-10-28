@@ -29,6 +29,16 @@ def unicodename(char):
         raise ValueError('{}: {}'.format(str(error), char))
 
 
+def swapbits(b):
+    return (b * 0x0202020202 & 0x010884422010) % 1023
+
+def harness(i):
+    print '{:4}: {} -> {}'.format(
+        i,
+        bin(i)[2:].zfill(8),
+        bin(swapbits(i))[2:].zfill(8)
+    )
+
 def convert_txt(src, dst, option):
     char_width_bytes = int(math.ceil(float(option.char_width) / float(option.char_width)))
     char_bytes = char_width_bytes * option.char_height
@@ -84,7 +94,10 @@ def convert_txt(src, dst, option):
         dst.write('    unicode: {}\n'.format(unicode_map[i]))
         dst.write('    bitmap:\n')
         dst.write('      |\n')
-        for j, byte in enumerate(binary[o:o + char_bytes]):
+        blob = binary[o:o + char_bytes]
+        for j, byte in enumerate(blob):
+            if option.reverse:
+                byte = swapbits(byte)
             dst.write('          ')
             dst.write(
                 binary_format.format(byte).replace('1', '#').replace('0', '-')
@@ -100,6 +113,10 @@ def run():
     parser.add_argument(
         '-m', '--unicode-map',
         help='Unicode map (old format)',
+    )
+    parser.add_argument(
+        '-r', '--reverse', default=False, action='store_true',
+        help='reverse glyphs horizontally (default: no)',
     )
     parser.add_argument(
         '-x', '--char-width', default=0, type=int,

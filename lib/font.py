@@ -117,6 +117,13 @@ class Font(object):
     def char_height(self):
         return self.info.get('size', [8, 16])[1]
 
+    @property
+    def palette(self):
+        if self.colors:
+            return [('#%06x' % (c[0],), c[1]) for c in self.colors]
+        else:
+            return None
+
     def parse(self, load_glyphs=True):
         with open(self.filename) as handle:
             font = yaml.load(handle)
@@ -124,6 +131,7 @@ class Font(object):
             self.info['name'] = os.path.splitext(
                 os.path.basename(self.filename)
             )[0]
+            self.colors = font.get('palette')
             self.glyphs = [None] * len(font['characters'])
             for index, info in font['characters'].iteritems():
                 if isinstance(index, basestring):
