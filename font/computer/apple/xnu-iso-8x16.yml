@@ -1,10 +1,10 @@
 font:
-  description: Apple XNU ISO
+  description: "Apple XNU ISO"
   copyright:
-    vendor: Apple Inc.
+    vendor: "Apple Computer, Inc."
     year:   1999
   size: [8, 16]
-  source: Apple Inc.
+  source: "Apple Computer, Inc."
 
 characters:
   0x000:
