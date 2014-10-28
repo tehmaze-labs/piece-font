@@ -6,9 +6,29 @@ font:
   size: [8, 8]
   source: http://www.bbcmicrogames.com/
 
+palette:
+  mode: rgb
+  colors:
+    - 0x000000
+    - 0xff0000
+    - 0x00ff00
+    - 0xffff00
+    - 0x0000ff
+    - 0xff00ff
+    - 0x00ffff
+    - 0xffffff
+    - 0x000000
+    - 0xff0000
+    - 0x00ff00
+    - 0xffff00
+    - 0x0000ff
+    - 0xff00ff
+    - 0x00ffff
+    - 0xffffff
+
 characters:
   0x000:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -21,7 +41,7 @@ characters:
           --------
 
   0x001:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -34,7 +54,7 @@ characters:
           --------
 
   0x002:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -47,7 +67,7 @@ characters:
           --------
 
   0x003:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -60,7 +80,7 @@ characters:
           --------
 
   0x004:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -73,7 +93,7 @@ characters:
           --------
 
   0x005:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -86,7 +106,7 @@ characters:
           --------
 
   0x006:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -99,7 +119,7 @@ characters:
           --------
 
   0x007:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -112,7 +132,7 @@ characters:
           --------
 
   0x008:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -125,7 +145,7 @@ characters:
           --------
 
   0x009:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -138,7 +158,7 @@ characters:
           --------
 
   0x00a:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -151,7 +171,7 @@ characters:
           --------
 
   0x00b:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -164,7 +184,7 @@ characters:
           --------
 
   0x00c:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -177,7 +197,7 @@ characters:
           --------
 
   0x00d:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -190,7 +210,7 @@ characters:
           --------
 
   0x00e:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -203,7 +223,7 @@ characters:
           --------
 
   0x00f:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -216,7 +236,7 @@ characters:
           --------
 
   0x010:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -229,7 +249,7 @@ characters:
           --------
 
   0x011:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -242,7 +262,7 @@ characters:
           --------
 
   0x012:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -255,7 +275,7 @@ characters:
           --------
 
   0x013:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -268,7 +288,7 @@ characters:
           --------
 
   0x014:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -281,7 +301,7 @@ characters:
           --------
 
   0x015:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -294,7 +314,7 @@ characters:
           --------
 
   0x016:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -307,7 +327,7 @@ characters:
           --------
 
   0x017:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -320,7 +340,7 @@ characters:
           --------
 
   0x018:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -333,7 +353,7 @@ characters:
           --------
 
   0x019:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -346,7 +366,7 @@ characters:
           --------
 
   0x01a:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -359,7 +379,7 @@ characters:
           --------
 
   0x01b:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -372,7 +392,7 @@ characters:
           --------
 
   0x01c:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -385,7 +405,7 @@ characters:
           --------
 
   0x01d:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -398,7 +418,7 @@ characters:
           --------
 
   0x01e:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -411,7 +431,7 @@ characters:
           --------
 
   0x01f:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -424,7 +444,7 @@ characters:
           --------
 
   0x020:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2920,7 +2940,7 @@ characters:
           --------
 
   0x0e0:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -3334,4 +3354,3 @@ characters:
           ########
           ########
           ########
-
