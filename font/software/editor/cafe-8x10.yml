@@ -1,8 +1,8 @@
 font:
-  description:
+  description: "CAFE, a mouse controlled Editor for textmode font"
   copyright:
-    vendor:
-    year:
+    vendor: "TBH-Softworx (Oliver Fromme)"
+    year: 1993
   size: [8, 10]
   source:
 

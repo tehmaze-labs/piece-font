@@ -1,8 +1,9 @@
 font:
-  description:
+  description: "TeX mathemathical symbols"
   copyright:
-    vendor:
-    year:
+    vendor: "Deptartment of Chemical Physics, The Weizmann Institute of
+    Science, Rehovot, Israel"
+    year: 1992
   size: [8, 16]
   source:
 

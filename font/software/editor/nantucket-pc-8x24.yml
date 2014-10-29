@@ -1,8 +1,8 @@
 font:
-  description:
+  description: "Fonts for Nantucket TOOLS II"
   copyright:
-    vendor:
-    year:
+    vendor: "Lothar Bongartz"
+    year: 1989
   size: [8, 24]
   source:
 

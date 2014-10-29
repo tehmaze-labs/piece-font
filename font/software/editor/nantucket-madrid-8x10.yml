@@ -1,4 +1,8 @@
 font:
+  description: "Fonts for Nantucket TOOLS II"
+  copyright:
+    vendor: "Lothar Bongartz"
+    year: 1989
   description:
   copyright:
     vendor:
