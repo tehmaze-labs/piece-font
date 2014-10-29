@@ -853,7 +853,7 @@ characters:
           --------
 
   0x041:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -866,7 +866,7 @@ characters:
           ---##---
 
   0x042:
-    unicode: 
+    unicode:
     bitmap:
       |
           ------##
@@ -879,7 +879,7 @@ characters:
           ------##
 
   0x043:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -892,7 +892,7 @@ characters:
           --------
 
   0x044:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -905,7 +905,7 @@ characters:
           ---##---
 
   0x045:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -918,7 +918,7 @@ characters:
           ---##---
 
   0x046:
-    unicode: 
+    unicode:
     bitmap:
       |
           ------##
@@ -931,7 +931,7 @@ characters:
           ##------
 
   0x047:
-    unicode: 
+    unicode:
     bitmap:
       |
           ##------
@@ -944,7 +944,7 @@ characters:
           ------##
 
   0x048:
-    unicode: 
+    unicode:
     bitmap:
       |
           -------#
@@ -957,7 +957,7 @@ characters:
           ########
 
   0x049:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -970,7 +970,7 @@ characters:
           ----####
 
   0x04a:
-    unicode: 
+    unicode:
     bitmap:
       |
           #-------
@@ -983,7 +983,7 @@ characters:
           ########
 
   0x04b:
-    unicode: 
+    unicode:
     bitmap:
       |
           ----####
@@ -996,7 +996,7 @@ characters:
           --------
 
   0x04c:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -1009,7 +1009,7 @@ characters:
           --------
 
   0x04d:
-    unicode: 
+    unicode:
     bitmap:
       |
           ########
@@ -1022,7 +1022,7 @@ characters:
           --------
 
   0x04e:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -1035,7 +1035,7 @@ characters:
           ########
 
   0x04f:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -1061,7 +1061,7 @@ characters:
           --------
 
   0x051:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -1074,7 +1074,7 @@ characters:
           ---##---
 
   0x052:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -1087,7 +1087,7 @@ characters:
           --------
 
   0x053:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -1113,7 +1113,7 @@ characters:
           --------
 
   0x055:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -1126,7 +1126,7 @@ characters:
           ########
 
   0x056:
-    unicode: 
+    unicode:
     bitmap:
       |
           ##------
@@ -1139,7 +1139,7 @@ characters:
           ##------
 
   0x057:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -1152,7 +1152,7 @@ characters:
           ---##---
 
   0x058:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -1165,7 +1165,7 @@ characters:
           --------
 
   0x059:
-    unicode: 
+    unicode:
     bitmap:
       |
           ####----
@@ -1178,7 +1178,7 @@ characters:
           ####----
 
   0x05a:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -1191,7 +1191,7 @@ characters:
           --------
 
   0x05b:
-    unicode: 
+    unicode:
     bitmap:
       |
           -####---
@@ -1620,7 +1620,7 @@ characters:
           --------
 
   0x07c:
-    unicode: 
+    unicode:
     bitmap:
       |
           ---##---
@@ -1633,7 +1633,7 @@ characters:
           ---##---
 
   0x07d:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -1671,3 +1671,132 @@ characters:
           ---#----
           --------
 
+palette:
+  - 0x3c3c3c
+  - 0x505050
+  - 0x646464
+  - 0x787878
+  - 0x8c8c8c
+  - 0xa0a0a0
+  - 0xb4b4b4
+  - 0xc8c8c8
+  - 0x445400
+  - 0x586800
+  - 0x6c7c00
+  - 0x809000
+  - 0x94a414
+  - 0xa8b828
+  - 0xbccc3c
+  - 0xd0e050
+  - 0x673900
+  - 0x7b4d00
+  - 0x8f6100
+  - 0xa37513
+  - 0xb78927
+  - 0xcb9d3b
+  - 0xdfb14f
+  - 0xf3c563
+  - 0x7b2504
+  - 0x8f3918
+  - 0xa34d2c
+  - 0xb76140
+  - 0xcb7554
+  - 0xdf8968
+  - 0xf39d7c
+  - 0xffb190
+  - 0x7d122c
+  - 0x912640
+  - 0xa53a54
+  - 0xb94e68
+  - 0xcd627c
+  - 0xe17690
+  - 0xf58aa4
+  - 0xff9eb8
+  - 0x730871
+  - 0x871c85
+  - 0x9b3099
+  - 0xaf44ad
+  - 0xc358c1
+  - 0xd76cd5
+  - 0xeb80e9
+  - 0xff94fd
+  - 0x5d0b92
+  - 0x711fa6
+  - 0x8533ba
+  - 0x9947ce
+  - 0xad5be2
+  - 0xc16ff6
+  - 0xd583ff
+  - 0xe997ff
+  - 0x401599
+  - 0x5429ad
+  - 0x683dc1
+  - 0x7c51d5
+  - 0x9065e9
+  - 0xa479fd
+  - 0xb88dff
+  - 0xcca1ff
+  - 0x252593
+  - 0x3939a7
+  - 0x4d4dbb
+  - 0x6161cf
+  - 0x7575e3
+  - 0x8989f7
+  - 0x9d9dff
+  - 0xb1b1ff
+  - 0x0f3480
+  - 0x234894
+  - 0x375ca8
+  - 0x4b70bc
+  - 0x5f84d0
+  - 0x7398e4
+  - 0x87acf8
+  - 0x9bc0ff
+  - 0x04425a
+  - 0x18566e
+  - 0x2c6a82
+  - 0x407e96
+  - 0x5492aa
+  - 0x68a6be
+  - 0x7cbad2
+  - 0x90cee6
+  - 0x044f30
+  - 0x186344
+  - 0x2c7758
+  - 0x408b6c
+  - 0x549f80
+  - 0x68b394
+  - 0x7cc7a8
+  - 0x90dbbc
+  - 0x0f550a
+  - 0x23691e
+  - 0x377d32
+  - 0x4b9146
+  - 0x5fa55a
+  - 0x73b96e
+  - 0x87cd82
+  - 0x9be196
+  - 0x1f5100
+  - 0x336505
+  - 0x477919
+  - 0x5b8d2d
+  - 0x6fa141
+  - 0x83b555
+  - 0x97c969
+  - 0xabdd7d
+  - 0x344600
+  - 0x485a00
+  - 0x5c6e14
+  - 0x708228
+  - 0x84963c
+  - 0x98aa50
+  - 0xacbe64
+  - 0xc0d278
+  - 0x463e00
+  - 0x5a5205
+  - 0x6e6619
+  - 0x827a2d
+  - 0x968e41
+  - 0xaaa255
+  - 0xbeb669
+  - 0xd2ca7d

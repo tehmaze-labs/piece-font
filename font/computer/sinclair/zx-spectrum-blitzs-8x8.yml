@@ -1,14 +1,14 @@
 font:
   description: Blitz's ZX Spectrum (clone)
   copyright:
-    vendor: 
-    year:   
+    vendor:
+    year:
   size: [8, 8]
   source: Multi Emulator Super System
 
 characters:
   0x000:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -21,7 +21,7 @@ characters:
           --------
 
   0x001:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -34,7 +34,7 @@ characters:
           --------
 
   0x002:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -47,7 +47,7 @@ characters:
           --------
 
   0x003:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -60,7 +60,7 @@ characters:
           --------
 
   0x004:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -73,7 +73,7 @@ characters:
           --------
 
   0x005:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -86,7 +86,7 @@ characters:
           --------
 
   0x006:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -99,7 +99,7 @@ characters:
           --------
 
   0x007:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -112,7 +112,7 @@ characters:
           --------
 
   0x008:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -125,7 +125,7 @@ characters:
           --------
 
   0x009:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -138,7 +138,7 @@ characters:
           --------
 
   0x00a:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -151,7 +151,7 @@ characters:
           --------
 
   0x00b:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -164,7 +164,7 @@ characters:
           --------
 
   0x00c:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -177,7 +177,7 @@ characters:
           --------
 
   0x00d:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -190,7 +190,7 @@ characters:
           --------
 
   0x00e:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -203,7 +203,7 @@ characters:
           --------
 
   0x00f:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -216,7 +216,7 @@ characters:
           --------
 
   0x010:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -229,7 +229,7 @@ characters:
           --------
 
   0x011:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -242,7 +242,7 @@ characters:
           --------
 
   0x012:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -255,7 +255,7 @@ characters:
           --------
 
   0x013:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -268,7 +268,7 @@ characters:
           --------
 
   0x014:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -281,7 +281,7 @@ characters:
           --------
 
   0x015:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -294,7 +294,7 @@ characters:
           --------
 
   0x016:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -307,7 +307,7 @@ characters:
           --------
 
   0x017:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -320,7 +320,7 @@ characters:
           --------
 
   0x018:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -333,7 +333,7 @@ characters:
           --------
 
   0x019:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -346,7 +346,7 @@ characters:
           --------
 
   0x01a:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -359,7 +359,7 @@ characters:
           --------
 
   0x01b:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -372,7 +372,7 @@ characters:
           --------
 
   0x01c:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -385,7 +385,7 @@ characters:
           --------
 
   0x01d:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -398,7 +398,7 @@ characters:
           --------
 
   0x01e:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -411,7 +411,7 @@ characters:
           --------
 
   0x01f:
-    unicode: 
+    unicode:
     bitmap:
       |
           --------
@@ -2503,3 +2503,20 @@ characters:
           -#####--
           --------
 
+palette:
+  - 0x000000
+  - 0x0000db
+  - 0xdb0000
+  - 0xdb00db
+  - 0x00db00
+  - 0x00dbdb
+  - 0xdbdb00
+  - 0xdbdbdb
+  - 0x000000
+  - 0x0000ff
+  - 0xff0000
+  - 0xff00ff
+  - 0x00ff00
+  - 0x00ffff
+  - 0xffff00
+  - 0xffffff

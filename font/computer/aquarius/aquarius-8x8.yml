@@ -6,27 +6,6 @@ font:
   size: [8, 8]
   source: http://rexpaint.blogspot.co.uk/p/legacy-system-resources.html
 
-# Palette from TEA1002 encoder chip
-palette:
-  mode: rgb
-  colors:
-    - 0x000000  # black
-    - 0xf01010  # red
-    - 0x10f010  # green
-    - 0xf0e810  # yellow
-    - 0x2020d8  # blue
-    - 0xf010f0  # magenta
-    - 0x30c0c0  # cyan
-    - 0xffffff  # white
-    - 0xc0c0c0  # grey
-    - 0x28a8a8  # cyan
-    - 0xc020c0  # magenta
-    - 0x401088  # blue
-    - 0xf0f070  # yellow
-    - 0x20c840  # green
-    - 0xa82020  # red
-    - 0x303030  # black
-
 characters:
   0x000:
     unicode: POUND SIGN
@@ -3355,3 +3334,22 @@ characters:
           ########
           ########
           ########
+
+# Palette from TEA1002 encoder chip
+palette:
+  - 0x000000
+  - 0xf01010
+  - 0x10f010
+  - 0xf0e810
+  - 0x2020d8
+  - 0xf010f0
+  - 0x30c0c0
+  - 0xffffff
+  - 0xc0c0c0
+  - 0x28a8a8
+  - 0xc020c0
+  - 0x401088
+  - 0xf0f070
+  - 0x20c840
+  - 0xa82020
+  - 0x303030

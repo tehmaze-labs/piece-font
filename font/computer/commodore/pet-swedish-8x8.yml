@@ -7,10 +7,6 @@ font:
   size: [8, 8]
   source: Multi Emulator Super System
 
-palette:
-  - [0x000000, background]
-  - [0x00ff00, foreground]
-
 characters:
   0x000:
     unicode: COMMERCIAL AT
@@ -3339,3 +3335,7 @@ characters:
           ----####
           ----####
           ----####
+
+palette:
+  - 0x000000
+  - 0x00ff00

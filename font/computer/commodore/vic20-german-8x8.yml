@@ -7,24 +7,6 @@ font:
   size: [8, 8]
   source: Multi Emulator Super System
 
-palette:
-  - [0x000000, black]
-  - [0xffffff, white]
-  - [0x68372b, red]
-  - [0x70a4b2, cyan]
-  - [0x6f3d86, purple]
-  - [0x588d43, green]
-  - [0x352879, blue]
-  - [0xb8c76f, yellow]
-  - [0x6f4f25, orange]
-  - [0x433900, brown]
-  - [0x9a6759, light red]
-  - [0x444444, dark grey]
-  - [0x6c6c6c, grey]
-  - [0x9ad284, light green]
-  - [0x6c5eb5, light blue]
-  - [0x959595, light grey]
-
 characters:
   0x000:
     unicode:
@@ -6681,3 +6663,21 @@ characters:
           ########
           ########
           ########
+
+palette:
+  - 0x000000
+  - 0xffffff
+  - 0x68372b
+  - 0x70a4b2
+  - 0x6f3d86
+  - 0x588d43
+  - 0x352879
+  - 0xb8c76f
+  - 0x6f4f25
+  - 0x433900
+  - 0x9a6759
+  - 0x444444
+  - 0x6c6c6c
+  - 0x9ad284
+  - 0x6c5eb5
+  - 0x959595

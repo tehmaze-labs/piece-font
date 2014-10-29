@@ -2086,3 +2086,21 @@ characters:
           #------
           #------
           #------
+
+palette:
+  - 0x000000
+  - 0x722640
+  - 0x40337f
+  - 0xe434fe
+  - 0x0e5940
+  - 0x808080
+  - 0x1b9afe
+  - 0xbfb3ff
+  - 0x404c00
+  - 0xe46501
+  - 0x808080
+  - 0xf1a6bf
+  - 0x1bcb01
+  - 0xbfcc80
+  - 0x8dd9bf
+  - 0xffffff
