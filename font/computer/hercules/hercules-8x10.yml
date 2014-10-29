@@ -1,8 +1,8 @@
 font:
-  description:
+  description: "Supplied with the Hercules+ card"
   copyright:
-    vendor:
-    year:
+    vendor: "Hercules Computer Technology, Inc."
+    year: 1992
   size: [8, 10]
   source:
 
@@ -23,7 +23,7 @@ characters:
           --------
 
   0x001:
-    unicode:
+    unicode: WHITE SMILING FACE
     bitmap:
       |
           --------
@@ -38,7 +38,7 @@ characters:
           --------
 
   0x002:
-    unicode:
+    unicode: BLACK SMILING FACE
     bitmap:
       |
           --------
@@ -53,7 +53,7 @@ characters:
           --------
 
   0x003:
-    unicode:
+    unicode: BLACK HEART SUIT
     bitmap:
       |
           --------
@@ -68,7 +68,7 @@ characters:
           --------
 
   0x004:
-    unicode:
+    unicode: BLACK DIAMOND SUIT
     bitmap:
       |
           --------
@@ -83,7 +83,7 @@ characters:
           --------
 
   0x005:
-    unicode:
+    unicode: BLACK CLUB SUIT
     bitmap:
       |
           --------
@@ -98,7 +98,7 @@ characters:
           --------
 
   0x006:
-    unicode:
+    unicode: BLACK SPADE SUIT
     bitmap:
       |
           --------
@@ -128,7 +128,7 @@ characters:
           --------
 
   0x008:
-    unicode:
+    unicode: INVERSE BULLET
     bitmap:
       |
           --------
@@ -143,7 +143,7 @@ characters:
           --------
 
   0x009:
-    unicode:
+    unicode: WHITE CIRCLE
     bitmap:
       |
           --------
@@ -158,7 +158,7 @@ characters:
           --------
 
   0x00a:
-    unicode:
+    unicode: INVERSE WHITE CIRCLE
     bitmap:
       |
           --------
@@ -173,7 +173,7 @@ characters:
           --------
 
   0x00b:
-    unicode:
+    unicode: MALE SIGN
     bitmap:
       |
           --------
@@ -188,7 +188,7 @@ characters:
           --------
 
   0x00c:
-    unicode:
+    unicode: FEMALE SIGN
     bitmap:
       |
           --------
@@ -203,7 +203,7 @@ characters:
           --------
 
   0x00d:
-    unicode:
+    unicode: EIGHTH NOTE
     bitmap:
       |
           --------
@@ -218,7 +218,7 @@ characters:
           --------
 
   0x00e:
-    unicode:
+    unicode: BEAMED SIXTEENTH NOTES
     bitmap:
       |
           --------
@@ -233,7 +233,7 @@ characters:
           --------
 
   0x00f:
-    unicode:
+    unicode: WHITE SUN WITH RAYS
     bitmap:
       |
           --------
@@ -248,7 +248,7 @@ characters:
           --------
 
   0x010:
-    unicode:
+    unicode: BLACK RIGHT-POINTING POINTER
     bitmap:
       |
           --------
@@ -263,7 +263,7 @@ characters:
           --------
 
   0x011:
-    unicode:
+    unicode: BLACK LEFT-POINTING POINTER
     bitmap:
       |
           --------
@@ -278,7 +278,7 @@ characters:
           --------
 
   0x012:
-    unicode:
+    unicode: UP DOWN ARROW
     bitmap:
       |
           ---##---
@@ -293,7 +293,7 @@ characters:
           --------
 
   0x013:
-    unicode:
+    unicode: DOUBLE EXCLAMATION MARK
     bitmap:
       |
           -##--##-
@@ -308,7 +308,7 @@ characters:
           --------
 
   0x014:
-    unicode:
+    unicode: PILCROW SIGN
     bitmap:
       |
           -#######
@@ -323,7 +323,7 @@ characters:
           --------
 
   0x015:
-    unicode:
+    unicode: SECTION SIGN
     bitmap:
       |
           --#####-
@@ -338,7 +338,7 @@ characters:
           --------
 
   0x016:
-    unicode:
+    unicode: BLACK RECTANGLE
     bitmap:
       |
           --------
@@ -353,7 +353,7 @@ characters:
           --------
 
   0x017:
-    unicode:
+    unicode: UP DOWN ARROW WITH BASE
     bitmap:
       |
           --------
@@ -368,7 +368,7 @@ characters:
           --------
 
   0x018:
-    unicode:
+    unicode: UPWARDS ARROW
     bitmap:
       |
           ---##---
@@ -383,7 +383,7 @@ characters:
           --------
 
   0x019:
-    unicode:
+    unicode: DOWNWARDS ARROW
     bitmap:
       |
           ---##---
@@ -398,7 +398,7 @@ characters:
           --------
 
   0x01a:
-    unicode:
+    unicode: RIGHTWARDS ARROW
     bitmap:
       |
           --------
@@ -413,7 +413,7 @@ characters:
           --------
 
   0x01b:
-    unicode:
+    unicode: LEFTWARDS ARROW
     bitmap:
       |
           --------
@@ -428,7 +428,7 @@ characters:
           --------
 
   0x01c:
-    unicode:
+    unicode: RIGHT ANGLE
     bitmap:
       |
           --------
@@ -443,7 +443,7 @@ characters:
           --------
 
   0x01d:
-    unicode:
+    unicode: LEFT RIGHT ARROW
     bitmap:
       |
           --------
@@ -458,7 +458,7 @@ characters:
           --------
 
   0x01e:
-    unicode:
+    unicode: BLACK UP-POINTING TRIANGLE
     bitmap:
       |
           --------
@@ -473,7 +473,7 @@ characters:
           --------
 
   0x01f:
-    unicode:
+    unicode: BLACK DOWN-POINTING TRIANGLE
     bitmap:
       |
           --------
@@ -503,7 +503,7 @@ characters:
           --------
 
   0x021:
-    unicode:
+    unicode: EXCLAMATION MARK
     bitmap:
       |
           --##----
@@ -518,7 +518,7 @@ characters:
           --------
 
   0x022:
-    unicode:
+    unicode: QUOTATION MARK
     bitmap:
       |
           -##-##--
@@ -533,7 +533,7 @@ characters:
           --------
 
   0x023:
-    unicode:
+    unicode: NUMBER SIGN
     bitmap:
       |
           --------
@@ -548,7 +548,7 @@ characters:
           --------
 
   0x024:
-    unicode:
+    unicode: DOLLAR SIGN
     bitmap:
       |
           --##----
@@ -563,7 +563,7 @@ characters:
           --------
 
   0x025:
-    unicode:
+    unicode: PERCENT SIGN
     bitmap:
       |
           -------#
@@ -578,7 +578,7 @@ characters:
           --------
 
   0x026:
-    unicode:
+    unicode: AMPERSAND
     bitmap:
       |
           --------
@@ -593,7 +593,7 @@ characters:
           --------
 
   0x027:
-    unicode:
+    unicode: APOSTROPHE
     bitmap:
       |
           --------
@@ -608,7 +608,7 @@ characters:
           --------
 
   0x028:
-    unicode:
+    unicode: LEFT PARENTHESIS
     bitmap:
       |
           ---##---
@@ -623,7 +623,7 @@ characters:
           --------
 
   0x029:
-    unicode:
+    unicode: RIGHT PARENTHESIS
     bitmap:
       |
           -##-----
@@ -638,7 +638,7 @@ characters:
           --------
 
   0x02a:
-    unicode:
+    unicode: ASTERISK
     bitmap:
       |
           --------
@@ -653,7 +653,7 @@ characters:
           --------
 
   0x02b:
-    unicode:
+    unicode: PLUS SIGN
     bitmap:
       |
           --------
@@ -668,7 +668,7 @@ characters:
           --------
 
   0x02c:
-    unicode:
+    unicode: COMMA
     bitmap:
       |
           --------
@@ -683,7 +683,7 @@ characters:
           --------
 
   0x02d:
-    unicode:
+    unicode: HYPHEN-MINUS
     bitmap:
       |
           --------
@@ -698,7 +698,7 @@ characters:
           --------
 
   0x02e:
-    unicode:
+    unicode: FULL STOP
     bitmap:
       |
           --------
@@ -713,7 +713,7 @@ characters:
           --------
 
   0x02f:
-    unicode:
+    unicode: SOLIDUS
     bitmap:
       |
           --------
@@ -728,7 +728,7 @@ characters:
           --------
 
   0x030:
-    unicode:
+    unicode: DIGIT ZERO
     bitmap:
       |
           -#####--
@@ -743,7 +743,7 @@ characters:
           --------
 
   0x031:
-    unicode:
+    unicode: DIGIT ONE
     bitmap:
       |
           --##----
@@ -758,7 +758,7 @@ characters:
           --------
 
   0x032:
-    unicode:
+    unicode: DIGIT TWO
     bitmap:
       |
           -####---
@@ -773,7 +773,7 @@ characters:
           --------
 
   0x033:
-    unicode:
+    unicode: DIGIT THREE
     bitmap:
       |
           -####---
@@ -788,7 +788,7 @@ characters:
           --------
 
   0x034:
-    unicode:
+    unicode: DIGIT FOUR
     bitmap:
       |
           ---###--
@@ -803,7 +803,7 @@ characters:
           --------
 
   0x035:
-    unicode:
+    unicode: DIGIT FIVE
     bitmap:
       |
           ######--
@@ -818,7 +818,7 @@ characters:
           --------
 
   0x036:
-    unicode:
+    unicode: DIGIT SIX
     bitmap:
       |
           --###---
@@ -833,7 +833,7 @@ characters:
           --------
 
   0x037:
-    unicode:
+    unicode: DIGIT SEVEN
     bitmap:
       |
           ######--
@@ -848,7 +848,7 @@ characters:
           --------
 
   0x038:
-    unicode:
+    unicode: DIGIT EIGHT
     bitmap:
       |
           -####---
@@ -863,7 +863,7 @@ characters:
           --------
 
   0x039:
-    unicode:
+    unicode: DIGIT NINE
     bitmap:
       |
           -####---
@@ -878,7 +878,7 @@ characters:
           --------
 
   0x03a:
-    unicode:
+    unicode: COLON
     bitmap:
       |
           --------
@@ -893,7 +893,7 @@ characters:
           --------
 
   0x03b:
-    unicode:
+    unicode: SEMICOLON
     bitmap:
       |
           --------
@@ -908,7 +908,7 @@ characters:
           --------
 
   0x03c:
-    unicode:
+    unicode: LESS-THAN SIGN
     bitmap:
       |
           --------
@@ -923,7 +923,7 @@ characters:
           --------
 
   0x03d:
-    unicode:
+    unicode: EQUALS SIGN
     bitmap:
       |
           --------
@@ -938,7 +938,7 @@ characters:
           --------
 
   0x03e:
-    unicode:
+    unicode: GREATER-THAN SIGN
     bitmap:
       |
           --------
@@ -953,7 +953,7 @@ characters:
           --------
 
   0x03f:
-    unicode:
+    unicode: QUESTION MARK
     bitmap:
       |
           -####---
@@ -968,7 +968,7 @@ characters:
           --------
 
   0x040:
-    unicode:
+    unicode: COMMERCIAL AT
     bitmap:
       |
           -#####--
@@ -983,7 +983,7 @@ characters:
           --------
 
   0x041:
-    unicode:
+    unicode: LATIN CAPITAL LETTER A
     bitmap:
       |
           --##----
@@ -998,7 +998,7 @@ characters:
           --------
 
   0x042:
-    unicode:
+    unicode: LATIN CAPITAL LETTER B
     bitmap:
       |
           ######--
@@ -1013,7 +1013,7 @@ characters:
           --------
 
   0x043:
-    unicode:
+    unicode: LATIN CAPITAL LETTER C
     bitmap:
       |
           --####--
@@ -1028,7 +1028,7 @@ characters:
           --------
 
   0x044:
-    unicode:
+    unicode: LATIN CAPITAL LETTER D
     bitmap:
       |
           #####---
@@ -1043,7 +1043,7 @@ characters:
           --------
 
   0x045:
-    unicode:
+    unicode: LATIN CAPITAL LETTER E
     bitmap:
       |
           #######-
@@ -1058,7 +1058,7 @@ characters:
           --------
 
   0x046:
-    unicode:
+    unicode: LATIN CAPITAL LETTER F
     bitmap:
       |
           #######-
@@ -1073,7 +1073,7 @@ characters:
           --------
 
   0x047:
-    unicode:
+    unicode: LATIN CAPITAL LETTER G
     bitmap:
       |
           --####--
@@ -1088,7 +1088,7 @@ characters:
           --------
 
   0x048:
-    unicode:
+    unicode: LATIN CAPITAL LETTER H
     bitmap:
       |
           ##--##--
@@ -1103,7 +1103,7 @@ characters:
           --------
 
   0x049:
-    unicode:
+    unicode: LATIN CAPITAL LETTER I
     bitmap:
       |
           -####---
@@ -1118,7 +1118,7 @@ characters:
           --------
 
   0x04a:
-    unicode:
+    unicode: LATIN CAPITAL LETTER J
     bitmap:
       |
           ---####-
@@ -1133,7 +1133,7 @@ characters:
           --------
 
   0x04b:
-    unicode:
+    unicode: LATIN CAPITAL LETTER K
     bitmap:
       |
           ###--##-
@@ -1148,7 +1148,7 @@ characters:
           --------
 
   0x04c:
-    unicode:
+    unicode: LATIN CAPITAL LETTER L
     bitmap:
       |
           ####----
@@ -1163,7 +1163,7 @@ characters:
           --------
 
   0x04d:
-    unicode:
+    unicode: LATIN CAPITAL LETTER M
     bitmap:
       |
           ##---##-
@@ -1178,7 +1178,7 @@ characters:
           --------
 
   0x04e:
-    unicode:
+    unicode: LATIN CAPITAL LETTER N
     bitmap:
       |
           ##---##-
@@ -1193,7 +1193,7 @@ characters:
           --------
 
   0x04f:
-    unicode:
+    unicode: LATIN CAPITAL LETTER O
     bitmap:
       |
           --###---
@@ -1208,7 +1208,7 @@ characters:
           --------
 
   0x050:
-    unicode:
+    unicode: LATIN CAPITAL LETTER P
     bitmap:
       |
           ######--
@@ -1223,7 +1223,7 @@ characters:
           --------
 
   0x051:
-    unicode:
+    unicode: LATIN CAPITAL LETTER Q
     bitmap:
       |
           -####---
@@ -1238,7 +1238,7 @@ characters:
           --------
 
   0x052:
-    unicode:
+    unicode: LATIN CAPITAL LETTER R
     bitmap:
       |
           ######--
@@ -1253,7 +1253,7 @@ characters:
           --------
 
   0x053:
-    unicode:
+    unicode: LATIN CAPITAL LETTER S
     bitmap:
       |
           -####---
@@ -1268,7 +1268,7 @@ characters:
           --------
 
   0x054:
-    unicode:
+    unicode: LATIN CAPITAL LETTER T
     bitmap:
       |
           ######--
@@ -1283,7 +1283,7 @@ characters:
           --------
 
   0x055:
-    unicode:
+    unicode: LATIN CAPITAL LETTER U
     bitmap:
       |
           ##--##--
@@ -1298,7 +1298,7 @@ characters:
           --------
 
   0x056:
-    unicode:
+    unicode: LATIN CAPITAL LETTER V
     bitmap:
       |
           ##--##--
@@ -1313,7 +1313,7 @@ characters:
           --------
 
   0x057:
-    unicode:
+    unicode: LATIN CAPITAL LETTER W
     bitmap:
       |
           ##---##-
@@ -1328,7 +1328,7 @@ characters:
           --------
 
   0x058:
-    unicode:
+    unicode: LATIN CAPITAL LETTER X
     bitmap:
       |
           ##---##-
@@ -1343,7 +1343,7 @@ characters:
           --------
 
   0x059:
-    unicode:
+    unicode: LATIN CAPITAL LETTER Y
     bitmap:
       |
           ##--##--
@@ -1358,7 +1358,7 @@ characters:
           --------
 
   0x05a:
-    unicode:
+    unicode: LATIN CAPITAL LETTER Z
     bitmap:
       |
           #######-
@@ -1373,7 +1373,7 @@ characters:
           --------
 
   0x05b:
-    unicode:
+    unicode: RIGHT SQUARE BRACKET
     bitmap:
       |
           -####---
@@ -1388,7 +1388,7 @@ characters:
           --------
 
   0x05c:
-    unicode:
+    unicode: REVERSE SOLIDUS
     bitmap:
       |
           #-------
@@ -1403,7 +1403,7 @@ characters:
           --------
 
   0x05d:
-    unicode:
+    unicode: RIGHT SQUARE BRACKET
     bitmap:
       |
           -####---
@@ -1418,7 +1418,7 @@ characters:
           --------
 
   0x05e:
-    unicode:
+    unicode: CIRCUMFLEX ACCENT
     bitmap:
       |
           ---#----
@@ -1433,7 +1433,7 @@ characters:
           --------
 
   0x05f:
-    unicode:
+    unicode: LOW LINE
     bitmap:
       |
           --------
@@ -1448,7 +1448,7 @@ characters:
           --------
 
   0x060:
-    unicode:
+    unicode: GRAVE ACCENT
     bitmap:
       |
           --##----
@@ -1463,7 +1463,7 @@ characters:
           --------
 
   0x061:
-    unicode:
+    unicode: LATIN SMALL LETTER A
     bitmap:
       |
           --------
@@ -1478,7 +1478,7 @@ characters:
           --------
 
   0x062:
-    unicode:
+    unicode: LATIN SMALL LETTER B
     bitmap:
       |
           ###-----
@@ -1493,7 +1493,7 @@ characters:
           --------
 
   0x063:
-    unicode:
+    unicode: LATIN SMALL LETTER C
     bitmap:
       |
           --------
@@ -1508,7 +1508,7 @@ characters:
           --------
 
   0x064:
-    unicode:
+    unicode: LATIN SMALL LETTER D
     bitmap:
       |
           ---###--
@@ -1523,7 +1523,7 @@ characters:
           --------
 
   0x065:
-    unicode:
+    unicode: LATIN SMALL LETTER E
     bitmap:
       |
           --------
@@ -1538,7 +1538,7 @@ characters:
           --------
 
   0x066:
-    unicode:
+    unicode: LATIN SMALL LETTER F
     bitmap:
       |
           --###---
@@ -1553,7 +1553,7 @@ characters:
           --------
 
   0x067:
-    unicode:
+    unicode: LATIN SMALL LETTER G
     bitmap:
       |
           --------
@@ -1568,7 +1568,7 @@ characters:
           --------
 
   0x068:
-    unicode:
+    unicode: LATIN SMALL LETTER H
     bitmap:
       |
           ###-----
@@ -1583,7 +1583,7 @@ characters:
           --------
 
   0x069:
-    unicode:
+    unicode: LATIN SMALL LETTER I
     bitmap:
       |
           --##----
@@ -1598,7 +1598,7 @@ characters:
           --------
 
   0x06a:
-    unicode:
+    unicode: LATIN SMALL LETTER J
     bitmap:
       |
           ----##--
@@ -1613,7 +1613,7 @@ characters:
           --------
 
   0x06b:
-    unicode:
+    unicode: LATIN SMALL LETTER K
     bitmap:
       |
           ###-----
@@ -1628,7 +1628,7 @@ characters:
           --------
 
   0x06c:
-    unicode:
+    unicode: LATIN SMALL LETTER L
     bitmap:
       |
           -###----
@@ -1643,7 +1643,7 @@ characters:
           --------
 
   0x06d:
-    unicode:
+    unicode: LATIN SMALL LETTER M
     bitmap:
       |
           --------
@@ -1658,7 +1658,7 @@ characters:
           --------
 
   0x06e:
-    unicode:
+    unicode: LATIN SMALL LETTER N
     bitmap:
       |
           --------
@@ -1673,7 +1673,7 @@ characters:
           --------
 
   0x06f:
-    unicode:
+    unicode: LATIN SMALL LETTER O
     bitmap:
       |
           --------
@@ -1688,7 +1688,7 @@ characters:
           --------
 
   0x070:
-    unicode:
+    unicode: LATIN SMALL LETTER P
     bitmap:
       |
           --------
@@ -1703,7 +1703,7 @@ characters:
           --------
 
   0x071:
-    unicode:
+    unicode: LATIN SMALL LETTER Q
     bitmap:
       |
           --------
@@ -1718,7 +1718,7 @@ characters:
           --------
 
   0x072:
-    unicode:
+    unicode: LATIN SMALL LETTER R
     bitmap:
       |
           --------
@@ -1733,7 +1733,7 @@ characters:
           --------
 
   0x073:
-    unicode:
+    unicode: LATIN SMALL LETTER S
     bitmap:
       |
           --------
@@ -1748,7 +1748,7 @@ characters:
           --------
 
   0x074:
-    unicode:
+    unicode: LATIN SMALL LETTER T
     bitmap:
       |
           ---#----
@@ -1763,7 +1763,7 @@ characters:
           --------
 
   0x075:
-    unicode:
+    unicode: LATIN SMALL LETTER U
     bitmap:
       |
           --------
@@ -1778,7 +1778,7 @@ characters:
           --------
 
   0x076:
-    unicode:
+    unicode: LATIN SMALL LETTER V
     bitmap:
       |
           --------
@@ -1793,7 +1793,7 @@ characters:
           --------
 
   0x077:
-    unicode:
+    unicode: LATIN SMALL LETTER W
     bitmap:
       |
           --------
@@ -1808,7 +1808,7 @@ characters:
           --------
 
   0x078:
-    unicode:
+    unicode: LATIN SMALL LETTER X
     bitmap:
       |
           --------
@@ -1823,7 +1823,7 @@ characters:
           --------
 
   0x079:
-    unicode:
+    unicode: LATIN SMALL LETTER Y
     bitmap:
       |
           --------
@@ -1838,7 +1838,7 @@ characters:
           --------
 
   0x07a:
-    unicode:
+    unicode: LATIN SMALL LETTER Z
     bitmap:
       |
           --------
@@ -1853,7 +1853,7 @@ characters:
           --------
 
   0x07b:
-    unicode:
+    unicode: LEFT CURLY BRACKET
     bitmap:
       |
           --------
@@ -1868,7 +1868,7 @@ characters:
           --------
 
   0x07c:
-    unicode:
+    unicode: VERTICAL LINE
     bitmap:
       |
           --------
@@ -1883,7 +1883,7 @@ characters:
           --------
 
   0x07d:
-    unicode:
+    unicode: RIGHT CURLY BRACKET
     bitmap:
       |
           --------
@@ -1898,7 +1898,7 @@ characters:
           --------
 
   0x07e:
-    unicode:
+    unicode: TILDE
     bitmap:
       |
           --------
@@ -1913,7 +1913,7 @@ characters:
           --------
 
   0x07f:
-    unicode:
+    unicode: HOUSE
     bitmap:
       |
           --------
@@ -1928,7 +1928,7 @@ characters:
           --------
 
   0x080:
-    unicode:
+    unicode: LATIN CAPITAL LETTER C WITH CEDILLA
     bitmap:
       |
           --------
@@ -1943,7 +1943,7 @@ characters:
           ---##---
 
   0x081:
-    unicode:
+    unicode: LATIN SMALL LETTER U WITH DIAERESIS
     bitmap:
       |
           --------
@@ -1958,7 +1958,7 @@ characters:
           --------
 
   0x082:
-    unicode:
+    unicode: LATIN SMALL LETTER E WITH ACUTE
     bitmap:
       |
           ---##---
@@ -1973,7 +1973,7 @@ characters:
           --------
 
   0x083:
-    unicode:
+    unicode: LATIN SMALL LETTER A WITH CIRCUMFLEX
     bitmap:
       |
           --##----
@@ -1988,7 +1988,7 @@ characters:
           --------
 
   0x084:
-    unicode:
+    unicode: LATIN SMALL LETTER A WITH DIAERESIS
     bitmap:
       |
           -#--#---
@@ -2003,7 +2003,7 @@ characters:
           --------
 
   0x085:
-    unicode:
+    unicode: LATIN SMALL LETTER A WITH GRAVE
     bitmap:
       |
           -##-----
@@ -2018,7 +2018,7 @@ characters:
           --------
 
   0x086:
-    unicode:
+    unicode: LATIN SMALL LETTER A WITH RING ABOVE
     bitmap:
       |
           -#--#---
@@ -2033,7 +2033,7 @@ characters:
           --------
 
   0x087:
-    unicode:
+    unicode: LATIN SMALL LETTER C WITH CEDILLA
     bitmap:
       |
           --------
@@ -2048,7 +2048,7 @@ characters:
           --##----
 
   0x088:
-    unicode:
+    unicode: LATIN SMALL LETTER E WITH CIRCUMFLEX
     bitmap:
       |
           --##----
@@ -2063,7 +2063,7 @@ characters:
           --------
 
   0x089:
-    unicode:
+    unicode: LATIN SMALL LETTER E WITH DIAERESIS
     bitmap:
       |
           --------
@@ -2078,7 +2078,7 @@ characters:
           --------
 
   0x08a:
-    unicode:
+    unicode: LATIN SMALL LETTER E WITH GRAVE
     bitmap:
       |
           -##-----
@@ -2093,7 +2093,7 @@ characters:
           --------
 
   0x08b:
-    unicode:
+    unicode: LATIN SMALL LETTER I WITH DIAERESIS
     bitmap:
       |
           --------
@@ -2108,7 +2108,7 @@ characters:
           --------
 
   0x08c:
-    unicode:
+    unicode: LATIN SMALL LETTER I WITH CIRCUMFLEX
     bitmap:
       |
           --##----
@@ -2123,7 +2123,7 @@ characters:
           --------
 
   0x08d:
-    unicode:
+    unicode: LATIN SMALL LETTER I WITH GRAVE
     bitmap:
       |
           -##-----
@@ -2138,7 +2138,7 @@ characters:
           --------
 
   0x08e:
-    unicode:
+    unicode: LATIN CAPITAL LETTER A WITH DIAERESIS
     bitmap:
       |
           -#--#---
@@ -2153,7 +2153,7 @@ characters:
           --------
 
   0x08f:
-    unicode:
+    unicode: LATIN CAPITAL LETTER A WITH RING ABOVE
     bitmap:
       |
           --##----
@@ -2168,7 +2168,7 @@ characters:
           --------
 
   0x090:
-    unicode:
+    unicode: LATIN CAPITAL LETTER E WITH ACUTE
     bitmap:
       |
           ---##---
@@ -2183,7 +2183,7 @@ characters:
           --------
 
   0x091:
-    unicode:
+    unicode: LATIN SMALL LETTER AE
     bitmap:
       |
           --------
@@ -2198,7 +2198,7 @@ characters:
           --------
 
   0x092:
-    unicode:
+    unicode: LATIN CAPITAL LETTER AE
     bitmap:
       |
           --------
@@ -2213,7 +2213,7 @@ characters:
           --------
 
   0x093:
-    unicode:
+    unicode: LATIN SMALL LETTER O WITH CIRCUMFLEX
     bitmap:
       |
           --##----
@@ -2228,7 +2228,7 @@ characters:
           --------
 
   0x094:
-    unicode:
+    unicode: LATIN SMALL LETTER O WITH DIAERESIS
     bitmap:
       |
           --------
@@ -2243,7 +2243,7 @@ characters:
           --------
 
   0x095:
-    unicode:
+    unicode: LATIN SMALL LETTER O WITH GRAVE
     bitmap:
       |
           -##-----
@@ -2258,7 +2258,7 @@ characters:
           --------
 
   0x096:
-    unicode:
+    unicode: LATIN SMALL LETTER U WITH CIRCUMFLEX
     bitmap:
       |
           --##----
@@ -2273,7 +2273,7 @@ characters:
           --------
 
   0x097:
-    unicode:
+    unicode: LATIN SMALL LETTER U WITH GRAVE
     bitmap:
       |
           -##-----
@@ -2288,7 +2288,7 @@ characters:
           --------
 
   0x098:
-    unicode:
+    unicode: LATIN SMALL LETTER Y WITH DIAERESIS
     bitmap:
       |
           -#--#---
@@ -2303,7 +2303,7 @@ characters:
           -####---
 
   0x099:
-    unicode:
+    unicode: LATIN CAPITAL LETTER O WITH DIAERESIS
     bitmap:
       |
           -#---#--
@@ -2318,7 +2318,7 @@ characters:
           --------
 
   0x09a:
-    unicode:
+    unicode: LATIN CAPITAL LETTER U WITH DIAERESIS
     bitmap:
       |
           --#--#--
@@ -2333,7 +2333,7 @@ characters:
           --------
 
   0x09b:
-    unicode:
+    unicode: CENT SIGN
     bitmap:
       |
           --------
@@ -2348,7 +2348,7 @@ characters:
           --------
 
   0x09c:
-    unicode:
+    unicode: POUND SIGN
     bitmap:
       |
           ---###--
@@ -2363,7 +2363,7 @@ characters:
           --------
 
   0x09d:
-    unicode:
+    unicode: YEN SIGN
     bitmap:
       |
           #-----#-
@@ -2378,7 +2378,7 @@ characters:
           --------
 
   0x09e:
-    unicode:
+    unicode: PESETA SIGN
     bitmap:
       |
           ####----
@@ -2393,7 +2393,7 @@ characters:
           --------
 
   0x09f:
-    unicode:
+    unicode: LATIN SMALL LETTER F WITH HOOK
     bitmap:
       |
           -----##-
@@ -2408,7 +2408,7 @@ characters:
           --------
 
   0x0a0:
-    unicode:
+    unicode: LATIN SMALL LETTER A WITH ACUTE
     bitmap:
       |
           ---##---
@@ -2423,7 +2423,7 @@ characters:
           --------
 
   0x0a1:
-    unicode:
+    unicode: LATIN SMALL LETTER I WITH ACUTE
     bitmap:
       |
           ---##---
@@ -2438,7 +2438,7 @@ characters:
           --------
 
   0x0a2:
-    unicode:
+    unicode: LATIN SMALL LETTER O WITH ACUTE
     bitmap:
       |
           ---##---
@@ -2453,7 +2453,7 @@ characters:
           --------
 
   0x0a3:
-    unicode:
+    unicode: LATIN SMALL LETTER U WITH ACUTE
     bitmap:
       |
           ---##---
@@ -2468,7 +2468,7 @@ characters:
           --------
 
   0x0a4:
-    unicode:
+    unicode: LATIN SMALL LETTER N WITH TILDE
     bitmap:
       |
           #-------
@@ -2483,7 +2483,7 @@ characters:
           --------
 
   0x0a5:
-    unicode:
+    unicode: LATIN CAPITAL LETTER N WITH TILDE
     bitmap:
       |
           #-------
@@ -2498,7 +2498,7 @@ characters:
           --------
 
   0x0a6:
-    unicode:
+    unicode: FEMININE ORDINAL INDICATOR
     bitmap:
       |
           --------
@@ -2513,7 +2513,7 @@ characters:
           --------
 
   0x0a7:
-    unicode:
+    unicode: MASCULINE ORDINAL INDICATOR
     bitmap:
       |
           --------
@@ -2528,7 +2528,7 @@ characters:
           --------
 
   0x0a8:
-    unicode:
+    unicode: INVERTED QUESTION MARK
     bitmap:
       |
           ---##---
@@ -2543,7 +2543,7 @@ characters:
           --------
 
   0x0a9:
-    unicode:
+    unicode: REVERSED NOT SIGN
     bitmap:
       |
           ########
@@ -2558,7 +2558,7 @@ characters:
           --------
 
   0x0aa:
-    unicode:
+    unicode: NOT SIGN
     bitmap:
       |
           ########
@@ -2573,7 +2573,7 @@ characters:
           --------
 
   0x0ab:
-    unicode:
+    unicode: VULGAR FRACTION ONE HALF
     bitmap:
       |
           -#------
@@ -2588,7 +2588,7 @@ characters:
           --------
 
   0x0ac:
-    unicode:
+    unicode: VULGAR FRACTION ONE QUARTER
     bitmap:
       |
           -#------
@@ -2603,7 +2603,7 @@ characters:
           --------
 
   0x0ad:
-    unicode:
+    unicode: INVERTED EXCLAMATION MARK
     bitmap:
       |
           --------
@@ -2618,7 +2618,7 @@ characters:
           --------
 
   0x0ae:
-    unicode:
+    unicode: LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
     bitmap:
       |
           --------
@@ -2633,7 +2633,7 @@ characters:
           --------
 
   0x0af:
-    unicode:
+    unicode: RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
     bitmap:
       |
           --------
@@ -2648,7 +2648,7 @@ characters:
           --------
 
   0x0b0:
-    unicode:
+    unicode: LIGHT SHADE
     bitmap:
       |
           --------
@@ -2663,7 +2663,7 @@ characters:
           -#--#--#
 
   0x0b1:
-    unicode:
+    unicode: MEDIUM SHADE
     bitmap:
       |
           --------
@@ -2678,7 +2678,7 @@ characters:
           -##-##-#
 
   0x0b2:
-    unicode:
+    unicode: DARK SHADE
     bitmap:
       |
           -#-#-#-#
@@ -2693,7 +2693,7 @@ characters:
           #-#-#-#-
 
   0x0b3:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT VERTICAL
     bitmap:
       |
           ---#----
@@ -2708,7 +2708,7 @@ characters:
           ---#----
 
   0x0b4:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT VERTICAL AND LEFT
     bitmap:
       |
           ---#----
@@ -2723,7 +2723,7 @@ characters:
           ---#----
 
   0x0b5:
-    unicode:
+    unicode: BOX DRAWINGS VERTICAL SINGLE AND LEFT DOUBLE
     bitmap:
       |
           ---#----
@@ -2738,7 +2738,7 @@ characters:
           ---#----
 
   0x0b6:
-    unicode:
+    unicode: BOX DRAWINGS VERTICAL DOUBLE AND LEFT SINGLE
     bitmap:
       |
           --#-#---
@@ -2753,7 +2753,7 @@ characters:
           --#-#---
 
   0x0b7:
-    unicode:
+    unicode: BOX DRAWINGS DOWN DOUBLE AND LEFT SINGLE
     bitmap:
       |
           --------
@@ -2768,7 +2768,7 @@ characters:
           --#-#---
 
   0x0b8:
-    unicode:
+    unicode: BOX DRAWINGS DOWN SINGLE AND LEFT DOUBLE
     bitmap:
       |
           --------
@@ -2783,7 +2783,7 @@ characters:
           ---#----
 
   0x0b9:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE VERTICAL AND LEFT
     bitmap:
       |
           --#-#---
@@ -2798,7 +2798,7 @@ characters:
           --#-#---
 
   0x0ba:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE VERTICAL
     bitmap:
       |
           --#-#---
@@ -2813,7 +2813,7 @@ characters:
           --#-#---
 
   0x0bb:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE DOWN AND LEFT
     bitmap:
       |
           --------
@@ -2828,7 +2828,7 @@ characters:
           --#-#---
 
   0x0bc:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE UP AND LEFT
     bitmap:
       |
           --#-#---
@@ -2843,7 +2843,7 @@ characters:
           --------
 
   0x0bd:
-    unicode:
+    unicode: BOX DRAWINGS UP DOUBLE AND LEFT SINGLE
     bitmap:
       |
           --#-#---
@@ -2858,7 +2858,7 @@ characters:
           --------
 
   0x0be:
-    unicode:
+    unicode: BOX DRAWINGS UP SINGLE AND LEFT DOUBLE
     bitmap:
       |
           ---#----
@@ -2873,7 +2873,7 @@ characters:
           --------
 
   0x0bf:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT DOWN AND LEFT
     bitmap:
       |
           --------
@@ -2888,7 +2888,7 @@ characters:
           ---#----
 
   0x0c0:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT UP AND RIGHT
     bitmap:
       |
           ---#----
@@ -2903,7 +2903,7 @@ characters:
           --------
 
   0x0c1:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT UP AND HORIZONTAL
     bitmap:
       |
           ---#----
@@ -2918,7 +2918,7 @@ characters:
           --------
 
   0x0c2:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT DOWN AND HORIZONTAL
     bitmap:
       |
           --------
@@ -2933,7 +2933,7 @@ characters:
           ---#----
 
   0x0c3:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT VERTICAL AND RIGHT
     bitmap:
       |
           ---#----
@@ -2963,7 +2963,7 @@ characters:
           --------
 
   0x0c5:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT VERTICAL AND HORIZONTAL
     bitmap:
       |
           ---#----
@@ -2978,7 +2978,7 @@ characters:
           ---#----
 
   0x0c6:
-    unicode:
+    unicode: BOX DRAWINGS VERTICAL SINGLE AND RIGHT DOUBLE
     bitmap:
       |
           ---#----
@@ -2993,7 +2993,7 @@ characters:
           ---#----
 
   0x0c7:
-    unicode:
+    unicode: BOX DRAWINGS VERTICAL DOUBLE AND RIGHT SINGLE
     bitmap:
       |
           --#-#---
@@ -3008,7 +3008,7 @@ characters:
           --#-#---
 
   0x0c8:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE UP AND RIGHT
     bitmap:
       |
           --#-#---
@@ -3023,7 +3023,7 @@ characters:
           --------
 
   0x0c9:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE DOWN AND RIGHT
     bitmap:
       |
           --------
@@ -3038,7 +3038,7 @@ characters:
           --#-#---
 
   0x0ca:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE UP AND HORIZONTAL
     bitmap:
       |
           --#-#---
@@ -3053,7 +3053,7 @@ characters:
           --------
 
   0x0cb:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE DOWN AND HORIZONTAL
     bitmap:
       |
           --------
@@ -3068,7 +3068,7 @@ characters:
           --#-#---
 
   0x0cc:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE VERTICAL AND RIGHT
     bitmap:
       |
           --#-#---
@@ -3083,7 +3083,7 @@ characters:
           --#-#---
 
   0x0cd:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE HORIZONTAL
     bitmap:
       |
           --------
@@ -3098,7 +3098,7 @@ characters:
           --------
 
   0x0ce:
-    unicode:
+    unicode: BOX DRAWINGS DOUBLE VERTICAL AND HORIZONTAL
     bitmap:
       |
           --#-#---
@@ -3113,7 +3113,7 @@ characters:
           --#-#---
 
   0x0cf:
-    unicode:
+    unicode: BOX DRAWINGS UP SINGLE AND HORIZONTAL DOUBLE
     bitmap:
       |
           ---#----
@@ -3128,7 +3128,7 @@ characters:
           --------
 
   0x0d0:
-    unicode:
+    unicode: BOX DRAWINGS UP DOUBLE AND HORIZONTAL SINGLE
     bitmap:
       |
           --#-#---
@@ -3143,7 +3143,7 @@ characters:
           --------
 
   0x0d1:
-    unicode:
+    unicode: BOX DRAWINGS DOWN SINGLE AND HORIZONTAL DOUBLE
     bitmap:
       |
           --------
@@ -3158,7 +3158,7 @@ characters:
           ---#----
 
   0x0d2:
-    unicode:
+    unicode: BOX DRAWINGS DOWN DOUBLE AND HORIZONTAL SINGLE
     bitmap:
       |
           --------
@@ -3173,7 +3173,7 @@ characters:
           --#-#---
 
   0x0d3:
-    unicode:
+    unicode: BOX DRAWINGS UP DOUBLE AND RIGHT SINGLE
     bitmap:
       |
           --#-#---
@@ -3188,7 +3188,7 @@ characters:
           --------
 
   0x0d4:
-    unicode:
+    unicode: BOX DRAWINGS UP SINGLE AND RIGHT DOUBLE
     bitmap:
       |
           ---#----
@@ -3203,7 +3203,7 @@ characters:
           --------
 
   0x0d5:
-    unicode:
+    unicode: BOX DRAWINGS DOWN SINGLE AND RIGHT DOUBLE
     bitmap:
       |
           --------
@@ -3218,7 +3218,7 @@ characters:
           ---#----
 
   0x0d6:
-    unicode:
+    unicode: BOX DRAWINGS DOWN DOUBLE AND RIGHT SINGLE
     bitmap:
       |
           --------
@@ -3233,7 +3233,7 @@ characters:
           --#-#---
 
   0x0d7:
-    unicode:
+    unicode: BOX DRAWINGS VERTICAL DOUBLE AND HORIZONTAL SINGLE
     bitmap:
       |
           --#-#---
@@ -3248,7 +3248,7 @@ characters:
           --#-#---
 
   0x0d8:
-    unicode:
+    unicode: BOX DRAWINGS VERTICAL SINGLE AND HORIZONTAL DOUBLE
     bitmap:
       |
           ---#----
@@ -3263,7 +3263,7 @@ characters:
           ---#----
 
   0x0d9:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT UP AND LEFT
     bitmap:
       |
           ---#----
@@ -3278,7 +3278,7 @@ characters:
           --------
 
   0x0da:
-    unicode:
+    unicode: BOX DRAWINGS LIGHT DOWN AND RIGHT
     bitmap:
       |
           --------
@@ -3308,7 +3308,7 @@ characters:
           ########
 
   0x0dc:
-    unicode:
+    unicode: LOWER HALF BLOCK
     bitmap:
       |
           --------
@@ -3323,7 +3323,7 @@ characters:
           --------
 
   0x0dd:
-    unicode:
+    unicode: LEFT HALF BLOCK
     bitmap:
       |
           ###-----
@@ -3338,7 +3338,7 @@ characters:
           ###-----
 
   0x0de:
-    unicode:
+    unicode: RIGHT HALF BLOCK
     bitmap:
       |
           -----###
@@ -3353,7 +3353,7 @@ characters:
           -----###
 
   0x0df:
-    unicode:
+    unicode: UPPER HALF BLOCK
     bitmap:
       |
           --------
@@ -3368,7 +3368,7 @@ characters:
           ########
 
   0x0e0:
-    unicode:
+    unicode: GREEK SMALL LETTER ALPHA
     bitmap:
       |
           --------
@@ -3383,7 +3383,7 @@ characters:
           --------
 
   0x0e1:
-    unicode:
+    unicode: LATIN SMALL LETTER SHARP S
     bitmap:
       |
           -#-###--
@@ -3398,7 +3398,7 @@ characters:
           --------
 
   0x0e2:
-    unicode:
+    unicode: GREEK CAPITAL LETTER GAMMA
     bitmap:
       |
           #######-
@@ -3413,7 +3413,7 @@ characters:
           --------
 
   0x0e3:
-    unicode:
+    unicode: GREEK SMALL LETTER PI
     bitmap:
       |
           --------
@@ -3428,7 +3428,7 @@ characters:
           --------
 
   0x0e4:
-    unicode:
+    unicode: GREEK CAPITAL LETTER SIGMA
     bitmap:
       |
           -######-
@@ -3443,7 +3443,7 @@ characters:
           --------
 
   0x0e5:
-    unicode:
+    unicode: GREEK SMALL LETTER SIGMA
     bitmap:
       |
           --------
@@ -3458,7 +3458,7 @@ characters:
           --------
 
   0x0e6:
-    unicode:
+    unicode: MICRO SIGN
     bitmap:
       |
           --------
@@ -3488,7 +3488,7 @@ characters:
           --------
 
   0x0e8:
-    unicode:
+    unicode: GREEK CAPITAL LETTER PHI
     bitmap:
       |
           ---###--
@@ -3503,7 +3503,7 @@ characters:
           --------
 
   0x0e9:
-    unicode:
+    unicode: GREEK CAPITAL LETTER THETA
     bitmap:
       |
           ---##---
@@ -3518,7 +3518,7 @@ characters:
           --------
 
   0x0ea:
-    unicode:
+    unicode: GREEK CAPITAL LETTER OMEGA
     bitmap:
       |
           --####--
@@ -3533,7 +3533,7 @@ characters:
           --------
 
   0x0eb:
-    unicode:
+    unicode: GREEK SMALL LETTER DELTA
     bitmap:
       |
           ----##--
@@ -3548,7 +3548,7 @@ characters:
           --------
 
   0x0ec:
-    unicode:
+    unicode: INFINITY
     bitmap:
       |
           --------
@@ -3563,7 +3563,7 @@ characters:
           --------
 
   0x0ed:
-    unicode:
+    unicode: GREEK SMALL LETTER PHI
     bitmap:
       |
           --------
@@ -3578,7 +3578,7 @@ characters:
           --------
 
   0x0ee:
-    unicode:
+    unicode: GREEK SMALL LETTER EPSILON
     bitmap:
       |
           --####--
@@ -3593,7 +3593,7 @@ characters:
           --------
 
   0x0ef:
-    unicode:
+    unicode: INTERSECTION
     bitmap:
       |
           --------
@@ -3608,7 +3608,7 @@ characters:
           --------
 
   0x0f0:
-    unicode:
+    unicode: IDENTICAL TO
     bitmap:
       |
           --------
@@ -3623,7 +3623,7 @@ characters:
           --------
 
   0x0f1:
-    unicode:
+    unicode: PLUS-MINUS SIGN
     bitmap:
       |
           --------
@@ -3638,7 +3638,7 @@ characters:
           --------
 
   0x0f2:
-    unicode:
+    unicode: GREATER-THAN OR EQUAL TO
     bitmap:
       |
           --##----
@@ -3653,7 +3653,7 @@ characters:
           --------
 
   0x0f3:
-    unicode:
+    unicode: LESS-THAN OR EQUAL TO
     bitmap:
       |
           -----##-
@@ -3668,7 +3668,7 @@ characters:
           --------
 
   0x0f4:
-    unicode:
+    unicode: TOP HALF INTEGRAL
     bitmap:
       |
           --------
@@ -3683,7 +3683,7 @@ characters:
           --------
 
   0x0f5:
-    unicode:
+    unicode: BOTTOM HALF INTEGRAL
     bitmap:
       |
           --------
@@ -3698,7 +3698,7 @@ characters:
           --------
 
   0x0f6:
-    unicode:
+    unicode: DIVISION SIGN
     bitmap:
       |
           --------
@@ -3713,7 +3713,7 @@ characters:
           --------
 
   0x0f7:
-    unicode:
+    unicode: ALMOST EQUAL TO
     bitmap:
       |
           --------
@@ -3728,7 +3728,7 @@ characters:
           --------
 
   0x0f8:
-    unicode:
+    unicode: DEGREE SIGN
     bitmap:
       |
           --------
@@ -3743,7 +3743,7 @@ characters:
           --------
 
   0x0f9:
-    unicode:
+    unicode: BULLET OPERATOR
     bitmap:
       |
           --------
@@ -3758,7 +3758,7 @@ characters:
           --------
 
   0x0fa:
-    unicode:
+    unicode: MIDDLE DOT
     bitmap:
       |
           --------
@@ -3773,7 +3773,7 @@ characters:
           --------
 
   0x0fb:
-    unicode:
+    unicode: SQUARE ROOT
     bitmap:
       |
           --------
@@ -3788,7 +3788,7 @@ characters:
           --------
 
   0x0fc:
-    unicode:
+    unicode: SUPERSCRIPT LATIN SMALL LETTER N
     bitmap:
       |
           --------
@@ -3803,7 +3803,7 @@ characters:
           --------
 
   0x0fd:
-    unicode:
+    unicode: SUPERSCRIPT TWO
     bitmap:
       |
           ---##---
@@ -3818,7 +3818,7 @@ characters:
           --------
 
   0x0fe:
-    unicode:
+    unicode: BLACK SQUARE
     bitmap:
       |
           --------
@@ -3833,7 +3833,7 @@ characters:
           --------
 
   0x0ff:
-    unicode:
+    unicode: NO-BREAK SPACE
     bitmap:
       |
           -----#--
