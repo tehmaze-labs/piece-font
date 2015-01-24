@@ -4,7 +4,7 @@ font:
     vendor: Commodore
     year:   1993
   size: [8, 16]
-  source: Kickstart v3.1 r40.68
+  source: http://www.trueschool.se/ / dMG/t!s^dS!
 
 characters:
   0x000:
