@@ -120,7 +120,15 @@ class Font(object):
     @property
     def palette(self):
         if self.colors:
-            return [('#%06x' % (c[0],), c[1]) for c in self.colors]
+            colormap = []
+            for i, color in enumerate(self.colors):
+                if isinstance(color, (list, tuple)):
+                    rgb, name = color[:]
+                else:
+                    rgb = '#%06x' % (color,)
+                    name = i
+                colormap.append((rgb, name))
+            return colormap
         else:
             return None
 

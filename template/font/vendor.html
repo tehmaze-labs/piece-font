@@ -12,6 +12,7 @@
   <thead>
     <tr>
       <th>Font</th>
+      <th>Glyphs</th>
       <th>Description</th>
       <th>Language</th>
       <th>Example</th>
@@ -21,6 +22,7 @@
 {% for font in fonts|sort %}
     <tr>
       <td><a href="{{ font.info.name }}.html">{{ font.info.name }}</a></td>
+      <td>{{ font|length }}</td>
       {%- if font.info.description -%}
       <td>{{ font.info.description }}</td>
       {%- else -%}
