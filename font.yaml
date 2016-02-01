@@ -691,6 +691,45 @@ Miscellanious Former Soviet Union:
         copyright_year:         1974
         source:                 "FreeBSD syscons"
 
+Unscii:
+    unscii-8x8:
+        copyright:              "Viznut"
+        copyright_year:         2016
+        source:                 "http://pelulamu.net/unscii/"
+    unscii-alt-8x8:
+        description:            "Based on the more peculiar glyph forms of the reference fonts"
+        copyright:              "Viznut"
+        copyright_year:         2016
+        source:                 "http://pelulamu.net/unscii/"
+    unscii-fantasy-8x8:
+        description:            "Based on fonts used in fantasy games"
+        copyright:              "Viznut"
+        copyright_year:         2016
+        source:                 "http://pelulamu.net/unscii/"
+    unscii-mcr-8x8:
+        description:            "Based on retrofuturistic MCR-like 8x8 fonts used in various games, demos, etc."
+        copyright:              "Viznut"
+        copyright_year:         2016
+        source:                 "http://pelulamu.net/unscii/"
+    unscii-tall-8x8:
+        description:            "Double-height version of unscii-8"
+        copyright:              "Viznut"
+        copyright_year:         2016
+        source:                 "http://pelulamu.net/unscii/"
+    unscii-thin-8x8:
+        description:            "Based on system fonts with 1-pixel-wide lines"
+        copyright:              "Viznut"
+        copyright_year:         2016
+        source:                 "http://pelulamu.net/unscii/"
+    unscii-8x16:
+        copyright:              "Viznut"
+        copyright_year:         2016
+        source:                 "http://pelulamu.net/unscii/"
+    unscii-full-8x16:
+        copyright:              "Viznut"
+        copyright_year:         2016
+        source:                 "http://pelulamu.net/unscii/"
+
 Unknown:
     iso02-8x14:
         description:            "Unknown"
