@@ -4,7 +4,7 @@ font:
     vendor: Viznut
     year:   2016
   size: [8, 16]
-  source: http://pelulamu.net/unscii/
+  source_url: http://pelulamu.net/unscii/
 
 characters:
   0x000:
