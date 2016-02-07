@@ -4,7 +4,7 @@ font:
     vendor: Viznut
     year:   2016
   size: [8, 8]
-  source: http://pelulamu.net/unscii/
+  source_url: http://pelulamu.net/unscii/
 
 characters:
   0x000:
@@ -1659,7 +1659,7 @@ characters:
           --------
 
   0x07f:
-    unicode: FULL BLOCK
+    unicode:
     bitmap:
       |
           ##------
@@ -2101,7 +2101,7 @@ characters:
           --------
 
   0x0a1:
-    unicode:
+    unicode: INVERTED EXCLAMATION MARK
     bitmap:
       |
           ---##---
@@ -2114,7 +2114,7 @@ characters:
           --------
 
   0x0a2:
-    unicode:
+    unicode: CENT SIGN
     bitmap:
       |
           --------
@@ -2127,7 +2127,7 @@ characters:
           --------
 
   0x0a3:
-    unicode:
+    unicode: POUND SIGN
     bitmap:
       |
           --###---
@@ -2140,7 +2140,7 @@ characters:
           --------
 
   0x0a4:
-    unicode:
+    unicode: 
     bitmap:
       |
           -##--##-
@@ -2153,7 +2153,7 @@ characters:
           --------
 
   0x0a5:
-    unicode:
+    unicode: YEN SIGN
     bitmap:
       |
           ##----##
@@ -2166,7 +2166,7 @@ characters:
           --------
 
   0x0a6:
-    unicode:
+    unicode: 
     bitmap:
       |
           ---##---
@@ -2179,7 +2179,7 @@ characters:
           --------
 
   0x0a7:
-    unicode:
+    unicode: SECTION SIGN
     bitmap:
       |
           --####--
@@ -2192,7 +2192,7 @@ characters:
           --####--
 
   0x0a8:
-    unicode:
+    unicode: COMBINING DIAERESIS
     bitmap:
       |
           -##--##-
@@ -2205,7 +2205,7 @@ characters:
           --------
 
   0x0a9:
-    unicode:
+    unicode: COPYRIGHT SIGN
     bitmap:
       |
           -######-
@@ -2218,7 +2218,7 @@ characters:
           -######-
 
   0x0aa:
-    unicode:
+    unicode: FEMININE ORDINAL INDICATOR
     bitmap:
       |
           --####--
@@ -2231,7 +2231,7 @@ characters:
           --------
 
   0x0ab:
-    unicode:
+    unicode: LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
     bitmap:
       |
           --------
@@ -2244,7 +2244,7 @@ characters:
           --------
 
   0x0ac:
-    unicode:
+    unicode: NOT SIGN
     bitmap:
       |
           --------
@@ -2270,7 +2270,7 @@ characters:
           --------
 
   0x0ae:
-    unicode:
+    unicode: REGISTERED SIGN
     bitmap:
       |
           -######-
@@ -2309,7 +2309,7 @@ characters:
           --------
 
   0x0b1:
-    unicode:
+    unicode: PLUS-MINUS SIGN
     bitmap:
       |
           ---##---
@@ -2322,7 +2322,7 @@ characters:
           --------
 
   0x0b2:
-    unicode:
+    unicode: SUPERSCRIPT TWO
     bitmap:
       |
           -###----
@@ -2335,7 +2335,7 @@ characters:
           --------
 
   0x0b3:
-    unicode:
+    unicode: SUPERSCRIPT THREE
     bitmap:
       |
           -####---
@@ -2361,7 +2361,7 @@ characters:
           --------
 
   0x0b5:
-    unicode:
+    unicode: MICRO SIGN
     bitmap:
       |
           --------
@@ -2374,7 +2374,7 @@ characters:
           ##------
 
   0x0b6:
-    unicode:
+    unicode: PILCROW SIGN
     bitmap:
       |
           --#####-
@@ -2413,7 +2413,7 @@ characters:
           --------
 
   0x0b9:
-    unicode:
+    unicode: SUPERSCRIPT ONE
     bitmap:
       |
           --##----
@@ -2426,7 +2426,7 @@ characters:
           --------
 
   0x0ba:
-    unicode:
+    unicode: MASCULINE ORDINAL INDICATOR
     bitmap:
       |
           --###---
@@ -2439,7 +2439,7 @@ characters:
           --------
 
   0x0bb:
-    unicode:
+    unicode: RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
     bitmap:
       |
           --------
@@ -2452,7 +2452,7 @@ characters:
           --------
 
   0x0bc:
-    unicode:
+    unicode: VULGAR FRACTION ONE QUARTER
     bitmap:
       |
           -#----##
@@ -2465,7 +2465,7 @@ characters:
           ------#-
 
   0x0bd:
-    unicode:
+    unicode: VULGAR FRACTION ONE HALF
     bitmap:
       |
           -#------
@@ -2478,7 +2478,7 @@ characters:
           ----####
 
   0x0be:
-    unicode:
+    unicode: VULGAR FRACTION THREE QUARTERS
     bitmap:
       |
           ##------
@@ -2491,7 +2491,7 @@ characters:
           -------#
 
   0x0bf:
-    unicode:
+    unicode: INVERTED QUESTION MARK
     bitmap:
       |
           ---##---

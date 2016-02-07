@@ -83,7 +83,23 @@
       </tr>
       <tr>
         <th>Copyright</th>
-        <td>&copy; {{ font.info.copyright.year }} {{ font.info.copyright.vendor }}</td>
+        <td>&copy; {{ font.info.copyright.year or "Unkown year, " }} {{ font.info.copyright.vendor or "Unknown vendor" }}</td>
+      </tr>
+      <tr>
+	<th>Source</th>
+{% if font.info.source_url and font.info.source -%}
+	<td><a href="{{ font.info.source_url }}">{{ font.info.source }}</a></td>
+{% elif font.info_source -%}
+	<td>{{ font.info.source }}</td>
+{% elif font.info.source_url -%}
+	<td><a href="{{ font.info.source_url }}">{{ font.info.source_url }}</a></td>
+{% else -%}
+	<td>Unknown</td>
+{% endif -%}
+      </tr>
+      <tr>
+	<th>License</th>
+	<td>{{ font.info.license or "Unknown" }}</td>
       </tr>
       <tr>
         <th>Character size</th>

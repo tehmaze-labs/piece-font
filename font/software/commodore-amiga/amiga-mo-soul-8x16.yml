@@ -4,7 +4,9 @@ font:
     vendor: Desoto
     year:   
   size: [8, 16]
-  source: http://www.trueschool.se/ / dMG/t!s^dS!
+  source: dMG/t!s^dS!
+  source_url: http://trueschool.se/html/fonts.html
+  license: BY-NC-SA-3.0 / GPL-FE
 
 characters:
   0x000:

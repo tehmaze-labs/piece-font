@@ -1,10 +1,11 @@
 font:
   description: Amiga Topaz Kickstart 2.x
   copyright:
-    vendor: Commodore
-    year:   1993
+    vendor: dMG/t!s^dS!
   size: [8, 16]
-  source: http://www.trueschool.se/ / dMG/t!s^dS!
+  source: dMG/t!s^dS!
+  source_url: http://trueschool.se/html/fonts.html
+  license: BY-NC-SA-3.0 / GPL-FE
 
 characters:
   0x000:

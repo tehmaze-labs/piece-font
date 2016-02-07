@@ -4,7 +4,9 @@ font:
     vendor: Lukas Nystrand (aka Mortimer Twang)
     year:   
   size: [8, 8]
-  source: B-Girl
+  source: dMG/t!s^dS!
+  source_url: http://trueschool.se/html/fonts.html
+  license: BY-NC-SA-3.0 / GPL-FE
 
 characters:
   0x000:
